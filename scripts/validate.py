@@ -95,7 +95,7 @@ def check_market(rep, m):
     cc = m.get("crosscheck", [])
     for c in cc:
         if c["diff_pct"] > 1:
-            rep.err(f"{c['id']}: 两个数据源收盘价不一致（Yahoo {c['yahoo']} vs Stooq {c['stooq']}），需人工核实")
+            rep.err(f"{c['id']}: 两个数据源收盘价不一致（Yahoo {c['yahoo']} vs Nasdaq {c['nasdaq']}），需人工核实")
         elif c["diff_pct"] > 0.5:
             rep.warn(f"{c['id']}: 两个数据源收盘价相差 {c['diff_pct']:.2f}%")
     if len(cc) < len(CFG["watchlist"]) // 2:

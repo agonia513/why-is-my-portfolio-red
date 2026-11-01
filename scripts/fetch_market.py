@@ -94,16 +94,21 @@ def intraday(symbol, day, prev_close):
     return pts
 
 
-def stooq_close(symbol, day):
-    s = symbol.lower().replace("^", "")
-    url = f"https://stooq.com/q/d/l/?s={s}.us&d1={day:%Y%m%d}&d2={day:%Y%m%d}&i=d"
-    try:
-        txt = requests.get(url, headers=UA, timeout=20).text.strip().splitlines()
-        if len(txt) < 2 or not txt[1].startswith(day.isoformat()):
-            return None
-        return float(txt[1].split(",")[4])
-    except Exception:
-        return None
+def nasdaq_close(symbol, day):
+    """Closing price from Nasdaq's historical quote API — an independent second source."""
+    sym = symbol.replace("-", ".")
+    for ac in ("stocks", "etf"):
+        url = (f"https://api.nasdaq.com/api/quote/{sym}/historical?assetclass={ac}"
+               f"&fromdate={day.isoformat()}&todate={day.isoformat()}&limit=5")
+        try:
+            j = requests.get(url, headers=UA, timeout=20).json()
+            rows = (((j or {}).get("data") or {}).get("tradesTable") or {}).get("rows") or []
+            for row in rows:
+                if dt.datetime.strptime(row["date"], "%m/%d/%Y").date() == day:
+                    return float(row["close"].replace("$", "").replace(",", ""))
+        except Exception:
+            continue
+    return None
 
 
 NAME_JUNK = re.compile(r"\s*(,?\s*Inc\.?|Corporation|Corp\.?|Company|Co\.|Holdings?|Ltd\.?|plc|N\.V\.|L\.P\.)?\s*"
@@ -198,19 +203,19 @@ def main():
     lose = sorted(rows, key=lambda x: x["chg_pct"])[:n]
     swing = sorted(rows, key=lambda x: -(x["range_pct"] or 0))[:n]
 
-    # second, independent source: Stooq daily closes for the watchlist and top movers
+    # second, independent source: Nasdaq historical closes for the watchlist and top movers
     checks = []
     for x in watch + gain + lose:
         sym = next((w["yf"] for w in CFG["watchlist"] if w["id"] == x["id"]), x["id"])
-        c2 = stooq_close(sym, day)
+        c2 = nasdaq_close(sym, day)
         if c2 is None:
-            warnings.append(f"{x['id']}: Stooq 无数据，未能交叉核对")
+            warnings.append(f"{x['id']}: Nasdaq 历史行情无数据，未能交叉核对")
             continue
         diff = abs(c2 / x["close"] - 1) * 100
         x["verified"] = diff <= 0.5
-        checks.append(dict(id=x["id"], yahoo=x["close"], stooq=c2, diff_pct=r(diff, 3)))
+        checks.append(dict(id=x["id"], yahoo=x["close"], nasdaq=c2, diff_pct=r(diff, 3)))
     res = dict(date=day.isoformat(), generated_at=dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
-               sources=dict(prices="Yahoo Finance（经 yfinance）", universe="Nasdaq 股票筛选器（api.nasdaq.com）",
+               sources=dict(prices="Yahoo Finance（经 yfinance）", universe="Nasdaq 股票筛选器（api.nasdaq.com）", check="Nasdaq 历史行情（交叉核对收盘价）",
                             sectors="SPDR 行业 ETF 作为 GICS 板块代理"),
                universe=dict(count=len(rows), min_market_cap=CFG["movers"]["min_market_cap"], country=CFG["movers"]["country"]),
                indices=indices, watchlist=watch, macro=macro, sectors=sectors, intraday=intr,
