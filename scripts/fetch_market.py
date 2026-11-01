@@ -112,7 +112,7 @@ def nasdaq_close(symbol, day):
 
 
 NAME_JUNK = re.compile(r"\s*(,?\s*Inc\.?|Corporation|Corp\.?|Company|Co\.|Holdings?|Ltd\.?|plc|N\.V\.|L\.P\.)?\s*"
-                       r"(Class [A-C] )?(Common Stock|Common Shares|Ordinary Shares|Capital Stock)\b.*$", re.I)
+                       r"(Class [A-C] )?(Common Stock|Common Shares|Ordinary Shares|Capital Stock|American Depositary Shares?|ADS|Sponsored ADR)\b.*$", re.I)
 
 
 def clean_name(n):
@@ -137,9 +137,9 @@ def universe():
         except ValueError:
             cap = 0
         name = x.get("name") or ""
-        if (x.get("country") != mv["country"] or cap < mv["min_market_cap"]
+        if ((mv.get("country") and x.get("country") != mv["country"]) or cap < mv["min_market_cap"]
                 or not re.fullmatch(r"[A-Z]{1,5}([./][A-Z])?", sym)
-                or re.search(r"warrant|unit|preferred|depositary|right", name, re.I)):
+                or re.search(r"warrant|\bunits?\b|preferred|\brights?\b|notes due|debentures", name, re.I)):
             continue
         keep[sym.replace("/", "-").replace(".", "-")] = dict(symbol=sym, name=name, market_cap=cap,
                                                              sector=x.get("sector") or "", industry=x.get("industry") or "",
@@ -225,7 +225,7 @@ def main():
     res = dict(date=day.isoformat(), generated_at=dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
                sources=dict(prices="Yahoo Finance（经 yfinance）", universe="Nasdaq 股票筛选器（api.nasdaq.com）", check="Nasdaq 历史行情（交叉核对收盘价）",
                             sectors="SPDR 行业 ETF 作为 GICS 板块代理"),
-               universe=dict(count=len(rows), min_market_cap=CFG["movers"]["min_market_cap"], country=CFG["movers"]["country"]),
+               universe=dict(count=len(rows), min_market_cap=CFG["movers"]["min_market_cap"], country=CFG["movers"].get("country")),
                indices=indices, watchlist=watch, macro=macro, sectors=sectors, intraday=intr,
                movers=dict(gainers=gain, losers=lose, swings=swing), crosscheck=checks, warnings=warnings)
     p = ROOT / "data" / day.isoformat() / "market.json"
