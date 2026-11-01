@@ -199,9 +199,34 @@ def main():
         rows.append(dict(id=u["symbol"], name=clean_name(u["name"]), sector=u["sector"], industry=u["industry"],
                          market_cap=u["market_cap"], **d))
     n = CFG["movers"]["top_n"]
-    gain = sorted(rows, key=lambda x: -x["chg_pct"])[:n]
-    lose = sorted(rows, key=lambda x: x["chg_pct"])[:n]
-    swing = sorted(rows, key=lambda x: -(x["range_pct"] or 0))[:n]
+    min_px = CFG["movers"].get("min_price", 5)
+    rows = [x for x in rows if x["close"] >= min_px and x["prev_close"] >= min_px]
+    excluded = []
+
+    def recent_split(sym):
+        """A split or reverse split in the last 10 days makes the day's % change unreliable."""
+        try:
+            sp = yf.Ticker(sym.replace("/", "-").replace(".", "-")).splits
+            return any(day - dt.timedelta(days=10) <= t.date() <= day for t in sp.index)
+        except Exception:
+            return False
+
+    def top(key, reverse):
+        out = []
+        for x in sorted(rows, key=key):
+            if len(out) == n:
+                break
+            if recent_split(x["id"]):
+                excluded.append(x["id"])
+                continue
+            out.append(x)
+        return out
+
+    gain = top(lambda x: -x["chg_pct"], True)
+    lose = top(lambda x: x["chg_pct"], False)
+    swing = top(lambda x: -(x["range_pct"] or 0), True)
+    if excluded:
+        print("excluded for recent split:", sorted(set(excluded)))
 
     # second, independent source: Nasdaq historical closes for the watchlist and top movers
     checks = []
@@ -225,7 +250,8 @@ def main():
     res = dict(date=day.isoformat(), generated_at=dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
                sources=dict(prices="Yahoo Finance（经 yfinance）", universe="Nasdaq 股票筛选器（api.nasdaq.com）", check="Nasdaq 历史行情（交叉核对收盘价）",
                             sectors="SPDR 行业 ETF 作为 GICS 板块代理"),
-               universe=dict(count=len(rows), min_market_cap=CFG["movers"]["min_market_cap"], country=CFG["movers"].get("country")),
+               universe=dict(count=len(rows), min_market_cap=CFG["movers"]["min_market_cap"], min_price=min_px,
+                             country=CFG["movers"].get("country"), excluded_split=sorted(set(excluded))),
                indices=indices, watchlist=watch, macro=macro, sectors=sectors, intraday=intr,
                movers=dict(gainers=gain, losers=lose, swings=swing), crosscheck=checks, warnings=warnings)
     p = ROOT / "data" / day.isoformat() / "market.json"

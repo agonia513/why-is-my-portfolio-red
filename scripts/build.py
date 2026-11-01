@@ -236,7 +236,7 @@ def issue_body(d, root, prev_day=None, next_day=None):
 </tbody></table></div><ul class="concl">{"".join(f"<li>{e(x)}</li>" for x in m["tech_takeaways"])}</ul></section>
 
 <section class="card"><h2><span class="no">05</span>当日大幅波动股票</h2>
-<p class="muted small">股票池：{U["count"]:,} 只在美国上市的股票（含 ADR，不含 ETF），市值 ≥ {U["min_market_cap"]/1e8:,.0f} 亿美元。</p>
+<p class="muted small">股票池：{U["count"]:,} 只在美国上市的股票（含 ADR，不含 ETF），市值 ≥ {U["min_market_cap"]/1e8:,.0f} 亿美元、股价 ≥ ${U.get("min_price", 5)}；近 10 天有拆股/合股的股票因涨跌幅失真不进榜{("（本期剔除：" + "、".join(U["excluded_split"]) + "）") if U.get("excluded_split") else ""}。</p>
 {mover_table("涨幅榜", MV["gainers"], "chg")}
 {mover_table("跌幅榜", MV["losers"], "chg")}
 {mover_table("振幅榜（日内最高与最低之差 ÷ 前收）", MV["swings"], "range")}

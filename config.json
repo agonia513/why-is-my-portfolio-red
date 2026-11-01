@@ -203,6 +203,7 @@
     "min_market_cap": 2000000000,
     "country": null,
     "top_n": 10,
-    "notes_required_top": 5
+    "notes_required_top": 5,
+    "min_price": 5
   }
 }
