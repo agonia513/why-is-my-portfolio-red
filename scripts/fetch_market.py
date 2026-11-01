@@ -99,7 +99,7 @@ def nasdaq_close(symbol, day):
     sym = symbol.replace("-", ".")
     for ac in ("stocks", "etf"):
         url = (f"https://api.nasdaq.com/api/quote/{sym}/historical?assetclass={ac}"
-               f"&fromdate={day.isoformat()}&todate={day.isoformat()}&limit=5")
+               f"&fromdate={(day - dt.timedelta(days=7)).isoformat()}&todate={day.isoformat()}&limit=10")
         try:
             j = requests.get(url, headers=UA, timeout=20).json()
             rows = (((j or {}).get("data") or {}).get("tradesTable") or {}).get("rows") or []
@@ -216,7 +216,7 @@ def main():
         checks.append(dict(id=x["id"], yahoo=x["close"], nasdaq=c2, diff_pct=r(diff, 3)))
     if not checks:  # print one raw answer so a blocked or changed API is diagnosable from the log
         try:
-            probe = requests.get(f"https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate={day}&todate={day}&limit=5",
+            probe = requests.get(f"https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate={day - dt.timedelta(days=7)}&todate={day}&limit=10",
                                  headers=UA, timeout=20)
             print("nasdaq probe", probe.status_code, probe.text[:400])
         except Exception as ex:
