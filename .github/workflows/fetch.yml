@@ -1,0 +1,56 @@
+name: Fetch market data
+
+# Runs after the US close on weekdays. Writes data/<date>/market.json to the
+# branch draft/<date>; nothing is published until that branch is merged to main.
+on:
+  schedule:
+    - cron: "15 21 * * 1-5"   # 21:15 UTC = 16:15 EST / 17:15 EDT
+    - cron: "15 22 * * 1-5"   # second try an hour later in case data lagged
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Trading day YYYY-MM-DD (blank = latest session)"
+        required: false
+  push:
+    branches: [dev]
+    paths: ["scripts/fetch_market.py", "config.json", ".github/workflows/fetch.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet yfinance pandas requests
+      - id: f
+        run: python3 scripts/fetch_market.py --date "${{ github.event.inputs.date }}"
+      - name: Commit to draft branch
+        if: steps.f.outputs.status == 'ok'
+        env:
+          D: ${{ steps.f.outputs.date }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp "data/$D/market.json" /tmp/market.json
+          B="draft/$D"
+          if git ls-remote --exit-code --heads origin "$B" >/dev/null; then
+            git fetch origin "$B" && git checkout -B "$B" "origin/$B"
+          else
+            git checkout -B "$B"
+          fi
+          mkdir -p "data/$D" && cp /tmp/market.json "data/$D/market.json"
+          git add "data/$D/market.json"
+          git diff --cached --quiet && { echo "no change"; exit 0; }
+          git commit -m "Market data for $D"
+          git push origin "$B"

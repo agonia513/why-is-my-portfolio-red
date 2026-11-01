@@ -1,0 +1,41 @@
+{
+  "indices": [
+    {"id": "SPX", "yf": "^GSPC", "name": "标普 500"},
+    {"id": "IXIC", "yf": "^IXIC", "name": "纳斯达克综指"},
+    {"id": "DJI", "yf": "^DJI", "name": "道琼斯工业"},
+    {"id": "RUT", "yf": "^RUT", "name": "罗素 2000"},
+    {"id": "SOX", "yf": "^SOX", "name": "费城半导体"},
+    {"id": "VIX", "yf": "^VIX", "name": "VIX 恐慌指数"}
+  ],
+  "watchlist": [
+    {"id": "NVDA", "yf": "NVDA", "name": "英伟达", "group": "AI 芯片"},
+    {"id": "AMD", "yf": "AMD", "name": "AMD", "group": "AI 芯片"},
+    {"id": "AVGO", "yf": "AVGO", "name": "博通", "group": "AI 芯片"},
+    {"id": "MU", "yf": "MU", "name": "美光", "group": "AI 芯片"},
+    {"id": "INTC", "yf": "INTC", "name": "英特尔", "group": "AI 芯片"},
+    {"id": "TSM", "yf": "TSM", "name": "台积电 ADR", "group": "AI 芯片"},
+    {"id": "MSFT", "yf": "MSFT", "name": "微软", "group": "云/平台"},
+    {"id": "GOOGL", "yf": "GOOGL", "name": "谷歌 A", "group": "云/平台"},
+    {"id": "AMZN", "yf": "AMZN", "name": "亚马逊", "group": "云/平台"},
+    {"id": "META", "yf": "META", "name": "Meta", "group": "云/平台"},
+    {"id": "AAPL", "yf": "AAPL", "name": "苹果", "group": "终端"},
+    {"id": "TSLA", "yf": "TSLA", "name": "特斯拉", "group": "终端"}
+  ],
+  "macro": [
+    {"id": "WTI", "yf": "CL=F", "name": "WTI 原油", "unit": "美元/桶"},
+    {"id": "BRENT", "yf": "BZ=F", "name": "布伦特原油", "unit": "美元/桶"},
+    {"id": "GOLD", "yf": "GC=F", "name": "黄金期货", "unit": "美元/盎司"},
+    {"id": "US10Y", "yf": "^TNX", "name": "10 年期美债收益率", "unit": "%"},
+    {"id": "US5Y", "yf": "^FVX", "name": "5 年期美债收益率", "unit": "%"},
+    {"id": "DXY", "yf": "DX-Y.NYB", "name": "美元指数", "unit": "点"},
+    {"id": "BTC", "yf": "BTC-USD", "name": "比特币", "unit": "美元"}
+  ],
+  "sectors": [
+    {"id": "XLK", "name": "信息技术"}, {"id": "XLC", "name": "通信服务"}, {"id": "XLY", "name": "可选消费"},
+    {"id": "XLP", "name": "必需消费"}, {"id": "XLE", "name": "能源"}, {"id": "XLF", "name": "金融"},
+    {"id": "XLV", "name": "医疗保健"}, {"id": "XLI", "name": "工业"}, {"id": "XLB", "name": "原材料"},
+    {"id": "XLRE", "name": "房地产"}, {"id": "XLU", "name": "公用事业"}
+  ],
+  "intraday": ["SPX", "IXIC"],
+  "movers": {"min_market_cap": 2000000000, "country": "United States", "top_n": 10, "notes_required_top": 5}
+}
