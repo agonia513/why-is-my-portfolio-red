@@ -2,11 +2,13 @@
 """Build the static site from data/<YYYY-MM-DD>/*.json into site/.
 
 Zero dependencies: standard library only. Run: python3 scripts/build.py
-Each issue folder holds meta.json, quotes.json, levels.json, movers.json,
-sectors.json and briefs.json (see data/2026-10-30 for the shape).
+Each issue folder holds market.json (fetched by scripts/fetch_market.py, never
+hand-edited) plus the written parts: meta.json, notes.json, briefs.json and
+optionally buzz.json. Run scripts/validate.py before publishing.
 """
 import html
 import json
+import math
 import os
 import shutil
 from datetime import datetime, timezone
@@ -38,35 +40,46 @@ def tone(v):
 
 def load(day):
     d = DATA / day
-    j = lambda n: json.loads((d / f"{n}.json").read_text(encoding="utf-8"))
-    out = {n: j(n) for n in ["meta", "quotes", "levels", "movers", "sectors", "briefs"]}
-    out["buzz"] = j("buzz") if (d / "buzz.json").exists() else []
-    return out
+    j = lambda n, default=None: json.loads((d / f"{n}.json").read_text(encoding="utf-8")) if (d / f"{n}.json").exists() else default
+    return dict(meta=j("meta"), market=j("market"), notes=j("notes", {}), briefs=j("briefs", []), buzz=j("buzz", []))
 
 
 # ---------- charts (static SVG, styled by CSS classes) ----------
 
-def svg_levels(levels):
-    pts = sorted(levels, key=lambda p: p["order"])
-    W, H, l, r, t, b = 560, 220, 64, 32, 28, 36
-    vals = [p["value"] for p in pts]
-    lo, hi = min(vals), max(vals)
-    pad = (hi - lo) * 0.3 or 1
+def svg_intraday(series, names):
+    """series: {id: [[HH:MM, price, pct], ...]} drawn as % change from previous close."""
+    W, H, l, r, t, b = 640, 260, 52, 96, 16, 28
+    mins = lambda hm: int(hm[:2]) * 60 + int(hm[3:]) - 570
+    allp = [p[2] for pts in series.values() for p in pts] + [0]
+    lo, hi = min(allp), max(allp)
+    pad = (hi - lo) * 0.08 or 0.2
     lo, hi = lo - pad, hi + pad
-    n = len(pts)
-    xs = [l + (W - l - r) * (i + 0.5) / n for i in range(n)]
+    x = lambda hm: l + (W - l - r) * mins(hm) / 390
     y = lambda v: t + (H - t - b) * (hi - v) / (hi - lo)
-    out = [f'<svg viewBox="0 0 {W} {H}" width="100%" role="img" aria-label="标普 500 关键价位">']
-    for k in range(5):
-        v = lo + (hi - lo) * k / 4
-        out.append(f'<line class="grid" x1="{l}" x2="{W-r}" y1="{y(v):.1f}" y2="{y(v):.1f}"/>'
-                   f'<text class="tick" x="{l-8}" y="{y(v):.1f}" dy=".35em" text-anchor="end">{v:,.0f}</text>')
-    path = " ".join(f"{'M' if i == 0 else 'L'}{xs[i]:.1f},{y(p['value']):.1f}" for i, p in enumerate(pts))
-    out.append(f'<path class="line down" d="{path}"/>')
-    for x, p in zip(xs, pts):
-        out.append(f'<circle class="dot down" cx="{x:.1f}" cy="{y(p["value"]):.1f}" r="5"><title>{e(p["point"])}: {num(p["value"])}</title></circle>'
-                   f'<text class="val" x="{x:.1f}" y="{y(p["value"])-12:.1f}" text-anchor="middle">{num(p["value"])}</text>'
-                   f'<text class="tick" x="{x:.1f}" y="{H-10}" text-anchor="middle">{e(p["point"])}</text>')
+    step = 0.5 if hi - lo <= 4 else 1.0
+    out = [f'<svg viewBox="0 0 {W} {H}" width="100%" role="img" aria-label="5 分钟走势，相对前收盘涨跌幅">']
+    k = math.floor(lo / step) * step
+    while k <= hi:
+        if k >= lo:
+            out.append(f'<line class="grid{" zero" if abs(k) < 1e-9 else ""}" x1="{l}" x2="{W-r}" y1="{y(k):.1f}" y2="{y(k):.1f}"/>'
+                       f'<text class="tick" x="{l-8}" y="{y(k):.1f}" dy=".35em" text-anchor="end">{k:+.1f}%</text>')
+        k += step
+    for hm in ["09:30", "11:00", "12:30", "14:00", "15:30"]:
+        out.append(f'<text class="tick" x="{x(hm):.1f}" y="{H-8}" text-anchor="middle">{hm}</text>')
+    ends = []
+    for i, (sid, pts) in enumerate(series.items()):
+        if not pts:
+            continue
+        d = " ".join(f"{'M' if j == 0 else 'L'}{x(p[0]):.1f},{y(p[2]):.1f}" for j, p in enumerate(pts))
+        out.append(f'<path class="line s{i}" d="{d}"/>')
+        lowp = min(pts, key=lambda p: p[2])
+        out.append(f'<circle class="dot s{i}" cx="{x(lowp[0]):.1f}" cy="{y(lowp[2]):.1f}" r="3.5"><title>{e(names[sid])} 日内低点 {lowp[0]} {lowp[2]:+.2f}%</title></circle>')
+        ends.append([y(pts[-1][2]), f"{names[sid]} {pts[-1][2]:+.2f}%", i])
+    ends.sort()
+    for j in range(1, len(ends)):
+        ends[j][0] = max(ends[j][0], ends[j - 1][0] + 16)
+    for yy, label, i in ends:
+        out.append(f'<text class="end s{i}" x="{W-r+6}" y="{yy:.1f}" dy=".35em">{e(label)}</text>')
     out.append("</svg>")
     return "".join(out)
 
@@ -84,16 +97,14 @@ def svg_sectors(sectors):
         yy = 4 + i * rowH
         x0, x1 = sorted([x(0), x(v)])
         lx, anchor = (x(v) - 6, "end") if v < 0 else (x(v) + 6, "start")
-        out.append(f'<text class="cat" x="0" y="{yy+rowH/2-2:.1f}" dy=".35em">{e(s["sector"])}</text>'
-                   f'<rect class="bar {tone(v)}" x="{x0:.1f}" y="{yy+3}" width="{max(1,x1-x0):.1f}" height="{rowH-10}" rx="2"><title>{e(s["sector"])}: {pct(v)}</title></rect>'
+        out.append(f'<text class="cat" x="0" y="{yy+rowH/2-2:.1f}" dy=".35em">{e(s["name"])} <tspan class="tick">{e(s["id"])}</tspan></text>'
+                   f'<rect class="bar {tone(v)}" x="{x0:.1f}" y="{yy+3}" width="{max(1,x1-x0):.1f}" height="{rowH-10}" rx="2"><title>{e(s["name"])}: {pct(v)}</title></rect>'
                    f'<text class="val" x="{lx:.1f}" y="{yy+rowH/2-2:.1f}" dy=".35em" text-anchor="{anchor}">{pct(v)}</text>')
     out.append("</svg>")
     return "".join(out)
 
 
 def barcell(v, mx):
-    if v is None:
-        return '<div class="mini"><i></i></div>'
     w = min(50, abs(v) / mx * 50)
     left = 50 - w if v < 0 else 50
     return f'<div class="mini"><i></i><span class="{tone(v)}" style="left:{left:.1f}%;width:{w:.1f}%"></span></div>'
@@ -111,6 +122,12 @@ def buzz_html(rows):
 
 def a(src, url):
     return f'<a href="{e(url)}" target="_blank" rel="noopener">{e(src)}</a>'
+
+
+def capfmt(v):
+    # market cap in USD → 亿美元 (1 亿 = 1e8)
+    yi = v / 1e8
+    return f"{yi/1e4:.2f} 万亿" if yi >= 1e4 else f"{yi:,.0f} 亿"
 
 
 # ---------- page pieces ----------
@@ -134,20 +151,25 @@ def layout(title, body, root, desc=""):
 
 
 def issue_body(d, root, prev_day=None, next_day=None):
-    m, Q = d["meta"], {q["ticker"]: q for q in d["quotes"]}
-    stocks = sorted([q for q in d["quotes"] if q["kind"] == "stock"], key=lambda q: q["chg_pct"] if q["chg_pct"] is not None else 0)
-    macro = [q for q in d["quotes"] if q["kind"] == "macro"]
-    idx = [q for q in d["quotes"] if q["kind"] == "index"]
-    mx = max(abs(q["chg_pct"] or 0) for q in stocks) or 1
+    m, mk, notes = d["meta"], d["market"], d["notes"]
+    Q = {r["id"]: r for k in ("indices", "watchlist", "macro") for r in mk[k]}
+    names = {r["id"]: r["name"] for r in mk["indices"]}
+    stock_notes = notes.get("stocks", {})
+    mover_notes = notes.get("movers", {})
+    watch = sorted(mk["watchlist"], key=lambda q: q["chg_pct"])
+    mx = max(abs(q["chg_pct"]) for q in watch) or 1
     B = d["briefs"]
     sec = lambda s: [b for b in B if b["section"] == s]
+    MV = mk["movers"]
 
     def tiles():
         out = []
         for t in m["kpis"]:
             q = Q[t]
+            val = f'{num(q["close"])}' + ("%" if q.get("unit") == "%" else "")
+            chg = f'{q["chg_bp"]:+.1f} bp' if q.get("chg_bp") is not None else pct(q["chg_pct"])
             out.append(f'<div class="tile"><p class="lbl">{e(q["name"])} <span class="tk">{e(t)}</span></p>'
-                       f'<p class="big">{num(q["close"])}</p><p class="chg {tone(q["chg_pct"])}">{pct(q["chg_pct"])}</p></div>')
+                       f'<p class="big">{val}</p><p class="chg {tone(q["chg_pct"])}">{chg}</p></div>')
         return "".join(out)
 
     def items(rows, labels):
@@ -157,16 +179,41 @@ def issue_body(d, root, prev_day=None, next_day=None):
             out.append(f'<article class="item"><h3>{e(b["title"])}</h3><dl>{dl}<dt>来源</dt><dd>{a(b["src"], b["url"])}</dd></dl></article>')
         return "".join(out)
 
+    def mover_rows(rows, metric):
+        out = []
+        for r in rows:
+            n = mover_notes.get(r["id"])
+            note = (f'{e(n["comment"])} <span class="muted">· {a(n["src"], n["url"])}</span>' if n
+                    else f'<span class="muted">{e(r.get("industry") or r.get("sector") or "")}</span>')
+            val = pct(r["chg_pct"]) if metric == "chg" else f'{r["range_pct"]:.2f}%'
+            cls = tone(r["chg_pct"]) if metric == "chg" else ""
+            extra = "" if metric == "chg" else f'<td class="r {tone(r["chg_pct"])}">{pct(r["chg_pct"])}</td>'
+            out.append(f'<tr><td class="tk">{e(r["id"])}</td><td>{e(r["name"])}</td><td class="r muted">{capfmt(r["market_cap"])}</td>'
+                       f'<td class="r">${num(r["close"])}</td><td class="r {cls}">{val}</td>{extra}<td>{note}</td></tr>')
+        return "".join(out)
+
+    def mover_table(title, rows, metric):
+        head = ("<th class='r'>涨跌幅</th>" if metric == "chg" else "<th class='r'>日内振幅</th><th class='r'>涨跌幅</th>")
+        return (f'<h3>{title}</h3><div class="scroll"><table class="t"><thead><tr><th>代码</th><th>公司</th><th class="r">市值（美元）</th>'
+                f'<th class="r">收盘</th>{head}<th>点评 / 行业</th></tr></thead><tbody>{mover_rows(rows, metric)}</tbody></table></div>')
+
     srcs = {}
-    for coll in ["quotes", "levels", "movers", "sectors", "briefs", "buzz"]:
-        for r in d[coll]:
+    for coll in (B, d["buzz"], list(mover_notes.values())):
+        for r in coll:
             if r.get("url"):
-                srcs.setdefault(r["url"], r.get("src") or f'{r["who"]}（{r["platform"]}）')
+                srcs.setdefault(r["url"], r.get("src") or f'{r.get("who")}（{r.get("platform")}）')
 
     pager = '<nav class="pager">'
     pager += f'<a href="{root}{prev_day}/index.html">← {prev_day}</a>' if prev_day else "<span></span>"
     pager += f'<a href="{root}{next_day}/index.html">{next_day} →</a>' if next_day else "<span></span>"
     pager += "</nav>"
+
+    U = mk["universe"]
+    macro_rows = "".join(
+        f'<tr><td>{e(q["name"])}</td><td class="r">{num(q["close"])}{"%" if q.get("unit") == "%" else ""}</td>'
+        f'<td class="r {tone(q["chg_pct"]) if q.get("chg_bp") is None else tone(q["chg_bp"])}">'
+        f'{(format(q["chg_bp"], "+.1f") + " bp") if q.get("chg_bp") is not None else pct(q["chg_pct"])}</td>'
+        f'<td class="muted">{e(q.get("unit",""))}</td></tr>' for q in mk["macro"])
 
     return f"""
 <article class="issue">
@@ -176,27 +223,29 @@ def issue_body(d, root, prev_day=None, next_day=None):
 <section class="hero"><h2><span class="no">01</span>一句话市场总览</h2><p>{e(m["summary"])}</p></section>
 
 <section><h2><span class="no">02</span>核心 KPI</h2><div class="tiles">{tiles()}</div>
-<table class="t compact"><thead><tr><th>指数</th><th class="r">收盘</th><th class="r">涨跌幅</th><th>备注</th></tr></thead><tbody>
-{"".join(f'<tr><td>{e(q["name"])}</td><td class="r">{num(q["close"])}</td><td class="r {tone(q["chg_pct"])}">{pct(q["chg_pct"])}</td><td class="muted">{e(q["note"])}</td></tr>' for q in idx)}
+<table class="t compact"><thead><tr><th>指数</th><th class="r">收盘</th><th class="r">涨跌幅</th><th class="r">日内振幅</th></tr></thead><tbody>
+{"".join(f'<tr><td>{e(q["name"])}</td><td class="r">{num(q["close"])}</td><td class="r {tone(q["chg_pct"])}">{pct(q["chg_pct"])}</td><td class="r muted">{q["range_pct"]:.2f}%</td></tr>' for q in mk["indices"])}
 </tbody></table></section>
 
-<section class="two"><div class="card"><h2><span class="no">03</span>指数走势：标普 500 关键价位</h2>{svg_levels(d["levels"])}</div>
+<section class="two"><div class="card"><h2><span class="no">03</span>指数走势（5 分钟）</h2><p class="muted small">相对前一交易日收盘的涨跌幅，美东时间</p>{svg_intraday(mk["intraday"], names)}</div>
 <div class="card"><h2>盘中轨迹</h2><ul class="timeline">{"".join(f'<li><span>{e(w)}</span><span>{e(t)}</span></li>' for w, t in m["timeline"])}</ul></div></section>
 
 <section class="card"><h2><span class="no">04</span>重点科技股表现</h2><div class="scroll"><table class="t">
 <thead><tr><th>代码</th><th>公司</th><th>链条位置</th><th class="r">收盘</th><th class="r">涨跌幅</th><th></th><th>备注</th></tr></thead><tbody>
-{"".join(f'<tr><td class="tk">{e(q["ticker"])}</td><td>{e(q["name"])}</td><td class="muted">{e(q["group"])}</td><td class="r">{"$"+num(q["close"]) if q["close"] is not None else "—"}</td><td class="r {tone(q["chg_pct"])}">{pct(q["chg_pct"])}</td><td class="bc">{barcell(q["chg_pct"], mx)}</td><td class="muted">{e(q["note"])}</td></tr>' for q in stocks)}
+{"".join(f'<tr><td class="tk">{e(q["id"])}</td><td>{e(q["name"])}</td><td class="muted">{e(q.get("group"))}</td><td class="r">${num(q["close"])}</td><td class="r {tone(q["chg_pct"])}">{pct(q["chg_pct"])}</td><td class="bc">{barcell(q["chg_pct"], mx)}</td><td class="muted">{e(stock_notes.get(q["id"], ""))}</td></tr>' for q in watch)}
 </tbody></table></div><ul class="concl">{"".join(f"<li>{e(x)}</li>" for x in m["tech_takeaways"])}</ul></section>
 
-<section class="card"><h2><span class="no">05</span>当日大幅波动股票</h2><div class="scroll"><table class="t">
-<thead><tr><th>代码</th><th>公司</th><th class="r">涨跌幅</th><th>一句话点评</th><th>来源</th></tr></thead><tbody>
-{"".join(f'<tr><td class="tk">{e(r["ticker"])}</td><td>{e(r["name"])}</td><td class="r {tone(r["chg_pct"])}">{pct(r["chg_pct"])}</td><td>{e(r["comment"])}</td><td class="muted">{a(r["src"], r["url"])}</td></tr>' for r in sorted(d["movers"], key=lambda r: r["chg_pct"]))}
-</tbody></table></div></section>
+<section class="card"><h2><span class="no">05</span>当日大幅波动股票</h2>
+<p class="muted small">股票池：{U["count"]:,} 只美国本土上市公司（不含 ADR、ETF），市值 ≥ {U["min_market_cap"]/1e8:,.0f} 亿美元。</p>
+{mover_table("涨幅榜", MV["gainers"], "chg")}
+{mover_table("跌幅榜", MV["losers"], "chg")}
+{mover_table("振幅榜（日内最高与最低之差 ÷ 前收）", MV["swings"], "range")}
+</section>
 
 <section><h2><span class="no">06</span>板块与市场结构</h2><div class="two">
-<div class="card"><h3>标普 500 十一大板块</h3>{svg_sectors(d["sectors"])}</div>
-<div class="card"><h3>宏观资产</h3><table class="t"><thead><tr><th>资产</th><th class="r">收盘</th><th class="r">变动</th><th>备注</th></tr></thead><tbody>
-{"".join(f'<tr><td>{e(q["name"])}</td><td class="r">{num(q["close"])}{"%" if q["unit"]=="%" else ""}</td><td class="r {tone(q["chg_pct"]) if q.get("chg_bp") is None else ""}">{(("+" if q["chg_bp"]>0 else "")+str(q["chg_bp"])+" bp") if q.get("chg_bp") is not None else pct(q["chg_pct"])}</td><td class="muted">{e(q["note"])}</td></tr>' for q in macro)}
+<div class="card"><h3>标普 500 十一大板块</h3><p class="muted small">以 SPDR 行业 ETF 涨跌幅代表</p>{svg_sectors(mk["sectors"])}</div>
+<div class="card"><h3>宏观资产</h3><table class="t"><thead><tr><th>资产</th><th class="r">收盘</th><th class="r">变动</th><th>单位</th></tr></thead><tbody>
+{macro_rows}
 </tbody></table></div></div>
 <div class="card"><h3>结构性结论</h3><ul class="concl">{"".join(f"<li><b>{e(k)}</b>：{e(v)}</li>" for k, v in m["structure"])}</ul></div></section>
 
@@ -207,16 +256,19 @@ def issue_body(d, root, prev_day=None, next_day=None):
 <section><h2><span class="no">10</span>明日 / 下周关注</h2><div class="items">{items(sec("watch"), ["内容", "相关资产", "为什么关注"])}</div></section>
 
 <section class="card"><h2><span class="no">11</span>数据来源与说明</h2>
-<ul class="concl">{"".join(f"<li>{e(x)}</li>" for x in m["notes"])}<li>“影响推断”为分析判断，不构成投资建议。</li></ul>
+<ul class="concl"><li>行情：{e(mk["sources"]["prices"])}；股票池：{e(mk["sources"]["universe"])}；板块：{e(mk["sources"]["sectors"])}。数据生成于 {e(mk["generated_at"])}（UTC）。</li>
+<li>价格为美东 16:00 常规交易时段收盘；期货、美债与比特币为对应品种的日线收盘。</li>
+{"".join(f"<li>{e(x)}</li>" for x in m.get("notes", []))}<li>每期发布前经过自动校验：数据无空值、文中所有百分比都能在行情数据中对上。</li>
+<li>“影响推断”为分析判断，不构成投资建议。</li></ul>
 <ol class="srcs">{"".join(f"<li>{a(s, u)}</li>" for u, s in srcs.items())}</ol></section>
 {pager}
 </article>"""
 
 
 CSS = """
-:root{--bg:#faf9f6;--panel:#fff;--fg:#1d1d1b;--muted:#6b6a65;--line:#e6e3dc;--up:#1f8a5b;--down:#c8372d;--accent:#c8372d;
+:root{--bg:#faf9f6;--panel:#fff;--fg:#1d1d1b;--muted:#6b6a65;--line:#e6e3dc;--up:#1f8a5b;--down:#c8372d;--accent:#c8372d;--s1:#2f5d9e;
 --serif:"Iowan Old Style","Songti SC","Noto Serif SC",Georgia,serif;--sans:-apple-system,"PingFang SC","Noto Sans SC","Segoe UI",sans-serif}
-@media (prefers-color-scheme:dark){:root{--bg:#161614;--panel:#1f1f1c;--fg:#ecebe6;--muted:#9a988f;--line:#33322d;--up:#4cc38a;--down:#ff6b5e}}
+@media (prefers-color-scheme:dark){:root{--bg:#161614;--panel:#1f1f1c;--fg:#ecebe6;--muted:#9a988f;--line:#33322d;--up:#4cc38a;--down:#ff6b5e;--s1:#7aa7e8}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.7 var(--sans)}
 a{color:inherit;text-underline-offset:3px}
 header.site,footer.site,main{max-width:1080px;margin:0 auto;padding:0 16px}
@@ -251,8 +303,10 @@ table.t{width:100%;border-collapse:collapse;font-size:13.5px}
 .item dl{display:grid;grid-template-columns:5em 1fr;gap:4px 12px;margin:0;font-size:14px}.item dt{color:var(--muted)}.item dd{margin:0}
 .srcs{columns:2 20rem;font-size:13px;color:var(--muted);padding-left:1.4em}
 svg text{font:12px var(--sans);fill:var(--muted);font-variant-numeric:tabular-nums}svg text.val{fill:var(--fg)}svg text.cat{fill:var(--fg)}
-svg .grid{stroke:var(--line)}svg .axis{stroke:var(--muted)}
-svg .line{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}svg .line.down{stroke:var(--down)}
+svg .grid{stroke:var(--line)}svg .grid.zero{stroke:var(--muted);stroke-dasharray:3 3}
+svg .line.s0{stroke:var(--fg)}svg .line.s1{stroke:var(--s1)}svg .dot.s0{fill:var(--fg)}svg .dot.s1{fill:var(--s1)}
+svg text.end{font-weight:600}svg text.end.s0{fill:var(--fg)}svg text.end.s1{fill:var(--s1)}svg .axis{stroke:var(--muted)}
+svg .line{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
 svg .dot.down,svg .bar.down{fill:var(--down)}svg .bar.up{fill:var(--up)}
 .pager{display:flex;justify-content:space-between;margin-top:24px;font-size:14px}
 .arch{list-style:none;padding:0}.arch li{display:grid;grid-template-columns:7.5em 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}

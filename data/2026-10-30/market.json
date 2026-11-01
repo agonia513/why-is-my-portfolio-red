@@ -1,0 +1,1741 @@
+{
+ "date": "2026-10-30",
+ "generated_at": "2026-11-01T00:37:54+00:00",
+ "sources": {
+  "prices": "Yahoo Finance（经 yfinance）",
+  "universe": "Nasdaq 股票筛选器（api.nasdaq.com）",
+  "sectors": "SPDR 行业 ETF 作为 GICS 板块代理"
+ },
+ "universe": {
+  "count": 1606,
+  "min_market_cap": 2000000000,
+  "country": "United States"
+ },
+ "indices": [
+  {
+   "id": "SPX",
+   "name": "标普 500",
+   "open": 7631.0698,
+   "high": 7637.48,
+   "low": 7527.5601,
+   "close": 7580.0698,
+   "prev_close": 7720.3901,
+   "chg_pct": -1.818,
+   "range_pct": 1.424,
+   "volume": 6149170000
+  },
+  {
+   "id": "IXIC",
+   "name": "纳斯达克综指",
+   "open": 25592.4902,
+   "high": 25673.0,
+   "low": 25177.3301,
+   "close": 25437.0,
+   "prev_close": 26184.7207,
+   "chg_pct": -2.856,
+   "range_pct": 1.893,
+   "volume": 9068930000
+  },
+  {
+   "id": "DJI",
+   "name": "道琼斯工业",
+   "open": 52383.8984,
+   "high": 52383.8984,
+   "low": 51563.7617,
+   "close": 51770.3086,
+   "prev_close": 52342.5586,
+   "chg_pct": -1.093,
+   "range_pct": 1.567,
+   "volume": 659020000
+  },
+  {
+   "id": "RUT",
+   "name": "罗素 2000",
+   "open": 2838.77,
+   "high": 2843.0,
+   "low": 2787.1201,
+   "close": 2811.8401,
+   "prev_close": 2859.22,
+   "chg_pct": -1.657,
+   "range_pct": 1.954,
+   "volume": 6149170000
+  },
+  {
+   "id": "SOX",
+   "name": "费城半导体",
+   "open": 10855.8096,
+   "high": 10957.3203,
+   "low": 10439.0098,
+   "close": 10688.7998,
+   "prev_close": 11518.2002,
+   "chg_pct": -7.201,
+   "range_pct": 4.5,
+   "volume": 0
+  },
+  {
+   "id": "VIX",
+   "name": "VIX 恐慌指数",
+   "open": 18.43,
+   "high": 23.93,
+   "low": 18.03,
+   "close": 19.42,
+   "prev_close": 17.2,
+   "chg_pct": 12.907,
+   "range_pct": 34.302,
+   "volume": 0
+  }
+ ],
+ "watchlist": [
+  {
+   "id": "NVDA",
+   "name": "英伟达",
+   "group": "AI 芯片",
+   "open": 208.94,
+   "high": 209.06,
+   "low": 200.92,
+   "close": 204.64,
+   "prev_close": 213.66,
+   "chg_pct": -4.222,
+   "range_pct": 3.81,
+   "volume": 168039400
+  },
+  {
+   "id": "AMD",
+   "name": "AMD",
+   "group": "AI 芯片",
+   "open": 508.53,
+   "high": 520.4,
+   "low": 492.21,
+   "close": 504.8,
+   "prev_close": 566.42,
+   "chg_pct": -10.879,
+   "range_pct": 4.977,
+   "volume": 39589800
+  },
+  {
+   "id": "AVGO",
+   "name": "博通",
+   "group": "AI 芯片",
+   "open": 330.72,
+   "high": 331.98,
+   "low": 319.3,
+   "close": 326.08,
+   "prev_close": 345.0,
+   "chg_pct": -5.484,
+   "range_pct": 3.675,
+   "volume": 36462300
+  },
+  {
+   "id": "MU",
+   "name": "美光",
+   "group": "AI 芯片",
+   "open": 884.0,
+   "high": 906.54,
+   "low": 861.59,
+   "close": 884.74,
+   "prev_close": 934.27,
+   "chg_pct": -5.301,
+   "range_pct": 4.811,
+   "volume": 30762300
+  },
+  {
+   "id": "INTC",
+   "name": "英特尔",
+   "group": "AI 芯片",
+   "open": 68.36,
+   "high": 68.77,
+   "low": 63.2,
+   "close": 65.76,
+   "prev_close": 92.07,
+   "chg_pct": -28.576,
+   "range_pct": 6.05,
+   "volume": 454221300
+  },
+  {
+   "id": "TSM",
+   "name": "台积电 ADR",
+   "group": "AI 芯片",
+   "open": 414.08,
+   "high": 418.09,
+   "low": 400.12,
+   "close": 406.13,
+   "prev_close": 431.81,
+   "chg_pct": -5.947,
+   "range_pct": 4.162,
+   "volume": 21907500
+  },
+  {
+   "id": "MSFT",
+   "name": "微软",
+   "group": "云/平台",
+   "open": 525.27,
+   "high": 526.0,
+   "low": 514.35,
+   "close": 521.91,
+   "prev_close": 530.14,
+   "chg_pct": -1.552,
+   "range_pct": 2.198,
+   "volume": 35618300
+  },
+  {
+   "id": "GOOGL",
+   "name": "谷歌 A",
+   "group": "云/平台",
+   "open": 281.12,
+   "high": 283.14,
+   "low": 276.92,
+   "close": 279.84,
+   "prev_close": 283.82,
+   "chg_pct": -1.402,
+   "range_pct": 2.192,
+   "volume": 65520500
+  },
+  {
+   "id": "AMZN",
+   "name": "亚马逊",
+   "group": "云/平台",
+   "open": 232.54,
+   "high": 241.55,
+   "low": 229.36,
+   "close": 240.35,
+   "prev_close": 243.79,
+   "chg_pct": -1.411,
+   "range_pct": 5.0,
+   "volume": 104775800
+  },
+  {
+   "id": "META",
+   "name": "Meta",
+   "group": "云/平台",
+   "open": 614.51,
+   "high": 626.37,
+   "low": 610.13,
+   "close": 614.99,
+   "prev_close": 624.52,
+   "chg_pct": -1.526,
+   "range_pct": 2.6,
+   "volume": 25295900
+  },
+  {
+   "id": "AAPL",
+   "name": "苹果",
+   "group": "终端",
+   "open": 346.72,
+   "high": 349.19,
+   "low": 334.35,
+   "close": 344.63,
+   "prev_close": 348.91,
+   "chg_pct": -1.227,
+   "range_pct": 4.253,
+   "volume": 67797500
+  },
+  {
+   "id": "TSLA",
+   "name": "特斯拉",
+   "group": "终端",
+   "open": 393.22,
+   "high": 404.22,
+   "low": 387.52,
+   "close": 399.81,
+   "prev_close": 403.3,
+   "chg_pct": -0.865,
+   "range_pct": 4.141,
+   "volume": 41644400
+  }
+ ],
+ "macro": [
+  {
+   "id": "WTI",
+   "name": "WTI 原油",
+   "unit": "美元/桶",
+   "open": 102.8,
+   "high": 104.99,
+   "low": 102.43,
+   "close": 104.12,
+   "prev_close": 102.0,
+   "chg_pct": 2.078,
+   "range_pct": 2.51,
+   "volume": 262537
+  },
+  {
+   "id": "BRENT",
+   "name": "布伦特原油",
+   "unit": "美元/桶",
+   "open": 115.83,
+   "high": 118.0,
+   "low": 115.28,
+   "close": 117.64,
+   "prev_close": 114.88,
+   "chg_pct": 2.403,
+   "range_pct": 2.368,
+   "volume": 6774
+  },
+  {
+   "id": "GOLD",
+   "name": "黄金期货",
+   "unit": "美元/盎司",
+   "open": 4033.6001,
+   "high": 4038.2,
+   "low": 3879.3,
+   "close": 3898.8999,
+   "prev_close": 4031.3999,
+   "chg_pct": -3.287,
+   "range_pct": 3.942,
+   "volume": 142006
+  },
+  {
+   "id": "US10Y",
+   "name": "10 年期美债收益率",
+   "unit": "%",
+   "open": 4.921,
+   "high": 4.958,
+   "low": 4.908,
+   "close": 4.929,
+   "prev_close": 4.989,
+   "chg_pct": -1.203,
+   "range_pct": 1.002,
+   "volume": 0,
+   "chg_bp": -6.0
+  },
+  {
+   "id": "US5Y",
+   "name": "5 年期美债收益率",
+   "unit": "%",
+   "open": 4.716,
+   "high": 4.761,
+   "low": 4.702,
+   "close": 4.721,
+   "prev_close": 4.801,
+   "chg_pct": -1.666,
+   "range_pct": 1.229,
+   "volume": 0,
+   "chg_bp": -8.0
+  },
+  {
+   "id": "DXY",
+   "name": "美元指数",
+   "unit": "点",
+   "open": 101.88,
+   "high": 102.09,
+   "low": 101.54,
+   "close": 101.88,
+   "prev_close": 102.04,
+   "chg_pct": -0.157,
+   "range_pct": 0.539,
+   "volume": 0
+  },
+  {
+   "id": "BTC",
+   "name": "比特币",
+   "unit": "美元",
+   "open": 77775.1094,
+   "high": 78647.3906,
+   "low": 76189.8828,
+   "close": 77198.2109,
+   "prev_close": 77775.1094,
+   "chg_pct": -0.742,
+   "range_pct": 3.16,
+   "volume": 45889366191
+  }
+ ],
+ "sectors": [
+  {
+   "id": "XLK",
+   "name": "信息技术",
+   "open": 182.11,
+   "high": 182.29,
+   "low": 176.92,
+   "close": 179.51,
+   "prev_close": 188.74,
+   "chg_pct": -4.89,
+   "range_pct": 2.845,
+   "volume": 19172000
+  },
+  {
+   "id": "XLC",
+   "name": "通信服务",
+   "open": 100.28,
+   "high": 100.87,
+   "low": 99.325,
+   "close": 99.9,
+   "prev_close": 101.21,
+   "chg_pct": -1.294,
+   "range_pct": 1.527,
+   "volume": 8131500
+  },
+  {
+   "id": "XLY",
+   "name": "可选消费",
+   "open": 114.89,
+   "high": 115.83,
+   "low": 114.47,
+   "close": 115.38,
+   "prev_close": 116.2,
+   "chg_pct": -0.706,
+   "range_pct": 1.17,
+   "volume": 10130000
+  },
+  {
+   "id": "XLP",
+   "name": "必需消费",
+   "open": 89.95,
+   "high": 90.38,
+   "low": 89.18,
+   "close": 89.42,
+   "prev_close": 88.18,
+   "chg_pct": 1.406,
+   "range_pct": 1.361,
+   "volume": 27702200
+  },
+  {
+   "id": "XLE",
+   "name": "能源",
+   "open": 69.52,
+   "high": 70.15,
+   "low": 69.28,
+   "close": 70.02,
+   "prev_close": 68.71,
+   "chg_pct": 1.907,
+   "range_pct": 1.266,
+   "volume": 31525500
+  },
+  {
+   "id": "XLF",
+   "name": "金融",
+   "open": 57.19,
+   "high": 57.2,
+   "low": 56.33,
+   "close": 56.51,
+   "prev_close": 56.94,
+   "chg_pct": -0.755,
+   "range_pct": 1.528,
+   "volume": 37063800
+  },
+  {
+   "id": "XLV",
+   "name": "医疗保健",
+   "open": 186.75,
+   "high": 187.99,
+   "low": 184.52,
+   "close": 184.87,
+   "prev_close": 184.04,
+   "chg_pct": 0.451,
+   "range_pct": 1.885,
+   "volume": 18709000
+  },
+  {
+   "id": "XLI",
+   "name": "工业",
+   "open": 169.04,
+   "high": 170.19,
+   "low": 166.66,
+   "close": 167.4,
+   "prev_close": 170.13,
+   "chg_pct": -1.605,
+   "range_pct": 2.075,
+   "volume": 10797600
+  },
+  {
+   "id": "XLB",
+   "name": "原材料",
+   "open": 52.45,
+   "high": 52.78,
+   "low": 52.19,
+   "close": 52.74,
+   "prev_close": 52.53,
+   "chg_pct": 0.4,
+   "range_pct": 1.123,
+   "volume": 10778000
+  },
+  {
+   "id": "XLRE",
+   "name": "房地产",
+   "open": 43.4,
+   "high": 43.445,
+   "low": 43.015,
+   "close": 43.17,
+   "prev_close": 43.06,
+   "chg_pct": 0.255,
+   "range_pct": 0.999,
+   "volume": 8858100
+  },
+  {
+   "id": "XLU",
+   "name": "公用事业",
+   "open": 43.44,
+   "high": 43.65,
+   "low": 43.35,
+   "close": 43.43,
+   "prev_close": 43.14,
+   "chg_pct": 0.672,
+   "range_pct": 0.695,
+   "volume": 30322000
+  }
+ ],
+ "intraday": {
+  "SPX": [
+   [
+    "09:30",
+    7622.93,
+    -1.262
+   ],
+   [
+    "09:35",
+    7631.43,
+    -1.152
+   ],
+   [
+    "09:40",
+    7625.17,
+    -1.233
+   ],
+   [
+    "09:45",
+    7625.89,
+    -1.224
+   ],
+   [
+    "09:50",
+    7630.32,
+    -1.167
+   ],
+   [
+    "09:55",
+    7635.77,
+    -1.096
+   ],
+   [
+    "10:00",
+    7627.74,
+    -1.2
+   ],
+   [
+    "10:05",
+    7619.35,
+    -1.309
+   ],
+   [
+    "10:10",
+    7609.72,
+    -1.433
+   ],
+   [
+    "10:15",
+    7606.16,
+    -1.48
+   ],
+   [
+    "10:20",
+    7598.94,
+    -1.573
+   ],
+   [
+    "10:25",
+    7605.01,
+    -1.494
+   ],
+   [
+    "10:30",
+    7605.15,
+    -1.493
+   ],
+   [
+    "10:35",
+    7619.09,
+    -1.312
+   ],
+   [
+    "10:40",
+    7623.07,
+    -1.261
+   ],
+   [
+    "10:45",
+    7624.53,
+    -1.242
+   ],
+   [
+    "10:50",
+    7619.69,
+    -1.304
+   ],
+   [
+    "10:55",
+    7621.12,
+    -1.286
+   ],
+   [
+    "11:00",
+    7612.86,
+    -1.393
+   ],
+   [
+    "11:05",
+    7615.72,
+    -1.356
+   ],
+   [
+    "11:10",
+    7610.25,
+    -1.427
+   ],
+   [
+    "11:15",
+    7609.0,
+    -1.443
+   ],
+   [
+    "11:20",
+    7611.33,
+    -1.413
+   ],
+   [
+    "11:25",
+    7608.77,
+    -1.446
+   ],
+   [
+    "11:30",
+    7605.82,
+    -1.484
+   ],
+   [
+    "11:35",
+    7601.86,
+    -1.535
+   ],
+   [
+    "11:40",
+    7597.51,
+    -1.592
+   ],
+   [
+    "11:45",
+    7599.42,
+    -1.567
+   ],
+   [
+    "11:50",
+    7599.13,
+    -1.571
+   ],
+   [
+    "11:55",
+    7603.44,
+    -1.515
+   ],
+   [
+    "12:00",
+    7593.98,
+    -1.637
+   ],
+   [
+    "12:05",
+    7594.83,
+    -1.626
+   ],
+   [
+    "12:10",
+    7593.51,
+    -1.643
+   ],
+   [
+    "12:15",
+    7596.7,
+    -1.602
+   ],
+   [
+    "12:20",
+    7593.7,
+    -1.641
+   ],
+   [
+    "12:25",
+    7600.07,
+    -1.558
+   ],
+   [
+    "12:30",
+    7597.17,
+    -1.596
+   ],
+   [
+    "12:35",
+    7599.89,
+    -1.561
+   ],
+   [
+    "12:40",
+    7598.22,
+    -1.582
+   ],
+   [
+    "12:45",
+    7584.58,
+    -1.759
+   ],
+   [
+    "12:50",
+    7579.27,
+    -1.828
+   ],
+   [
+    "12:55",
+    7582.19,
+    -1.79
+   ],
+   [
+    "13:00",
+    7581.39,
+    -1.8
+   ],
+   [
+    "13:05",
+    7576.03,
+    -1.87
+   ],
+   [
+    "13:10",
+    7576.27,
+    -1.867
+   ],
+   [
+    "13:15",
+    7577.61,
+    -1.849
+   ],
+   [
+    "13:20",
+    7580.52,
+    -1.812
+   ],
+   [
+    "13:25",
+    7579.2,
+    -1.829
+   ],
+   [
+    "13:30",
+    7573.85,
+    -1.898
+   ],
+   [
+    "13:35",
+    7574.73,
+    -1.887
+   ],
+   [
+    "13:40",
+    7577.82,
+    -1.847
+   ],
+   [
+    "13:45",
+    7570.61,
+    -1.94
+   ],
+   [
+    "13:50",
+    7563.43,
+    -2.033
+   ],
+   [
+    "13:55",
+    7563.3,
+    -2.035
+   ],
+   [
+    "14:00",
+    7558.08,
+    -2.102
+   ],
+   [
+    "14:05",
+    7557.89,
+    -2.105
+   ],
+   [
+    "14:10",
+    7554.51,
+    -2.149
+   ],
+   [
+    "14:15",
+    7547.74,
+    -2.236
+   ],
+   [
+    "14:20",
+    7545.34,
+    -2.267
+   ],
+   [
+    "14:25",
+    7538.21,
+    -2.36
+   ],
+   [
+    "14:30",
+    7529.84,
+    -2.468
+   ],
+   [
+    "14:35",
+    7541.31,
+    -2.32
+   ],
+   [
+    "14:40",
+    7539.26,
+    -2.346
+   ],
+   [
+    "14:45",
+    7534.62,
+    -2.406
+   ],
+   [
+    "14:50",
+    7531.49,
+    -2.447
+   ],
+   [
+    "14:55",
+    7544.17,
+    -2.283
+   ],
+   [
+    "15:00",
+    7540.97,
+    -2.324
+   ],
+   [
+    "15:05",
+    7554.65,
+    -2.147
+   ],
+   [
+    "15:10",
+    7555.98,
+    -2.13
+   ],
+   [
+    "15:15",
+    7547.13,
+    -2.244
+   ],
+   [
+    "15:20",
+    7553.69,
+    -2.159
+   ],
+   [
+    "15:25",
+    7551.96,
+    -2.182
+   ],
+   [
+    "15:30",
+    7555.32,
+    -2.138
+   ],
+   [
+    "15:35",
+    7557.79,
+    -2.106
+   ],
+   [
+    "15:40",
+    7556.05,
+    -2.129
+   ],
+   [
+    "15:45",
+    7566.38,
+    -1.995
+   ],
+   [
+    "15:50",
+    7584.3,
+    -1.763
+   ],
+   [
+    "15:55",
+    7580.95,
+    -1.806
+   ]
+  ],
+  "IXIC": [
+   [
+    "09:30",
+    25537.52,
+    -2.472
+   ],
+   [
+    "09:35",
+    25616.08,
+    -2.172
+   ],
+   [
+    "09:40",
+    25582.47,
+    -2.3
+   ],
+   [
+    "09:45",
+    25604.32,
+    -2.217
+   ],
+   [
+    "09:50",
+    25617.95,
+    -2.164
+   ],
+   [
+    "09:55",
+    25663.55,
+    -1.99
+   ],
+   [
+    "10:00",
+    25644.73,
+    -2.062
+   ],
+   [
+    "10:05",
+    25591.03,
+    -2.267
+   ],
+   [
+    "10:10",
+    25533.77,
+    -2.486
+   ],
+   [
+    "10:15",
+    25531.04,
+    -2.496
+   ],
+   [
+    "10:20",
+    25483.23,
+    -2.679
+   ],
+   [
+    "10:25",
+    25530.99,
+    -2.497
+   ],
+   [
+    "10:30",
+    25545.94,
+    -2.44
+   ],
+   [
+    "10:35",
+    25619.56,
+    -2.158
+   ],
+   [
+    "10:40",
+    25632.51,
+    -2.109
+   ],
+   [
+    "10:45",
+    25648.12,
+    -2.049
+   ],
+   [
+    "10:50",
+    25633.23,
+    -2.106
+   ],
+   [
+    "10:55",
+    25629.2,
+    -2.122
+   ],
+   [
+    "11:00",
+    25591.37,
+    -2.266
+   ],
+   [
+    "11:05",
+    25624.52,
+    -2.139
+   ],
+   [
+    "11:10",
+    25585.48,
+    -2.288
+   ],
+   [
+    "11:15",
+    25584.58,
+    -2.292
+   ],
+   [
+    "11:20",
+    25592.88,
+    -2.26
+   ],
+   [
+    "11:25",
+    25571.62,
+    -2.341
+   ],
+   [
+    "11:30",
+    25559.64,
+    -2.387
+   ],
+   [
+    "11:35",
+    25532.24,
+    -2.492
+   ],
+   [
+    "11:40",
+    25515.95,
+    -2.554
+   ],
+   [
+    "11:45",
+    25529.74,
+    -2.501
+   ],
+   [
+    "11:50",
+    25524.6,
+    -2.521
+   ],
+   [
+    "11:55",
+    25545.87,
+    -2.44
+   ],
+   [
+    "12:00",
+    25491.32,
+    -2.648
+   ],
+   [
+    "12:05",
+    25499.43,
+    -2.617
+   ],
+   [
+    "12:10",
+    25482.8,
+    -2.681
+   ],
+   [
+    "12:15",
+    25494.4,
+    -2.636
+   ],
+   [
+    "12:20",
+    25474.83,
+    -2.711
+   ],
+   [
+    "12:25",
+    25504.88,
+    -2.596
+   ],
+   [
+    "12:30",
+    25491.01,
+    -2.649
+   ],
+   [
+    "12:35",
+    25503.04,
+    -2.603
+   ],
+   [
+    "12:40",
+    25496.5,
+    -2.628
+   ],
+   [
+    "12:45",
+    25428.36,
+    -2.889
+   ],
+   [
+    "12:50",
+    25413.71,
+    -2.945
+   ],
+   [
+    "12:55",
+    25427.04,
+    -2.894
+   ],
+   [
+    "13:00",
+    25416.26,
+    -2.935
+   ],
+   [
+    "13:05",
+    25384.6,
+    -3.056
+   ],
+   [
+    "13:10",
+    25380.72,
+    -3.07
+   ],
+   [
+    "13:15",
+    25386.6,
+    -3.048
+   ],
+   [
+    "13:20",
+    25398.91,
+    -3.001
+   ],
+   [
+    "13:25",
+    25391.63,
+    -3.029
+   ],
+   [
+    "13:30",
+    25363.48,
+    -3.136
+   ],
+   [
+    "13:35",
+    25367.99,
+    -3.119
+   ],
+   [
+    "13:40",
+    25383.58,
+    -3.06
+   ],
+   [
+    "13:45",
+    25359.59,
+    -3.151
+   ],
+   [
+    "13:50",
+    25326.2,
+    -3.279
+   ],
+   [
+    "13:55",
+    25320.95,
+    -3.299
+   ],
+   [
+    "14:00",
+    25298.12,
+    -3.386
+   ],
+   [
+    "14:05",
+    25301.29,
+    -3.374
+   ],
+   [
+    "14:10",
+    25291.46,
+    -3.411
+   ],
+   [
+    "14:15",
+    25261.12,
+    -3.527
+   ],
+   [
+    "14:20",
+    25262.46,
+    -3.522
+   ],
+   [
+    "14:25",
+    25236.59,
+    -3.621
+   ],
+   [
+    "14:30",
+    25191.32,
+    -3.794
+   ],
+   [
+    "14:35",
+    25236.71,
+    -3.62
+   ],
+   [
+    "14:40",
+    25236.69,
+    -3.621
+   ],
+   [
+    "14:45",
+    25211.76,
+    -3.716
+   ],
+   [
+    "14:50",
+    25196.74,
+    -3.773
+   ],
+   [
+    "14:55",
+    25254.94,
+    -3.551
+   ],
+   [
+    "15:00",
+    25245.0,
+    -3.589
+   ],
+   [
+    "15:05",
+    25303.89,
+    -3.364
+   ],
+   [
+    "15:10",
+    25321.22,
+    -3.298
+   ],
+   [
+    "15:15",
+    25283.81,
+    -3.441
+   ],
+   [
+    "15:20",
+    25316.44,
+    -3.316
+   ],
+   [
+    "15:25",
+    25317.52,
+    -3.312
+   ],
+   [
+    "15:30",
+    25329.18,
+    -3.267
+   ],
+   [
+    "15:35",
+    25343.7,
+    -3.212
+   ],
+   [
+    "15:40",
+    25344.34,
+    -3.209
+   ],
+   [
+    "15:45",
+    25387.13,
+    -3.046
+   ],
+   [
+    "15:50",
+    25457.88,
+    -2.776
+   ],
+   [
+    "15:55",
+    25440.68,
+    -2.842
+   ]
+  ]
+ },
+ "movers": {
+  "gainers": [
+   {
+    "id": "CDNA",
+    "name": "CareDx Inc. Common Stock",
+    "sector": "Health Care",
+    "industry": "Medical Specialities",
+    "market_cap": 3700031629.0,
+    "open": 80.615,
+    "high": 90.87,
+    "low": 80.44,
+    "close": 87.41,
+    "prev_close": 71.52,
+    "chg_pct": 22.218,
+    "range_pct": 14.583,
+    "volume": 3553600
+   },
+   {
+    "id": "FDXF",
+    "name": "FedEx Freight Holding Company Inc. Common Stock",
+    "sector": "Consumer Discretionary",
+    "industry": "Air Freight/Delivery Services",
+    "market_cap": 16400644009.0,
+    "open": 115.2,
+    "high": 128.0,
+    "low": 115.2,
+    "close": 126.04,
+    "prev_close": 109.69,
+    "chg_pct": 14.906,
+    "range_pct": 11.669,
+    "volume": 3597000
+   },
+   {
+    "id": "REGN",
+    "name": "Regeneron Pharmaceuticals Inc. Common Stock",
+    "sector": "Health Care",
+    "industry": "Biotechnology: Pharmaceutical Preparations",
+    "market_cap": 84296455525.0,
+    "open": 869.43,
+    "high": 935.35,
+    "low": 839.08,
+    "close": 927.89,
+    "prev_close": 818.77,
+    "chg_pct": 13.327,
+    "range_pct": 11.758,
+    "volume": 2870600
+   },
+   {
+    "id": "CVCO",
+    "name": "Cavco Industries Inc. Common Stock When Issued",
+    "sector": "Consumer Discretionary",
+    "industry": "Homebuilding",
+    "market_cap": 4208025245.0,
+    "open": 613.77,
+    "high": 632.89,
+    "low": 594.74,
+    "close": 619.0,
+    "prev_close": 547.25,
+    "chg_pct": 13.111,
+    "range_pct": 6.971,
+    "volume": 248700
+   },
+   {
+    "id": "GPN",
+    "name": "Global Payments Inc. Common Stock",
+    "sector": "Consumer Discretionary",
+    "industry": "Business Services",
+    "market_cap": 22683088391.0,
+    "open": 86.0,
+    "high": 101.32,
+    "low": 84.66,
+    "close": 96.84,
+    "prev_close": 85.72,
+    "chg_pct": 12.972,
+    "range_pct": 19.435,
+    "volume": 16726200
+   },
+   {
+    "id": "GDDY",
+    "name": "GoDaddy Inc. Class A Common Stock",
+    "sector": "Technology",
+    "industry": "EDP Services",
+    "market_cap": 13410725377.0,
+    "open": 103.7,
+    "high": 118.11,
+    "low": 103.7,
+    "close": 117.24,
+    "prev_close": 105.89,
+    "chg_pct": 10.719,
+    "range_pct": 13.608,
+    "volume": 3574800
+   },
+   {
+    "id": "INTA",
+    "name": "Intapp Inc. Common Stock",
+    "sector": "Technology",
+    "industry": "Computer Software: Prepackaged Software",
+    "market_cap": 2997068841.0,
+    "open": 39.62,
+    "high": 42.41,
+    "low": 39.24,
+    "close": 42.21,
+    "prev_close": 39.1,
+    "chg_pct": 7.954,
+    "range_pct": 8.107,
+    "volume": 1135000
+   },
+   {
+    "id": "HGV",
+    "name": "Hilton Grand Vacations Inc. Common Stock ",
+    "sector": "Consumer Discretionary",
+    "industry": "Hotels/Resorts",
+    "market_cap": 2775529218.0,
+    "open": 36.47,
+    "high": 38.575,
+    "low": 35.22,
+    "close": 38.44,
+    "prev_close": 35.71,
+    "chg_pct": 7.645,
+    "range_pct": 9.395,
+    "volume": 1877900
+   },
+   {
+    "id": "RKT",
+    "name": "Rocket Companies Inc. Class A Common Stock",
+    "sector": "Finance",
+    "industry": "Finance: Consumer Services",
+    "market_cap": 33753177658.0,
+    "open": 12.565,
+    "high": 12.847,
+    "low": 12.26,
+    "close": 12.8,
+    "prev_close": 11.92,
+    "chg_pct": 7.383,
+    "range_pct": 4.924,
+    "volume": 54367400
+   },
+   {
+    "id": "MHK",
+    "name": "Mohawk Industries Inc. Common Stock",
+    "sector": "Consumer Discretionary",
+    "industry": "Home Furnishings",
+    "market_cap": 8805281469.0,
+    "open": 140.5,
+    "high": 141.17,
+    "low": 129.67,
+    "close": 139.41,
+    "prev_close": 129.99,
+    "chg_pct": 7.247,
+    "range_pct": 8.847,
+    "volume": 3016800
+   }
+  ],
+  "losers": [
+   {
+    "id": "RDDT",
+    "name": "Reddit Inc. Class A Common Stock",
+    "sector": "Technology",
+    "industry": "EDP Services",
+    "market_cap": 24934587696.0,
+    "open": 100.25,
+    "high": 101.98,
+    "low": 89.28,
+    "close": 91.73,
+    "prev_close": 129.6,
+    "chg_pct": -29.221,
+    "range_pct": 9.799,
+    "volume": 33313200
+   },
+   {
+    "id": "INTC",
+    "name": "Intel Corporation Common Stock",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "market_cap": 486596349878.0,
+    "open": 68.36,
+    "high": 68.77,
+    "low": 63.2,
+    "close": 65.76,
+    "prev_close": 92.07,
+    "chg_pct": -28.576,
+    "range_pct": 6.05,
+    "volume": 454221300
+   },
+   {
+    "id": "CACC",
+    "name": "Credit Acceptance Corporation Common Stock",
+    "sector": "Finance",
+    "industry": "Finance: Consumer Services",
+    "market_cap": 5976930352.0,
+    "open": 497.91,
+    "high": 520.0,
+    "low": 455.43,
+    "close": 464.89,
+    "prev_close": 575.78,
+    "chg_pct": -19.259,
+    "range_pct": 11.214,
+    "volume": 386300
+   },
+   {
+    "id": "ILMN",
+    "name": "Illumina Inc. Common Stock",
+    "sector": "Health Care",
+    "industry": "Medical Specialities",
+    "market_cap": 43799060000.0,
+    "open": 255.77,
+    "high": 256.09,
+    "low": 231.18,
+    "close": 235.99,
+    "prev_close": 290.06,
+    "chg_pct": -18.641,
+    "range_pct": 8.588,
+    "volume": 5389800
+   },
+   {
+    "id": "RBLX",
+    "name": "Roblox Corporation Class A Common Stock",
+    "sector": "Technology",
+    "industry": "Computer Software: Prepackaged Software",
+    "market_cap": 37476161865.0,
+    "open": 45.73,
+    "high": 47.76,
+    "low": 41.362,
+    "close": 42.99,
+    "prev_close": 52.46,
+    "chg_pct": -18.052,
+    "range_pct": 12.196,
+    "volume": 29379600
+   },
+   {
+    "id": "AGIO",
+    "name": "Agios Pharmaceuticals Inc. Common Stock",
+    "sector": "Health Care",
+    "industry": "Biotechnology: Pharmaceutical Preparations",
+    "market_cap": 2222701067.0,
+    "open": 31.43,
+    "high": 33.0,
+    "low": 29.8,
+    "close": 30.55,
+    "prev_close": 37.23,
+    "chg_pct": -17.943,
+    "range_pct": 8.595,
+    "volume": 3094300
+   },
+   {
+    "id": "AUGO",
+    "name": "Aura Minerals Inc. Common Shares",
+    "sector": "Basic Materials",
+    "industry": "Metal Mining",
+    "market_cap": 6560696161.0,
+    "open": 74.0,
+    "high": 75.64,
+    "low": 65.16,
+    "close": 66.22,
+    "prev_close": 78.3,
+    "chg_pct": -15.428,
+    "range_pct": 13.384,
+    "volume": 1667000
+   },
+   {
+    "id": "TWLO",
+    "name": "Twilio Inc. Class A Common Stock",
+    "sector": "Technology",
+    "industry": "Computer Software: Prepackaged Software",
+    "market_cap": 37149845718.0,
+    "open": 186.59,
+    "high": 206.905,
+    "low": 180.0,
+    "close": 205.03,
+    "prev_close": 241.9,
+    "chg_pct": -15.242,
+    "range_pct": 11.122,
+    "volume": 7343100
+   },
+   {
+    "id": "SKYW",
+    "name": "SkyWest Inc. Common Stock",
+    "sector": "Consumer Discretionary",
+    "industry": "Air Freight/Delivery Services",
+    "market_cap": 3748486496.0,
+    "open": 87.79,
+    "high": 89.01,
+    "low": 81.85,
+    "close": 82.33,
+    "prev_close": 96.54,
+    "chg_pct": -14.719,
+    "range_pct": 7.417,
+    "volume": 828900
+   },
+   {
+    "id": "TXG",
+    "name": "10x Genomics Inc. Class A Common Stock",
+    "sector": "Industrials",
+    "industry": "Biotechnology: Laboratory Analytical Instruments",
+    "market_cap": 10625244750.0,
+    "open": 73.65,
+    "high": 75.79,
+    "low": 67.42,
+    "close": 70.11,
+    "prev_close": 81.55,
+    "chg_pct": -14.028,
+    "range_pct": 10.264,
+    "volume": 5216800
+   }
+  ],
+  "swings": [
+   {
+    "id": "GPN",
+    "name": "Global Payments Inc. Common Stock",
+    "sector": "Consumer Discretionary",
+    "industry": "Business Services",
+    "market_cap": 22683088391.0,
+    "open": 86.0,
+    "high": 101.32,
+    "low": 84.66,
+    "close": 96.84,
+    "prev_close": 85.72,
+    "chg_pct": 12.972,
+    "range_pct": 19.435,
+    "volume": 16726200
+   },
+   {
+    "id": "CDNA",
+    "name": "CareDx Inc. Common Stock",
+    "sector": "Health Care",
+    "industry": "Medical Specialities",
+    "market_cap": 3700031629.0,
+    "open": 80.615,
+    "high": 90.87,
+    "low": 80.44,
+    "close": 87.41,
+    "prev_close": 71.52,
+    "chg_pct": 22.218,
+    "range_pct": 14.583,
+    "volume": 3553600
+   },
+   {
+    "id": "GDDY",
+    "name": "GoDaddy Inc. Class A Common Stock",
+    "sector": "Technology",
+    "industry": "EDP Services",
+    "market_cap": 13410725377.0,
+    "open": 103.7,
+    "high": 118.11,
+    "low": 103.7,
+    "close": 117.24,
+    "prev_close": 105.89,
+    "chg_pct": 10.719,
+    "range_pct": 13.608,
+    "volume": 3574800
+   },
+   {
+    "id": "AUGO",
+    "name": "Aura Minerals Inc. Common Shares",
+    "sector": "Basic Materials",
+    "industry": "Metal Mining",
+    "market_cap": 6560696161.0,
+    "open": 74.0,
+    "high": 75.64,
+    "low": 65.16,
+    "close": 66.22,
+    "prev_close": 78.3,
+    "chg_pct": -15.428,
+    "range_pct": 13.384,
+    "volume": 1667000
+   },
+   {
+    "id": "ALMR",
+    "name": "Alamar Biosciences Inc. Common Stock",
+    "sector": "Industrials",
+    "industry": "Biotechnology: Laboratory Analytical Instruments",
+    "market_cap": 2362129755.0,
+    "open": 33.35,
+    "high": 33.85,
+    "low": 29.36,
+    "close": 30.6,
+    "prev_close": 34.04,
+    "chg_pct": -10.106,
+    "range_pct": 13.19,
+    "volume": 740000
+   },
+   {
+    "id": "CIFR",
+    "name": "Cipher Digital Inc. Common Stock",
+    "sector": "Finance",
+    "industry": "Finance: Consumer Services",
+    "market_cap": 3691418848.0,
+    "open": 7.51,
+    "high": 7.99,
+    "low": 6.93,
+    "close": 7.29,
+    "prev_close": 8.1,
+    "chg_pct": -10.0,
+    "range_pct": 13.086,
+    "volume": 56512500
+   },
+   {
+    "id": "AXTI",
+    "name": "AXT Inc Common Stock",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "market_cap": 3992097147.0,
+    "open": 57.28,
+    "high": 58.84,
+    "low": 50.96,
+    "close": 55.06,
+    "prev_close": 60.88,
+    "chg_pct": -9.56,
+    "range_pct": 12.943,
+    "volume": 14730400
+   },
+   {
+    "id": "RBLX",
+    "name": "Roblox Corporation Class A Common Stock",
+    "sector": "Technology",
+    "industry": "Computer Software: Prepackaged Software",
+    "market_cap": 37476161865.0,
+    "open": 45.73,
+    "high": 47.76,
+    "low": 41.362,
+    "close": 42.99,
+    "prev_close": 52.46,
+    "chg_pct": -18.052,
+    "range_pct": 12.196,
+    "volume": 29379600
+   },
+   {
+    "id": "FTRE",
+    "name": "Fortrea Holdings Inc. Common Stock",
+    "sector": "Health Care",
+    "industry": "Medical Specialities",
+    "market_cap": 2200138500.0,
+    "open": 23.295,
+    "high": 23.51,
+    "low": 20.7,
+    "close": 21.29,
+    "prev_close": 23.135,
+    "chg_pct": -7.975,
+    "range_pct": 12.146,
+    "volume": 2873500
+   },
+   {
+    "id": "SXT",
+    "name": "Sensient Technologies Corporation Common Stock",
+    "sector": "Industrials",
+    "industry": "Major Chemicals",
+    "market_cap": 5598286531.0,
+    "open": 112.0,
+    "high": 119.89,
+    "low": 104.25,
+    "close": 117.63,
+    "prev_close": 131.53,
+    "chg_pct": -10.568,
+    "range_pct": 11.891,
+    "volume": 1733400
+   }
+  ]
+ },
+ "warnings": [
+  "CDNA: yfinance 22.22% vs nasdaq -0.85%",
+  "FDXF: yfinance 14.91% vs nasdaq 1.25%",
+  "REGN: yfinance 13.33% vs nasdaq 0.68%",
+  "CVCO: yfinance 13.11% vs nasdaq 2.76%",
+  "GPN: yfinance 12.97% vs nasdaq 2.60%",
+  "GDDY: yfinance 10.72% vs nasdaq -0.61%",
+  "INTA: yfinance 7.95% vs nasdaq -3.07%",
+  "HGV: yfinance 7.64% vs nasdaq 0.51%",
+  "RKT: yfinance 7.38% vs nasdaq 3.02%",
+  "MHK: yfinance 7.25% vs nasdaq 1.73%",
+  "RDDT: yfinance -29.22% vs nasdaq -3.79%",
+  "INTC: yfinance -28.58% vs nasdaq -3.62%",
+  "CACC: yfinance -19.26% vs nasdaq 5.67%",
+  "ILMN: yfinance -18.64% vs nasdaq 0.44%",
+  "RBLX: yfinance -18.05% vs nasdaq -1.54%",
+  "AGIO: yfinance -17.94% vs nasdaq -2.33%",
+  "AUGO: yfinance -15.43% vs nasdaq -4.30%",
+  "TWLO: yfinance -15.24% vs nasdaq -4.68%",
+  "SKYW: yfinance -14.72% vs nasdaq 1.33%",
+  "TXG: yfinance -14.03% vs nasdaq -2.48%"
+ ]
+}

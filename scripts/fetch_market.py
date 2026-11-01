@@ -94,6 +94,27 @@ def intraday(symbol, day, prev_close):
     return pts
 
 
+def stooq_close(symbol, day):
+    s = symbol.lower().replace("^", "")
+    url = f"https://stooq.com/q/d/l/?s={s}.us&d1={day:%Y%m%d}&d2={day:%Y%m%d}&i=d"
+    try:
+        txt = requests.get(url, headers=UA, timeout=20).text.strip().splitlines()
+        if len(txt) < 2 or not txt[1].startswith(day.isoformat()):
+            return None
+        return float(txt[1].split(",")[4])
+    except Exception:
+        return None
+
+
+NAME_JUNK = re.compile(r"\s*(,?\s*Inc\.?|Corporation|Corp\.?|Company|Co\.|Holdings?|Ltd\.?|plc|N\.V\.|L\.P\.)?\s*"
+                       r"(Class [A-C] )?(Common Stock|Common Shares|Ordinary Shares|Capital Stock)\b.*$", re.I)
+
+
+def clean_name(n):
+    short = NAME_JUNK.sub("", n).strip().rstrip(",")
+    return short or n
+
+
 def latest_session():
     d = yf.download("^GSPC", period="10d", interval="1d", progress=False).dropna()
     return d.index[-1].date()
@@ -117,7 +138,7 @@ def universe():
             continue
         keep[sym.replace("/", "-").replace(".", "-")] = dict(symbol=sym, name=name, market_cap=cap,
                                                              sector=x.get("sector") or "", industry=x.get("industry") or "",
-                                                             nasdaq_pct=x.get("pctchange"))
+                                                             )
     return keep
 
 
@@ -170,29 +191,30 @@ def main():
     rows = []
     for ysym, d in data.items():
         u = uni[ysym]
-        rows.append(dict(id=u["symbol"], name=u["name"], sector=u["sector"], industry=u["industry"],
+        rows.append(dict(id=u["symbol"], name=clean_name(u["name"]), sector=u["sector"], industry=u["industry"],
                          market_cap=u["market_cap"], **d))
     n = CFG["movers"]["top_n"]
     gain = sorted(rows, key=lambda x: -x["chg_pct"])[:n]
     lose = sorted(rows, key=lambda x: x["chg_pct"])[:n]
     swing = sorted(rows, key=lambda x: -(x["range_pct"] or 0))[:n]
 
-    # cross-check movers against Nasdaq's own % change (same session expected)
-    for x in gain + lose:
-        npct = uni[x["id"].replace("/", "-").replace(".", "-")]["nasdaq_pct"] or ""
-        try:
-            nv = float(str(npct).replace("%", ""))
-            if abs(nv - x["chg_pct"]) > 0.5:
-                warnings.append(f"{x['id']}: yfinance {x['chg_pct']:.2f}% vs nasdaq {nv:.2f}%")
-        except ValueError:
-            pass
-
+    # second, independent source: Stooq daily closes for the watchlist and top movers
+    checks = []
+    for x in watch + gain + lose:
+        sym = next((w["yf"] for w in CFG["watchlist"] if w["id"] == x["id"]), x["id"])
+        c2 = stooq_close(sym, day)
+        if c2 is None:
+            warnings.append(f"{x['id']}: Stooq 无数据，未能交叉核对")
+            continue
+        diff = abs(c2 / x["close"] - 1) * 100
+        x["verified"] = diff <= 0.5
+        checks.append(dict(id=x["id"], yahoo=x["close"], stooq=c2, diff_pct=r(diff, 3)))
     res = dict(date=day.isoformat(), generated_at=dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
                sources=dict(prices="Yahoo Finance（经 yfinance）", universe="Nasdaq 股票筛选器（api.nasdaq.com）",
                             sectors="SPDR 行业 ETF 作为 GICS 板块代理"),
                universe=dict(count=len(rows), min_market_cap=CFG["movers"]["min_market_cap"], country=CFG["movers"]["country"]),
                indices=indices, watchlist=watch, macro=macro, sectors=sectors, intraday=intr,
-               movers=dict(gainers=gain, losers=lose, swings=swing), warnings=warnings)
+               movers=dict(gainers=gain, losers=lose, swings=swing), crosscheck=checks, warnings=warnings)
     p = ROOT / "data" / day.isoformat() / "market.json"
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")

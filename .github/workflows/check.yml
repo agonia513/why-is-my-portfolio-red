@@ -1,0 +1,25 @@
+name: Check draft
+
+# Every push to a draft branch is validated, so problems show up before review.
+on:
+  push:
+    branches: ["draft/**", dev]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate issues that have written content
+        run: |
+          set -e
+          for d in data/*/; do
+            d=$(basename "$d")
+            if [ -f "data/$d/meta.json" ]; then python3 scripts/validate.py "$d" --links; else echo "$d: market data only, writing not done yet"; fi
+          done
+      - run: python3 scripts/build.py
+      - run: python3 scripts/validate.py --all --rendered

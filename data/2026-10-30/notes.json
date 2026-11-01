@@ -1,0 +1,72 @@
+{
+ "stocks": {
+  "INTC": "Q4 指引远低于预期，52 年来最大单日跌幅",
+  "AMD": "周二盘后发财报",
+  "NVDA": "市值被苹果反超",
+  "AAPL": "重回全球市值第一；周一盘后财报",
+  "AMZN": "盘前一度跌超 7%，收盘大幅收窄",
+  "GOOGL": "周四财报后已大跌，周五续跌"
+ },
+ "movers": {
+  "CDNA": {
+   "comment": "Q3 营收 1.39 亿美元、同比 +39%，并把全年营收指引上调到 5.2–5.3 亿美元",
+   "src": "RTTNews",
+   "url": "https://www.rttnews.com/3706462/caredx-q3-revenue-jumps-39-raises-fy26-revenue-ebitda-guidance-stock-up.aspx"
+  },
+  "FDXF": {
+   "comment": "分拆后首份独立财报：营收同比 +9.2%，Q4 营收指引约 23 亿美元高于去年同期；今年此前已跌 27%",
+   "src": "Transport Topics",
+   "url": "https://www.ttnews.com/articles/fedex-freight-earnings-q3-2026"
+  },
+  "REGN": {
+   "comment": "Q3 营收 51.2 亿美元、同比 +36%，非 GAAP EPS 增 70%；上调毛利率指引，扩大与赛诺菲合作",
+   "src": "Regeneron 财报（Quiver 转载）",
+   "url": "https://www.quiverquant.com/news/Regeneron+Reports+Third+Quarter+2026+Results,+Raises+Full-Year+Guidance+and+Expands+Sanofi+Collaboration"
+  },
+  "CVCO": {
+   "comment": "营收同比 +18%，单季发货量创纪录，订单积压同比 +63%",
+   "src": "TradingKey 电话会摘要",
+   "url": "https://www.tradingkey.com/news/transcripts/262262223-"
+  },
+  "GPN": {
+   "comment": "多家媒体报道私募 CD&R 正洽谈将其私有化（公司未证实）",
+   "src": "GuruFocus",
+   "url": "https://www.gurufocus.com/news/9159429/global-payments-gpn-surges-15-amid-takeprivate-talks-with-clayton-dubilier-rice"
+  },
+  "GDDY": {
+   "comment": "EPS 2.08 美元，高于预期的 1.90",
+   "src": "Capp Notes",
+   "url": "https://cappnotes.substack.com/p/closing-look-friday-october-30-2026"
+  },
+  "RDDT": {
+   "comment": "营收 +53%，但称谷歌 AI 搜索使美国日活下滑，Q4 指引偏弱；上市以来最大跌幅",
+   "src": "TheStreet",
+   "url": "https://www.thestreet.com/technology/reddit-stock-plunges-28-as-google-ai-cuts-us-traffic"
+  },
+  "INTC": {
+   "comment": "Q3 超预期，但 Q4 营收指引 150–160 亿美元远低于约 171 亿的预期，毛利率指引降至 38%",
+   "src": "Intel 8-K（SEC）",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000188/q326earningsrelease.htm"
+  },
+  "CACC": {
+   "comment": "下调 2022–2026 年贷款的回收预测（未来现金流预测减少 2.9 亿美元），GAAP 由盈转亏",
+   "src": "公司财报（GlobeNewswire）",
+   "url": "https://www.globenewswire.com/news-release/2026/10/29/3391813/0/en/credit-acceptance-announces-third-quarter-2026-results.html"
+  },
+  "ILMN": {
+   "comment": "Q3 营收低于预期，并提到被列入中国“不可靠实体清单”的影响",
+   "src": "StockStory",
+   "url": "https://markets.financialcontent.com/stocks/article/stockstory-2026-10-30-why-illumina-ilmn-shares-are-getting-obliterated-today"
+  },
+  "RBLX": {
+   "comment": "日活 1.38 亿低于预期，Q4 预订额与营收指引均低于共识",
+   "src": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/roblox-shares-fall-user-growth-205249303.html"
+  },
+  "SKYW": {
+   "comment": "因燃油成本下调 2026 年 EPS 展望",
+   "src": "Capp Notes",
+   "url": "https://cappnotes.substack.com/p/closing-look-friday-october-30-2026"
+  }
+ }
+}
