@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "generated_at": "2026-11-01T00:37:54+00:00",
+ "generated_at": "2026-11-01T00:43:09+00:00",
  "sources": {
   "prices": "Yahoo Finance（经 yfinance）",
   "universe": "Nasdaq 股票筛选器（api.nasdaq.com）",
@@ -1262,7 +1262,7 @@
   "gainers": [
    {
     "id": "CDNA",
-    "name": "CareDx Inc. Common Stock",
+    "name": "CareDx",
     "sector": "Health Care",
     "industry": "Medical Specialities",
     "market_cap": 3700031629.0,
@@ -1277,7 +1277,7 @@
    },
    {
     "id": "FDXF",
-    "name": "FedEx Freight Holding Company Inc. Common Stock",
+    "name": "FedEx Freight Holding Company",
     "sector": "Consumer Discretionary",
     "industry": "Air Freight/Delivery Services",
     "market_cap": 16400644009.0,
@@ -1292,7 +1292,7 @@
    },
    {
     "id": "REGN",
-    "name": "Regeneron Pharmaceuticals Inc. Common Stock",
+    "name": "Regeneron Pharmaceuticals",
     "sector": "Health Care",
     "industry": "Biotechnology: Pharmaceutical Preparations",
     "market_cap": 84296455525.0,
@@ -1307,7 +1307,7 @@
    },
    {
     "id": "CVCO",
-    "name": "Cavco Industries Inc. Common Stock When Issued",
+    "name": "Cavco Industries",
     "sector": "Consumer Discretionary",
     "industry": "Homebuilding",
     "market_cap": 4208025245.0,
@@ -1322,7 +1322,7 @@
    },
    {
     "id": "GPN",
-    "name": "Global Payments Inc. Common Stock",
+    "name": "Global Payments",
     "sector": "Consumer Discretionary",
     "industry": "Business Services",
     "market_cap": 22683088391.0,
@@ -1337,7 +1337,7 @@
    },
    {
     "id": "GDDY",
-    "name": "GoDaddy Inc. Class A Common Stock",
+    "name": "GoDaddy",
     "sector": "Technology",
     "industry": "EDP Services",
     "market_cap": 13410725377.0,
@@ -1352,7 +1352,7 @@
    },
    {
     "id": "INTA",
-    "name": "Intapp Inc. Common Stock",
+    "name": "Intapp",
     "sector": "Technology",
     "industry": "Computer Software: Prepackaged Software",
     "market_cap": 2997068841.0,
@@ -1367,7 +1367,7 @@
    },
    {
     "id": "HGV",
-    "name": "Hilton Grand Vacations Inc. Common Stock ",
+    "name": "Hilton Grand Vacations",
     "sector": "Consumer Discretionary",
     "industry": "Hotels/Resorts",
     "market_cap": 2775529218.0,
@@ -1382,7 +1382,7 @@
    },
    {
     "id": "RKT",
-    "name": "Rocket Companies Inc. Class A Common Stock",
+    "name": "Rocket Companies",
     "sector": "Finance",
     "industry": "Finance: Consumer Services",
     "market_cap": 33753177658.0,
@@ -1397,7 +1397,7 @@
    },
    {
     "id": "MHK",
-    "name": "Mohawk Industries Inc. Common Stock",
+    "name": "Mohawk Industries",
     "sector": "Consumer Discretionary",
     "industry": "Home Furnishings",
     "market_cap": 8805281469.0,
@@ -1414,7 +1414,7 @@
   "losers": [
    {
     "id": "RDDT",
-    "name": "Reddit Inc. Class A Common Stock",
+    "name": "Reddit",
     "sector": "Technology",
     "industry": "EDP Services",
     "market_cap": 24934587696.0,
@@ -1429,7 +1429,7 @@
    },
    {
     "id": "INTC",
-    "name": "Intel Corporation Common Stock",
+    "name": "Intel",
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 486596349878.0,
@@ -1444,7 +1444,7 @@
    },
    {
     "id": "CACC",
-    "name": "Credit Acceptance Corporation Common Stock",
+    "name": "Credit Acceptance",
     "sector": "Finance",
     "industry": "Finance: Consumer Services",
     "market_cap": 5976930352.0,
@@ -1459,7 +1459,7 @@
    },
    {
     "id": "ILMN",
-    "name": "Illumina Inc. Common Stock",
+    "name": "Illumina",
     "sector": "Health Care",
     "industry": "Medical Specialities",
     "market_cap": 43799060000.0,
@@ -1474,7 +1474,7 @@
    },
    {
     "id": "RBLX",
-    "name": "Roblox Corporation Class A Common Stock",
+    "name": "Roblox",
     "sector": "Technology",
     "industry": "Computer Software: Prepackaged Software",
     "market_cap": 37476161865.0,
@@ -1489,7 +1489,7 @@
    },
    {
     "id": "AGIO",
-    "name": "Agios Pharmaceuticals Inc. Common Stock",
+    "name": "Agios Pharmaceuticals",
     "sector": "Health Care",
     "industry": "Biotechnology: Pharmaceutical Preparations",
     "market_cap": 2222701067.0,
@@ -1504,7 +1504,7 @@
    },
    {
     "id": "AUGO",
-    "name": "Aura Minerals Inc. Common Shares",
+    "name": "Aura Minerals",
     "sector": "Basic Materials",
     "industry": "Metal Mining",
     "market_cap": 6560696161.0,
@@ -1519,7 +1519,7 @@
    },
    {
     "id": "TWLO",
-    "name": "Twilio Inc. Class A Common Stock",
+    "name": "Twilio",
     "sector": "Technology",
     "industry": "Computer Software: Prepackaged Software",
     "market_cap": 37149845718.0,
@@ -1534,7 +1534,7 @@
    },
    {
     "id": "SKYW",
-    "name": "SkyWest Inc. Common Stock",
+    "name": "SkyWest",
     "sector": "Consumer Discretionary",
     "industry": "Air Freight/Delivery Services",
     "market_cap": 3748486496.0,
@@ -1549,7 +1549,7 @@
    },
    {
     "id": "TXG",
-    "name": "10x Genomics Inc. Class A Common Stock",
+    "name": "10x Genomics",
     "sector": "Industrials",
     "industry": "Biotechnology: Laboratory Analytical Instruments",
     "market_cap": 10625244750.0,
@@ -1566,7 +1566,7 @@
   "swings": [
    {
     "id": "GPN",
-    "name": "Global Payments Inc. Common Stock",
+    "name": "Global Payments",
     "sector": "Consumer Discretionary",
     "industry": "Business Services",
     "market_cap": 22683088391.0,
@@ -1581,7 +1581,7 @@
    },
    {
     "id": "CDNA",
-    "name": "CareDx Inc. Common Stock",
+    "name": "CareDx",
     "sector": "Health Care",
     "industry": "Medical Specialities",
     "market_cap": 3700031629.0,
@@ -1596,7 +1596,7 @@
    },
    {
     "id": "GDDY",
-    "name": "GoDaddy Inc. Class A Common Stock",
+    "name": "GoDaddy",
     "sector": "Technology",
     "industry": "EDP Services",
     "market_cap": 13410725377.0,
@@ -1611,7 +1611,7 @@
    },
    {
     "id": "AUGO",
-    "name": "Aura Minerals Inc. Common Shares",
+    "name": "Aura Minerals",
     "sector": "Basic Materials",
     "industry": "Metal Mining",
     "market_cap": 6560696161.0,
@@ -1626,7 +1626,7 @@
    },
    {
     "id": "ALMR",
-    "name": "Alamar Biosciences Inc. Common Stock",
+    "name": "Alamar Biosciences",
     "sector": "Industrials",
     "industry": "Biotechnology: Laboratory Analytical Instruments",
     "market_cap": 2362129755.0,
@@ -1641,7 +1641,7 @@
    },
    {
     "id": "CIFR",
-    "name": "Cipher Digital Inc. Common Stock",
+    "name": "Cipher Digital",
     "sector": "Finance",
     "industry": "Finance: Consumer Services",
     "market_cap": 3691418848.0,
@@ -1656,7 +1656,7 @@
    },
    {
     "id": "AXTI",
-    "name": "AXT Inc Common Stock",
+    "name": "AXT",
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 3992097147.0,
@@ -1671,7 +1671,7 @@
    },
    {
     "id": "RBLX",
-    "name": "Roblox Corporation Class A Common Stock",
+    "name": "Roblox",
     "sector": "Technology",
     "industry": "Computer Software: Prepackaged Software",
     "market_cap": 37476161865.0,
@@ -1686,7 +1686,7 @@
    },
    {
     "id": "FTRE",
-    "name": "Fortrea Holdings Inc. Common Stock",
+    "name": "Fortrea Holdings",
     "sector": "Health Care",
     "industry": "Medical Specialities",
     "market_cap": 2200138500.0,
@@ -1701,7 +1701,7 @@
    },
    {
     "id": "SXT",
-    "name": "Sensient Technologies Corporation Common Stock",
+    "name": "Sensient Technologies",
     "sector": "Industrials",
     "industry": "Major Chemicals",
     "market_cap": 5598286531.0,
@@ -1716,26 +1716,39 @@
    }
   ]
  },
+ "crosscheck": [],
  "warnings": [
-  "CDNA: yfinance 22.22% vs nasdaq -0.85%",
-  "FDXF: yfinance 14.91% vs nasdaq 1.25%",
-  "REGN: yfinance 13.33% vs nasdaq 0.68%",
-  "CVCO: yfinance 13.11% vs nasdaq 2.76%",
-  "GPN: yfinance 12.97% vs nasdaq 2.60%",
-  "GDDY: yfinance 10.72% vs nasdaq -0.61%",
-  "INTA: yfinance 7.95% vs nasdaq -3.07%",
-  "HGV: yfinance 7.64% vs nasdaq 0.51%",
-  "RKT: yfinance 7.38% vs nasdaq 3.02%",
-  "MHK: yfinance 7.25% vs nasdaq 1.73%",
-  "RDDT: yfinance -29.22% vs nasdaq -3.79%",
-  "INTC: yfinance -28.58% vs nasdaq -3.62%",
-  "CACC: yfinance -19.26% vs nasdaq 5.67%",
-  "ILMN: yfinance -18.64% vs nasdaq 0.44%",
-  "RBLX: yfinance -18.05% vs nasdaq -1.54%",
-  "AGIO: yfinance -17.94% vs nasdaq -2.33%",
-  "AUGO: yfinance -15.43% vs nasdaq -4.30%",
-  "TWLO: yfinance -15.24% vs nasdaq -4.68%",
-  "SKYW: yfinance -14.72% vs nasdaq 1.33%",
-  "TXG: yfinance -14.03% vs nasdaq -2.48%"
+  "NVDA: Stooq 无数据，未能交叉核对",
+  "AMD: Stooq 无数据，未能交叉核对",
+  "AVGO: Stooq 无数据，未能交叉核对",
+  "MU: Stooq 无数据，未能交叉核对",
+  "INTC: Stooq 无数据，未能交叉核对",
+  "TSM: Stooq 无数据，未能交叉核对",
+  "MSFT: Stooq 无数据，未能交叉核对",
+  "GOOGL: Stooq 无数据，未能交叉核对",
+  "AMZN: Stooq 无数据，未能交叉核对",
+  "META: Stooq 无数据，未能交叉核对",
+  "AAPL: Stooq 无数据，未能交叉核对",
+  "TSLA: Stooq 无数据，未能交叉核对",
+  "CDNA: Stooq 无数据，未能交叉核对",
+  "FDXF: Stooq 无数据，未能交叉核对",
+  "REGN: Stooq 无数据，未能交叉核对",
+  "CVCO: Stooq 无数据，未能交叉核对",
+  "GPN: Stooq 无数据，未能交叉核对",
+  "GDDY: Stooq 无数据，未能交叉核对",
+  "INTA: Stooq 无数据，未能交叉核对",
+  "HGV: Stooq 无数据，未能交叉核对",
+  "RKT: Stooq 无数据，未能交叉核对",
+  "MHK: Stooq 无数据，未能交叉核对",
+  "RDDT: Stooq 无数据，未能交叉核对",
+  "INTC: Stooq 无数据，未能交叉核对",
+  "CACC: Stooq 无数据，未能交叉核对",
+  "ILMN: Stooq 无数据，未能交叉核对",
+  "RBLX: Stooq 无数据，未能交叉核对",
+  "AGIO: Stooq 无数据，未能交叉核对",
+  "AUGO: Stooq 无数据，未能交叉核对",
+  "TWLO: Stooq 无数据，未能交叉核对",
+  "SKYW: Stooq 无数据，未能交叉核对",
+  "TXG: Stooq 无数据，未能交叉核对"
  ]
 }
