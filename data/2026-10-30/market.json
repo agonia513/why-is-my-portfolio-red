@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "generated_at": "2026-11-01T00:56:26+00:00",
+ "generated_at": "2026-11-01T01:01:55+00:00",
  "sources": {
   "prices": "Yahoo Finance（经 yfinance）",
   "universe": "Nasdaq 股票筛选器（api.nasdaq.com）",
@@ -8,9 +8,9 @@
   "sectors": "SPDR 行业 ETF 作为 GICS 板块代理"
  },
  "universe": {
-  "count": 1606,
+  "count": 2034,
   "min_market_cap": 2000000000,
-  "country": "United States"
+  "country": null
  },
  "indices": [
   {
@@ -1306,6 +1306,22 @@
     "verified": true
    },
    {
+    "id": "MEOH",
+    "name": "Methanex",
+    "sector": "Industrials",
+    "industry": "Major Chemicals",
+    "market_cap": 4855381146.0,
+    "open": 66.96,
+    "high": 72.32,
+    "low": 66.01,
+    "close": 71.57,
+    "prev_close": 62.76,
+    "chg_pct": 14.038,
+    "range_pct": 10.054,
+    "volume": 2768400,
+    "verified": true
+   },
+   {
     "id": "REGN",
     "name": "Regeneron Pharmaceuticals",
     "sector": "Health Care",
@@ -1354,6 +1370,22 @@
     "verified": true
    },
    {
+    "id": "BTSG",
+    "name": "BrightSpring Health Services",
+    "sector": "Health Care",
+    "industry": "Medical/Nursing Services",
+    "market_cap": 11915384593.0,
+    "open": 65.29,
+    "high": 71.12,
+    "low": 64.21,
+    "close": 66.89,
+    "prev_close": 60.22,
+    "chg_pct": 11.076,
+    "range_pct": 11.475,
+    "volume": 5934400,
+    "verified": true
+   },
+   {
     "id": "GDDY",
     "name": "GoDaddy",
     "sector": "Technology",
@@ -1386,51 +1418,19 @@
     "verified": true
    },
    {
-    "id": "HGV",
-    "name": "Hilton Grand Vacations",
+    "id": "CDLR",
+    "name": "Cadeler A/S",
     "sector": "Consumer Discretionary",
-    "industry": "Hotels/Resorts",
-    "market_cap": 2775529218.0,
-    "open": 36.47,
-    "high": 38.575,
-    "low": 35.22,
-    "close": 38.44,
-    "prev_close": 35.71,
-    "chg_pct": 7.645,
-    "range_pct": 9.395,
-    "volume": 1877900,
-    "verified": true
-   },
-   {
-    "id": "RKT",
-    "name": "Rocket Companies",
-    "sector": "Finance",
-    "industry": "Finance: Consumer Services",
-    "market_cap": 33753177658.0,
-    "open": 12.565,
-    "high": 12.847,
-    "low": 12.26,
-    "close": 12.8,
-    "prev_close": 11.92,
-    "chg_pct": 7.383,
-    "range_pct": 4.924,
-    "volume": 54367400,
-    "verified": true
-   },
-   {
-    "id": "MHK",
-    "name": "Mohawk Industries",
-    "sector": "Consumer Discretionary",
-    "industry": "Home Furnishings",
-    "market_cap": 8805281469.0,
-    "open": 140.5,
-    "high": 141.17,
-    "low": 129.67,
-    "close": 139.41,
-    "prev_close": 129.99,
-    "chg_pct": 7.247,
-    "range_pct": 8.847,
-    "volume": 3016800,
+    "industry": "Marine Transportation",
+    "market_cap": 2575340440.0,
+    "open": 25.91,
+    "high": 28.87,
+    "low": 25.91,
+    "close": 28.76,
+    "prev_close": 26.69,
+    "chg_pct": 7.756,
+    "range_pct": 11.09,
+    "volume": 91700,
     "verified": true
    }
   ],
@@ -1465,6 +1465,22 @@
     "chg_pct": -28.576,
     "range_pct": 6.05,
     "volume": 454221300,
+    "verified": true
+   },
+   {
+    "id": "ENHA",
+    "name": "Enhanced Group",
+    "sector": "Consumer Discretionary",
+    "industry": "Services-Misc. Amusement & Recreation",
+    "market_cap": 5107897013.0,
+    "open": 12.68,
+    "high": 12.77,
+    "low": 9.22,
+    "close": 9.43,
+    "prev_close": 12.91,
+    "chg_pct": -26.956,
+    "range_pct": 27.498,
+    "volume": 92300,
     "verified": true
    },
    {
@@ -1532,71 +1548,71 @@
     "verified": true
    },
    {
-    "id": "AUGO",
-    "name": "Aura Minerals",
-    "sector": "Basic Materials",
-    "industry": "Metal Mining",
-    "market_cap": 6560696161.0,
-    "open": 74.0,
-    "high": 75.64,
-    "low": 65.16,
-    "close": 66.22,
-    "prev_close": 78.3,
-    "chg_pct": -15.428,
-    "range_pct": 13.384,
-    "volume": 1667000,
-    "verified": true
-   },
-   {
-    "id": "TWLO",
-    "name": "Twilio",
-    "sector": "Technology",
-    "industry": "Computer Software: Prepackaged Software",
-    "market_cap": 37149845718.0,
-    "open": 186.59,
-    "high": 206.905,
-    "low": 180.0,
-    "close": 205.03,
-    "prev_close": 241.9,
-    "chg_pct": -15.242,
-    "range_pct": 11.122,
-    "volume": 7343100,
-    "verified": true
-   },
-   {
-    "id": "SKYW",
-    "name": "SkyWest",
+    "id": "BFAM",
+    "name": "Bright Horizons Family Solutions",
     "sector": "Consumer Discretionary",
-    "industry": "Air Freight/Delivery Services",
-    "market_cap": 3748486496.0,
-    "open": 87.79,
-    "high": 89.01,
-    "low": 81.85,
-    "close": 82.33,
-    "prev_close": 96.54,
-    "chg_pct": -14.719,
-    "range_pct": 7.417,
-    "volume": 828900,
+    "industry": "Other Consumer Services",
+    "market_cap": 3257592796.0,
+    "open": 58.93,
+    "high": 62.37,
+    "low": 52.1,
+    "close": 54.98,
+    "prev_close": 66.98,
+    "chg_pct": -17.916,
+    "range_pct": 15.333,
+    "volume": 7373600,
     "verified": true
    },
    {
-    "id": "TXG",
-    "name": "10x Genomics",
+    "id": "TFII",
+    "name": "TFI International",
     "sector": "Industrials",
-    "industry": "Biotechnology: Laboratory Analytical Instruments",
-    "market_cap": 10625244750.0,
-    "open": 73.65,
-    "high": 75.79,
-    "low": 67.42,
-    "close": 70.11,
-    "prev_close": 81.55,
-    "chg_pct": -14.028,
-    "range_pct": 10.264,
-    "volume": 5216800,
+    "industry": "Trucking Freight/Courier Services",
+    "market_cap": 9249666089.0,
+    "open": 100.0,
+    "high": 108.69,
+    "low": 92.84,
+    "close": 93.32,
+    "prev_close": 112.54,
+    "chg_pct": -17.078,
+    "range_pct": 14.084,
+    "volume": 1140700,
+    "verified": true
+   },
+   {
+    "id": "BLSH",
+    "name": "Bullish",
+    "sector": "Finance",
+    "industry": "Finance: Consumer Services",
+    "market_cap": 4544985590.0,
+    "open": 27.12,
+    "high": 27.12,
+    "low": 23.76,
+    "close": 23.9,
+    "prev_close": 28.47,
+    "chg_pct": -16.052,
+    "range_pct": 11.802,
+    "volume": 2535900,
     "verified": true
    }
   ],
   "swings": [
+   {
+    "id": "ENHA",
+    "name": "Enhanced Group",
+    "sector": "Consumer Discretionary",
+    "industry": "Services-Misc. Amusement & Recreation",
+    "market_cap": 5107897013.0,
+    "open": 12.68,
+    "high": 12.77,
+    "low": 9.22,
+    "close": 9.43,
+    "prev_close": 12.91,
+    "chg_pct": -26.956,
+    "range_pct": 27.498,
+    "volume": 92300,
+    "verified": true
+   },
    {
     "id": "GPN",
     "name": "Global Payments",
@@ -1611,6 +1627,37 @@
     "chg_pct": 12.972,
     "range_pct": 19.435,
     "volume": 16726200,
+    "verified": true
+   },
+   {
+    "id": "CSQR",
+    "name": "Csquare",
+    "sector": "Technology",
+    "industry": "Computer Software: Programming Data Processing",
+    "market_cap": 2491178061.0,
+    "open": 14.6,
+    "high": 15.11,
+    "low": 12.3,
+    "close": 13.29,
+    "prev_close": 14.95,
+    "chg_pct": -11.104,
+    "range_pct": 18.796,
+    "volume": 4379800
+   },
+   {
+    "id": "BFAM",
+    "name": "Bright Horizons Family Solutions",
+    "sector": "Consumer Discretionary",
+    "industry": "Other Consumer Services",
+    "market_cap": 3257592796.0,
+    "open": 58.93,
+    "high": 62.37,
+    "low": 52.1,
+    "close": 54.98,
+    "prev_close": 66.98,
+    "chg_pct": -17.916,
+    "range_pct": 15.333,
+    "volume": 7373600,
     "verified": true
    },
    {
@@ -1630,6 +1677,22 @@
     "verified": true
    },
    {
+    "id": "TFII",
+    "name": "TFI International",
+    "sector": "Industrials",
+    "industry": "Trucking Freight/Courier Services",
+    "market_cap": 9249666089.0,
+    "open": 100.0,
+    "high": 108.69,
+    "low": 92.84,
+    "close": 93.32,
+    "prev_close": 112.54,
+    "chg_pct": -17.078,
+    "range_pct": 14.084,
+    "volume": 1140700,
+    "verified": true
+   },
+   {
     "id": "GDDY",
     "name": "GoDaddy",
     "sector": "Technology",
@@ -1646,6 +1709,21 @@
     "verified": true
    },
    {
+    "id": "IMO",
+    "name": "Imperial Oil Limited",
+    "sector": "Energy",
+    "industry": "Integrated oil Companies",
+    "market_cap": 63287815910.0,
+    "open": 120.89,
+    "high": 138.52,
+    "low": 120.89,
+    "close": 138.1,
+    "prev_close": 130.87,
+    "chg_pct": 5.525,
+    "range_pct": 13.471,
+    "volume": 1047900
+   },
+   {
     "id": "AUGO",
     "name": "Aura Minerals",
     "sector": "Basic Materials",
@@ -1658,8 +1736,7 @@
     "prev_close": 78.3,
     "chg_pct": -15.428,
     "range_pct": 13.384,
-    "volume": 1667000,
-    "verified": true
+    "volume": 1667000
    },
    {
     "id": "ALMR",
@@ -1675,82 +1752,6 @@
     "chg_pct": -10.106,
     "range_pct": 13.19,
     "volume": 740000
-   },
-   {
-    "id": "CIFR",
-    "name": "Cipher Digital",
-    "sector": "Finance",
-    "industry": "Finance: Consumer Services",
-    "market_cap": 3691418848.0,
-    "open": 7.51,
-    "high": 7.99,
-    "low": 6.93,
-    "close": 7.29,
-    "prev_close": 8.1,
-    "chg_pct": -10.0,
-    "range_pct": 13.086,
-    "volume": 56512500
-   },
-   {
-    "id": "AXTI",
-    "name": "AXT",
-    "sector": "Technology",
-    "industry": "Semiconductors",
-    "market_cap": 3992097147.0,
-    "open": 57.28,
-    "high": 58.84,
-    "low": 50.96,
-    "close": 55.06,
-    "prev_close": 60.88,
-    "chg_pct": -9.56,
-    "range_pct": 12.943,
-    "volume": 14730400
-   },
-   {
-    "id": "RBLX",
-    "name": "Roblox",
-    "sector": "Technology",
-    "industry": "Computer Software: Prepackaged Software",
-    "market_cap": 37476161865.0,
-    "open": 45.73,
-    "high": 47.76,
-    "low": 41.362,
-    "close": 42.99,
-    "prev_close": 52.46,
-    "chg_pct": -18.052,
-    "range_pct": 12.196,
-    "volume": 29379600,
-    "verified": true
-   },
-   {
-    "id": "FTRE",
-    "name": "Fortrea Holdings",
-    "sector": "Health Care",
-    "industry": "Medical Specialities",
-    "market_cap": 2200138500.0,
-    "open": 23.295,
-    "high": 23.51,
-    "low": 20.7,
-    "close": 21.29,
-    "prev_close": 23.135,
-    "chg_pct": -7.975,
-    "range_pct": 12.146,
-    "volume": 2873500
-   },
-   {
-    "id": "SXT",
-    "name": "Sensient Technologies",
-    "sector": "Industrials",
-    "industry": "Major Chemicals",
-    "market_cap": 5598286531.0,
-    "open": 112.0,
-    "high": 119.89,
-    "low": 104.25,
-    "close": 117.63,
-    "prev_close": 131.53,
-    "chg_pct": -10.568,
-    "range_pct": 11.891,
-    "volume": 1733400
    }
   ]
  },
@@ -1840,6 +1841,12 @@
    "diff_pct": 0.0
   },
   {
+   "id": "MEOH",
+   "yahoo": 71.57,
+   "nasdaq": 71.57,
+   "diff_pct": 0.0
+  },
+  {
    "id": "REGN",
    "yahoo": 927.89,
    "nasdaq": 927.89,
@@ -1858,6 +1865,12 @@
    "diff_pct": 0.0
   },
   {
+   "id": "BTSG",
+   "yahoo": 66.89,
+   "nasdaq": 66.89,
+   "diff_pct": 0.0
+  },
+  {
    "id": "GDDY",
    "yahoo": 117.24,
    "nasdaq": 117.24,
@@ -1870,21 +1883,9 @@
    "diff_pct": 0.0
   },
   {
-   "id": "HGV",
-   "yahoo": 38.44,
-   "nasdaq": 38.44,
-   "diff_pct": 0.0
-  },
-  {
-   "id": "RKT",
-   "yahoo": 12.8,
-   "nasdaq": 12.8,
-   "diff_pct": 0.0
-  },
-  {
-   "id": "MHK",
-   "yahoo": 139.41,
-   "nasdaq": 139.41,
+   "id": "CDLR",
+   "yahoo": 28.76,
+   "nasdaq": 28.76,
    "diff_pct": 0.0
   },
   {
@@ -1897,6 +1898,12 @@
    "id": "INTC",
    "yahoo": 65.76,
    "nasdaq": 65.76,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "ENHA",
+   "yahoo": 9.43,
+   "nasdaq": 9.43,
    "diff_pct": 0.0
   },
   {
@@ -1924,27 +1931,21 @@
    "diff_pct": 0.0
   },
   {
-   "id": "AUGO",
-   "yahoo": 66.22,
-   "nasdaq": 66.22,
+   "id": "BFAM",
+   "yahoo": 54.98,
+   "nasdaq": 54.98,
    "diff_pct": 0.0
   },
   {
-   "id": "TWLO",
-   "yahoo": 205.03,
-   "nasdaq": 205.03,
+   "id": "TFII",
+   "yahoo": 93.32,
+   "nasdaq": 93.32,
    "diff_pct": 0.0
   },
   {
-   "id": "SKYW",
-   "yahoo": 82.33,
-   "nasdaq": 82.33,
-   "diff_pct": 0.0
-  },
-  {
-   "id": "TXG",
-   "yahoo": 70.11,
-   "nasdaq": 70.11,
+   "id": "BLSH",
+   "yahoo": 23.9,
+   "nasdaq": 23.9,
    "diff_pct": 0.0
   }
  ],
