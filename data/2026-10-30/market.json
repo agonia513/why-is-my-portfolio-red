@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "generated_at": "2026-11-01T01:01:55+00:00",
+ "generated_at": "2026-11-01T01:07:06+00:00",
  "sources": {
   "prices": "Yahoo Finance（经 yfinance）",
   "universe": "Nasdaq 股票筛选器（api.nasdaq.com）",
@@ -8,9 +8,13 @@
   "sectors": "SPDR 行业 ETF 作为 GICS 板块代理"
  },
  "universe": {
-  "count": 2034,
+  "count": 2002,
   "min_market_cap": 2000000000,
-  "country": null
+  "min_price": 5,
+  "country": null,
+  "excluded_split": [
+   "ENHA"
+  ]
  },
  "indices": [
   {
@@ -1468,22 +1472,6 @@
     "verified": true
    },
    {
-    "id": "ENHA",
-    "name": "Enhanced Group",
-    "sector": "Consumer Discretionary",
-    "industry": "Services-Misc. Amusement & Recreation",
-    "market_cap": 5107897013.0,
-    "open": 12.68,
-    "high": 12.77,
-    "low": 9.22,
-    "close": 9.43,
-    "prev_close": 12.91,
-    "chg_pct": -26.956,
-    "range_pct": 27.498,
-    "volume": 92300,
-    "verified": true
-   },
-   {
     "id": "CACC",
     "name": "Credit Acceptance",
     "sector": "Finance",
@@ -1594,25 +1582,25 @@
     "range_pct": 11.802,
     "volume": 2535900,
     "verified": true
+   },
+   {
+    "id": "AUGO",
+    "name": "Aura Minerals",
+    "sector": "Basic Materials",
+    "industry": "Metal Mining",
+    "market_cap": 6560696161.0,
+    "open": 74.0,
+    "high": 75.64,
+    "low": 65.16,
+    "close": 66.22,
+    "prev_close": 78.3,
+    "chg_pct": -15.428,
+    "range_pct": 13.384,
+    "volume": 1667000,
+    "verified": true
    }
   ],
   "swings": [
-   {
-    "id": "ENHA",
-    "name": "Enhanced Group",
-    "sector": "Consumer Discretionary",
-    "industry": "Services-Misc. Amusement & Recreation",
-    "market_cap": 5107897013.0,
-    "open": 12.68,
-    "high": 12.77,
-    "low": 9.22,
-    "close": 9.43,
-    "prev_close": 12.91,
-    "chg_pct": -26.956,
-    "range_pct": 27.498,
-    "volume": 92300,
-    "verified": true
-   },
    {
     "id": "GPN",
     "name": "Global Payments",
@@ -1736,7 +1724,8 @@
     "prev_close": 78.3,
     "chg_pct": -15.428,
     "range_pct": 13.384,
-    "volume": 1667000
+    "volume": 1667000,
+    "verified": true
    },
    {
     "id": "ALMR",
@@ -1752,6 +1741,21 @@
     "chg_pct": -10.106,
     "range_pct": 13.19,
     "volume": 740000
+   },
+   {
+    "id": "CIFR",
+    "name": "Cipher Digital",
+    "sector": "Finance",
+    "industry": "Finance: Consumer Services",
+    "market_cap": 3691418848.0,
+    "open": 7.51,
+    "high": 7.99,
+    "low": 6.93,
+    "close": 7.29,
+    "prev_close": 8.1,
+    "chg_pct": -10.0,
+    "range_pct": 13.086,
+    "volume": 56512500
    }
   ]
  },
@@ -1901,12 +1905,6 @@
    "diff_pct": 0.0
   },
   {
-   "id": "ENHA",
-   "yahoo": 9.43,
-   "nasdaq": 9.43,
-   "diff_pct": 0.0
-  },
-  {
    "id": "CACC",
    "yahoo": 464.89,
    "nasdaq": 464.89,
@@ -1946,6 +1944,12 @@
    "id": "BLSH",
    "yahoo": 23.9,
    "nasdaq": 23.9,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "AUGO",
+   "yahoo": 66.22,
+   "nasdaq": 66.22,
    "diff_pct": 0.0
   }
  ],
