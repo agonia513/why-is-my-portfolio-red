@@ -1,9 +1,10 @@
 {
  "date": "2026-10-30",
- "generated_at": "2026-11-01T00:37:54+00:00",
+ "generated_at": "2026-11-01T00:56:26+00:00",
  "sources": {
   "prices": "Yahoo Finance（经 yfinance）",
   "universe": "Nasdaq 股票筛选器（api.nasdaq.com）",
+  "check": "Nasdaq 历史行情（交叉核对收盘价）",
   "sectors": "SPDR 行业 ETF 作为 GICS 板块代理"
  },
  "universe": {
@@ -97,7 +98,8 @@
    "prev_close": 213.66,
    "chg_pct": -4.222,
    "range_pct": 3.81,
-   "volume": 168039400
+   "volume": 168039400,
+   "verified": true
   },
   {
    "id": "AMD",
@@ -110,7 +112,8 @@
    "prev_close": 566.42,
    "chg_pct": -10.879,
    "range_pct": 4.977,
-   "volume": 39589800
+   "volume": 39589800,
+   "verified": true
   },
   {
    "id": "AVGO",
@@ -123,7 +126,8 @@
    "prev_close": 345.0,
    "chg_pct": -5.484,
    "range_pct": 3.675,
-   "volume": 36462300
+   "volume": 36462300,
+   "verified": true
   },
   {
    "id": "MU",
@@ -136,7 +140,8 @@
    "prev_close": 934.27,
    "chg_pct": -5.301,
    "range_pct": 4.811,
-   "volume": 30762300
+   "volume": 30762300,
+   "verified": true
   },
   {
    "id": "INTC",
@@ -149,7 +154,8 @@
    "prev_close": 92.07,
    "chg_pct": -28.576,
    "range_pct": 6.05,
-   "volume": 454221300
+   "volume": 454221300,
+   "verified": true
   },
   {
    "id": "TSM",
@@ -162,7 +168,8 @@
    "prev_close": 431.81,
    "chg_pct": -5.947,
    "range_pct": 4.162,
-   "volume": 21907500
+   "volume": 21907500,
+   "verified": true
   },
   {
    "id": "MSFT",
@@ -175,7 +182,8 @@
    "prev_close": 530.14,
    "chg_pct": -1.552,
    "range_pct": 2.198,
-   "volume": 35618300
+   "volume": 35618300,
+   "verified": true
   },
   {
    "id": "GOOGL",
@@ -188,7 +196,8 @@
    "prev_close": 283.82,
    "chg_pct": -1.402,
    "range_pct": 2.192,
-   "volume": 65520500
+   "volume": 65520500,
+   "verified": true
   },
   {
    "id": "AMZN",
@@ -201,7 +210,8 @@
    "prev_close": 243.79,
    "chg_pct": -1.411,
    "range_pct": 5.0,
-   "volume": 104775800
+   "volume": 104775800,
+   "verified": true
   },
   {
    "id": "META",
@@ -214,7 +224,8 @@
    "prev_close": 624.52,
    "chg_pct": -1.526,
    "range_pct": 2.6,
-   "volume": 25295900
+   "volume": 25295900,
+   "verified": true
   },
   {
    "id": "AAPL",
@@ -227,7 +238,8 @@
    "prev_close": 348.91,
    "chg_pct": -1.227,
    "range_pct": 4.253,
-   "volume": 67797500
+   "volume": 67797500,
+   "verified": true
   },
   {
    "id": "TSLA",
@@ -240,7 +252,8 @@
    "prev_close": 403.3,
    "chg_pct": -0.865,
    "range_pct": 4.141,
-   "volume": 41644400
+   "volume": 41644400,
+   "verified": true
   }
  ],
  "macro": [
@@ -1262,7 +1275,7 @@
   "gainers": [
    {
     "id": "CDNA",
-    "name": "CareDx Inc. Common Stock",
+    "name": "CareDx",
     "sector": "Health Care",
     "industry": "Medical Specialities",
     "market_cap": 3700031629.0,
@@ -1273,11 +1286,12 @@
     "prev_close": 71.52,
     "chg_pct": 22.218,
     "range_pct": 14.583,
-    "volume": 3553600
+    "volume": 3553600,
+    "verified": true
    },
    {
     "id": "FDXF",
-    "name": "FedEx Freight Holding Company Inc. Common Stock",
+    "name": "FedEx Freight Holding Company",
     "sector": "Consumer Discretionary",
     "industry": "Air Freight/Delivery Services",
     "market_cap": 16400644009.0,
@@ -1288,11 +1302,12 @@
     "prev_close": 109.69,
     "chg_pct": 14.906,
     "range_pct": 11.669,
-    "volume": 3597000
+    "volume": 3597000,
+    "verified": true
    },
    {
     "id": "REGN",
-    "name": "Regeneron Pharmaceuticals Inc. Common Stock",
+    "name": "Regeneron Pharmaceuticals",
     "sector": "Health Care",
     "industry": "Biotechnology: Pharmaceutical Preparations",
     "market_cap": 84296455525.0,
@@ -1303,11 +1318,12 @@
     "prev_close": 818.77,
     "chg_pct": 13.327,
     "range_pct": 11.758,
-    "volume": 2870600
+    "volume": 2870600,
+    "verified": true
    },
    {
     "id": "CVCO",
-    "name": "Cavco Industries Inc. Common Stock When Issued",
+    "name": "Cavco Industries",
     "sector": "Consumer Discretionary",
     "industry": "Homebuilding",
     "market_cap": 4208025245.0,
@@ -1318,11 +1334,12 @@
     "prev_close": 547.25,
     "chg_pct": 13.111,
     "range_pct": 6.971,
-    "volume": 248700
+    "volume": 248700,
+    "verified": true
    },
    {
     "id": "GPN",
-    "name": "Global Payments Inc. Common Stock",
+    "name": "Global Payments",
     "sector": "Consumer Discretionary",
     "industry": "Business Services",
     "market_cap": 22683088391.0,
@@ -1333,11 +1350,12 @@
     "prev_close": 85.72,
     "chg_pct": 12.972,
     "range_pct": 19.435,
-    "volume": 16726200
+    "volume": 16726200,
+    "verified": true
    },
    {
     "id": "GDDY",
-    "name": "GoDaddy Inc. Class A Common Stock",
+    "name": "GoDaddy",
     "sector": "Technology",
     "industry": "EDP Services",
     "market_cap": 13410725377.0,
@@ -1348,11 +1366,12 @@
     "prev_close": 105.89,
     "chg_pct": 10.719,
     "range_pct": 13.608,
-    "volume": 3574800
+    "volume": 3574800,
+    "verified": true
    },
    {
     "id": "INTA",
-    "name": "Intapp Inc. Common Stock",
+    "name": "Intapp",
     "sector": "Technology",
     "industry": "Computer Software: Prepackaged Software",
     "market_cap": 2997068841.0,
@@ -1363,11 +1382,12 @@
     "prev_close": 39.1,
     "chg_pct": 7.954,
     "range_pct": 8.107,
-    "volume": 1135000
+    "volume": 1135000,
+    "verified": true
    },
    {
     "id": "HGV",
-    "name": "Hilton Grand Vacations Inc. Common Stock ",
+    "name": "Hilton Grand Vacations",
     "sector": "Consumer Discretionary",
     "industry": "Hotels/Resorts",
     "market_cap": 2775529218.0,
@@ -1378,11 +1398,12 @@
     "prev_close": 35.71,
     "chg_pct": 7.645,
     "range_pct": 9.395,
-    "volume": 1877900
+    "volume": 1877900,
+    "verified": true
    },
    {
     "id": "RKT",
-    "name": "Rocket Companies Inc. Class A Common Stock",
+    "name": "Rocket Companies",
     "sector": "Finance",
     "industry": "Finance: Consumer Services",
     "market_cap": 33753177658.0,
@@ -1393,11 +1414,12 @@
     "prev_close": 11.92,
     "chg_pct": 7.383,
     "range_pct": 4.924,
-    "volume": 54367400
+    "volume": 54367400,
+    "verified": true
    },
    {
     "id": "MHK",
-    "name": "Mohawk Industries Inc. Common Stock",
+    "name": "Mohawk Industries",
     "sector": "Consumer Discretionary",
     "industry": "Home Furnishings",
     "market_cap": 8805281469.0,
@@ -1408,13 +1430,14 @@
     "prev_close": 129.99,
     "chg_pct": 7.247,
     "range_pct": 8.847,
-    "volume": 3016800
+    "volume": 3016800,
+    "verified": true
    }
   ],
   "losers": [
    {
     "id": "RDDT",
-    "name": "Reddit Inc. Class A Common Stock",
+    "name": "Reddit",
     "sector": "Technology",
     "industry": "EDP Services",
     "market_cap": 24934587696.0,
@@ -1425,11 +1448,12 @@
     "prev_close": 129.6,
     "chg_pct": -29.221,
     "range_pct": 9.799,
-    "volume": 33313200
+    "volume": 33313200,
+    "verified": true
    },
    {
     "id": "INTC",
-    "name": "Intel Corporation Common Stock",
+    "name": "Intel",
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 486596349878.0,
@@ -1440,11 +1464,12 @@
     "prev_close": 92.07,
     "chg_pct": -28.576,
     "range_pct": 6.05,
-    "volume": 454221300
+    "volume": 454221300,
+    "verified": true
    },
    {
     "id": "CACC",
-    "name": "Credit Acceptance Corporation Common Stock",
+    "name": "Credit Acceptance",
     "sector": "Finance",
     "industry": "Finance: Consumer Services",
     "market_cap": 5976930352.0,
@@ -1455,11 +1480,12 @@
     "prev_close": 575.78,
     "chg_pct": -19.259,
     "range_pct": 11.214,
-    "volume": 386300
+    "volume": 386300,
+    "verified": true
    },
    {
     "id": "ILMN",
-    "name": "Illumina Inc. Common Stock",
+    "name": "Illumina",
     "sector": "Health Care",
     "industry": "Medical Specialities",
     "market_cap": 43799060000.0,
@@ -1470,11 +1496,12 @@
     "prev_close": 290.06,
     "chg_pct": -18.641,
     "range_pct": 8.588,
-    "volume": 5389800
+    "volume": 5389800,
+    "verified": true
    },
    {
     "id": "RBLX",
-    "name": "Roblox Corporation Class A Common Stock",
+    "name": "Roblox",
     "sector": "Technology",
     "industry": "Computer Software: Prepackaged Software",
     "market_cap": 37476161865.0,
@@ -1485,11 +1512,12 @@
     "prev_close": 52.46,
     "chg_pct": -18.052,
     "range_pct": 12.196,
-    "volume": 29379600
+    "volume": 29379600,
+    "verified": true
    },
    {
     "id": "AGIO",
-    "name": "Agios Pharmaceuticals Inc. Common Stock",
+    "name": "Agios Pharmaceuticals",
     "sector": "Health Care",
     "industry": "Biotechnology: Pharmaceutical Preparations",
     "market_cap": 2222701067.0,
@@ -1500,11 +1528,12 @@
     "prev_close": 37.23,
     "chg_pct": -17.943,
     "range_pct": 8.595,
-    "volume": 3094300
+    "volume": 3094300,
+    "verified": true
    },
    {
     "id": "AUGO",
-    "name": "Aura Minerals Inc. Common Shares",
+    "name": "Aura Minerals",
     "sector": "Basic Materials",
     "industry": "Metal Mining",
     "market_cap": 6560696161.0,
@@ -1515,11 +1544,12 @@
     "prev_close": 78.3,
     "chg_pct": -15.428,
     "range_pct": 13.384,
-    "volume": 1667000
+    "volume": 1667000,
+    "verified": true
    },
    {
     "id": "TWLO",
-    "name": "Twilio Inc. Class A Common Stock",
+    "name": "Twilio",
     "sector": "Technology",
     "industry": "Computer Software: Prepackaged Software",
     "market_cap": 37149845718.0,
@@ -1530,11 +1560,12 @@
     "prev_close": 241.9,
     "chg_pct": -15.242,
     "range_pct": 11.122,
-    "volume": 7343100
+    "volume": 7343100,
+    "verified": true
    },
    {
     "id": "SKYW",
-    "name": "SkyWest Inc. Common Stock",
+    "name": "SkyWest",
     "sector": "Consumer Discretionary",
     "industry": "Air Freight/Delivery Services",
     "market_cap": 3748486496.0,
@@ -1545,11 +1576,12 @@
     "prev_close": 96.54,
     "chg_pct": -14.719,
     "range_pct": 7.417,
-    "volume": 828900
+    "volume": 828900,
+    "verified": true
    },
    {
     "id": "TXG",
-    "name": "10x Genomics Inc. Class A Common Stock",
+    "name": "10x Genomics",
     "sector": "Industrials",
     "industry": "Biotechnology: Laboratory Analytical Instruments",
     "market_cap": 10625244750.0,
@@ -1560,13 +1592,14 @@
     "prev_close": 81.55,
     "chg_pct": -14.028,
     "range_pct": 10.264,
-    "volume": 5216800
+    "volume": 5216800,
+    "verified": true
    }
   ],
   "swings": [
    {
     "id": "GPN",
-    "name": "Global Payments Inc. Common Stock",
+    "name": "Global Payments",
     "sector": "Consumer Discretionary",
     "industry": "Business Services",
     "market_cap": 22683088391.0,
@@ -1577,11 +1610,12 @@
     "prev_close": 85.72,
     "chg_pct": 12.972,
     "range_pct": 19.435,
-    "volume": 16726200
+    "volume": 16726200,
+    "verified": true
    },
    {
     "id": "CDNA",
-    "name": "CareDx Inc. Common Stock",
+    "name": "CareDx",
     "sector": "Health Care",
     "industry": "Medical Specialities",
     "market_cap": 3700031629.0,
@@ -1592,11 +1626,12 @@
     "prev_close": 71.52,
     "chg_pct": 22.218,
     "range_pct": 14.583,
-    "volume": 3553600
+    "volume": 3553600,
+    "verified": true
    },
    {
     "id": "GDDY",
-    "name": "GoDaddy Inc. Class A Common Stock",
+    "name": "GoDaddy",
     "sector": "Technology",
     "industry": "EDP Services",
     "market_cap": 13410725377.0,
@@ -1607,11 +1642,12 @@
     "prev_close": 105.89,
     "chg_pct": 10.719,
     "range_pct": 13.608,
-    "volume": 3574800
+    "volume": 3574800,
+    "verified": true
    },
    {
     "id": "AUGO",
-    "name": "Aura Minerals Inc. Common Shares",
+    "name": "Aura Minerals",
     "sector": "Basic Materials",
     "industry": "Metal Mining",
     "market_cap": 6560696161.0,
@@ -1622,11 +1658,12 @@
     "prev_close": 78.3,
     "chg_pct": -15.428,
     "range_pct": 13.384,
-    "volume": 1667000
+    "volume": 1667000,
+    "verified": true
    },
    {
     "id": "ALMR",
-    "name": "Alamar Biosciences Inc. Common Stock",
+    "name": "Alamar Biosciences",
     "sector": "Industrials",
     "industry": "Biotechnology: Laboratory Analytical Instruments",
     "market_cap": 2362129755.0,
@@ -1641,7 +1678,7 @@
    },
    {
     "id": "CIFR",
-    "name": "Cipher Digital Inc. Common Stock",
+    "name": "Cipher Digital",
     "sector": "Finance",
     "industry": "Finance: Consumer Services",
     "market_cap": 3691418848.0,
@@ -1656,7 +1693,7 @@
    },
    {
     "id": "AXTI",
-    "name": "AXT Inc Common Stock",
+    "name": "AXT",
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 3992097147.0,
@@ -1671,7 +1708,7 @@
    },
    {
     "id": "RBLX",
-    "name": "Roblox Corporation Class A Common Stock",
+    "name": "Roblox",
     "sector": "Technology",
     "industry": "Computer Software: Prepackaged Software",
     "market_cap": 37476161865.0,
@@ -1682,11 +1719,12 @@
     "prev_close": 52.46,
     "chg_pct": -18.052,
     "range_pct": 12.196,
-    "volume": 29379600
+    "volume": 29379600,
+    "verified": true
    },
    {
     "id": "FTRE",
-    "name": "Fortrea Holdings Inc. Common Stock",
+    "name": "Fortrea Holdings",
     "sector": "Health Care",
     "industry": "Medical Specialities",
     "market_cap": 2200138500.0,
@@ -1701,7 +1739,7 @@
    },
    {
     "id": "SXT",
-    "name": "Sensient Technologies Corporation Common Stock",
+    "name": "Sensient Technologies",
     "sector": "Industrials",
     "industry": "Major Chemicals",
     "market_cap": 5598286531.0,
@@ -1716,26 +1754,199 @@
    }
   ]
  },
- "warnings": [
-  "CDNA: yfinance 22.22% vs nasdaq -0.85%",
-  "FDXF: yfinance 14.91% vs nasdaq 1.25%",
-  "REGN: yfinance 13.33% vs nasdaq 0.68%",
-  "CVCO: yfinance 13.11% vs nasdaq 2.76%",
-  "GPN: yfinance 12.97% vs nasdaq 2.60%",
-  "GDDY: yfinance 10.72% vs nasdaq -0.61%",
-  "INTA: yfinance 7.95% vs nasdaq -3.07%",
-  "HGV: yfinance 7.64% vs nasdaq 0.51%",
-  "RKT: yfinance 7.38% vs nasdaq 3.02%",
-  "MHK: yfinance 7.25% vs nasdaq 1.73%",
-  "RDDT: yfinance -29.22% vs nasdaq -3.79%",
-  "INTC: yfinance -28.58% vs nasdaq -3.62%",
-  "CACC: yfinance -19.26% vs nasdaq 5.67%",
-  "ILMN: yfinance -18.64% vs nasdaq 0.44%",
-  "RBLX: yfinance -18.05% vs nasdaq -1.54%",
-  "AGIO: yfinance -17.94% vs nasdaq -2.33%",
-  "AUGO: yfinance -15.43% vs nasdaq -4.30%",
-  "TWLO: yfinance -15.24% vs nasdaq -4.68%",
-  "SKYW: yfinance -14.72% vs nasdaq 1.33%",
-  "TXG: yfinance -14.03% vs nasdaq -2.48%"
- ]
+ "crosscheck": [
+  {
+   "id": "NVDA",
+   "yahoo": 204.64,
+   "nasdaq": 204.64,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "AMD",
+   "yahoo": 504.8,
+   "nasdaq": 504.8,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "AVGO",
+   "yahoo": 326.08,
+   "nasdaq": 326.08,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "MU",
+   "yahoo": 884.74,
+   "nasdaq": 884.74,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "INTC",
+   "yahoo": 65.76,
+   "nasdaq": 65.76,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "TSM",
+   "yahoo": 406.13,
+   "nasdaq": 406.13,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "MSFT",
+   "yahoo": 521.91,
+   "nasdaq": 521.91,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "GOOGL",
+   "yahoo": 279.84,
+   "nasdaq": 279.84,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "AMZN",
+   "yahoo": 240.35,
+   "nasdaq": 240.35,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "META",
+   "yahoo": 614.99,
+   "nasdaq": 614.99,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "AAPL",
+   "yahoo": 344.63,
+   "nasdaq": 344.63,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "TSLA",
+   "yahoo": 399.81,
+   "nasdaq": 399.81,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "CDNA",
+   "yahoo": 87.41,
+   "nasdaq": 87.41,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "FDXF",
+   "yahoo": 126.04,
+   "nasdaq": 126.04,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "REGN",
+   "yahoo": 927.89,
+   "nasdaq": 927.89,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "CVCO",
+   "yahoo": 619.0,
+   "nasdaq": 619.0,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "GPN",
+   "yahoo": 96.84,
+   "nasdaq": 96.84,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "GDDY",
+   "yahoo": 117.24,
+   "nasdaq": 117.24,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "INTA",
+   "yahoo": 42.21,
+   "nasdaq": 42.21,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "HGV",
+   "yahoo": 38.44,
+   "nasdaq": 38.44,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "RKT",
+   "yahoo": 12.8,
+   "nasdaq": 12.8,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "MHK",
+   "yahoo": 139.41,
+   "nasdaq": 139.41,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "RDDT",
+   "yahoo": 91.73,
+   "nasdaq": 91.73,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "INTC",
+   "yahoo": 65.76,
+   "nasdaq": 65.76,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "CACC",
+   "yahoo": 464.89,
+   "nasdaq": 464.89,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "ILMN",
+   "yahoo": 235.99,
+   "nasdaq": 235.99,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "RBLX",
+   "yahoo": 42.99,
+   "nasdaq": 42.99,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "AGIO",
+   "yahoo": 30.55,
+   "nasdaq": 30.55,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "AUGO",
+   "yahoo": 66.22,
+   "nasdaq": 66.22,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "TWLO",
+   "yahoo": 205.03,
+   "nasdaq": 205.03,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "SKYW",
+   "yahoo": 82.33,
+   "nasdaq": 82.33,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "TXG",
+   "yahoo": 70.11,
+   "nasdaq": 70.11,
+   "diff_pct": 0.0
+  }
+ ],
+ "warnings": []
 }
