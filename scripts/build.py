@@ -39,7 +39,9 @@ def tone(v):
 def load(day):
     d = DATA / day
     j = lambda n: json.loads((d / f"{n}.json").read_text(encoding="utf-8"))
-    return {n: j(n) for n in ["meta", "quotes", "levels", "movers", "sectors", "briefs"]}
+    out = {n: j(n) for n in ["meta", "quotes", "levels", "movers", "sectors", "briefs"]}
+    out["buzz"] = j("buzz") if (d / "buzz.json").exists() else []
+    return out
 
 
 # ---------- charts (static SVG, styled by CSS classes) ----------
@@ -97,6 +99,16 @@ def barcell(v, mx):
     return f'<div class="mini"><i></i><span class="{tone(v)}" style="left:{left:.1f}%;width:{w:.1f}%"></span></div>'
 
 
+def buzz_html(rows):
+    if not rows:
+        return ""
+    cards = "".join(
+        f'<figure class="buzz"><blockquote>{e(r["quote"])}</blockquote>'
+        f'<figcaption><b>{e(r["who"])}</b> · {a(r["platform"], r["url"])}<br><span class="muted">{e(r["context"])}</span></figcaption></figure>'
+        for r in rows)
+    return f'<section><h2><span class="no">🍿</span>吃瓜群众怎么说</h2><p class="muted small">摘自公开社交媒体，仅为气氛参考，不代表本站观点</p><div class="buzzes">{cards}</div></section>'
+
+
 def a(src, url):
     return f'<a href="{e(url)}" target="_blank" rel="noopener">{e(src)}</a>'
 
@@ -146,10 +158,10 @@ def issue_body(d, root, prev_day=None, next_day=None):
         return "".join(out)
 
     srcs = {}
-    for coll in ["quotes", "levels", "movers", "sectors", "briefs"]:
+    for coll in ["quotes", "levels", "movers", "sectors", "briefs", "buzz"]:
         for r in d[coll]:
             if r.get("url"):
-                srcs.setdefault(r["url"], r["src"])
+                srcs.setdefault(r["url"], r.get("src") or f'{r["who"]}（{r["platform"]}）')
 
     pager = '<nav class="pager">'
     pager += f'<a href="{root}{prev_day}/index.html">← {prev_day}</a>' if prev_day else "<span></span>"
@@ -191,6 +203,7 @@ def issue_body(d, root, prev_day=None, next_day=None):
 <section><h2><span class="no">07</span>影响美股的关键新闻</h2><div class="items">{items(sec("news"), ["事件事实", "影响资产", "影响推断"])}</div></section>
 <section><h2><span class="no">08</span>过去 24 小时国际大事</h2><div class="items">{items(sec("world"), ["发生了什么", "相关资产", "传导路径"])}</div></section>
 <section><h2><span class="no">09</span>重要人物发言</h2><div class="items">{items(sec("speaker"), ["说了什么", "", "市场含义"])}</div></section>
+{buzz_html(d["buzz"])}
 <section><h2><span class="no">10</span>明日 / 下周关注</h2><div class="items">{items(sec("watch"), ["内容", "相关资产", "为什么关注"])}</div></section>
 
 <section class="card"><h2><span class="no">11</span>数据来源与说明</h2>
@@ -245,6 +258,11 @@ svg .dot.down,svg .bar.down{fill:var(--down)}svg .bar.up{fill:var(--up)}
 .arch{list-style:none;padding:0}.arch li{display:grid;grid-template-columns:7.5em 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
 .arch .d{color:var(--muted);font-variant-numeric:tabular-nums}.arch a{font-family:var(--serif);font-size:18px;text-decoration:none}
 .prose{max-width:680px}
+.small{font-size:13px;margin:-6px 0 12px}
+.buzzes{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr))}
+.buzz{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;justify-content:space-between;gap:10px}
+.buzz blockquote{margin:0;font-family:var(--serif);font-size:18px;line-height:1.45}.buzz blockquote::before{content:"“";color:var(--down)}.buzz blockquote::after{content:"”";color:var(--down)}
+.buzz figcaption{font-size:13px;line-height:1.6}
 """
 
 
