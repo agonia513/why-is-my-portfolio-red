@@ -214,6 +214,14 @@ def main():
         diff = abs(c2 / x["close"] - 1) * 100
         x["verified"] = diff <= 0.5
         checks.append(dict(id=x["id"], yahoo=x["close"], nasdaq=c2, diff_pct=r(diff, 3)))
+    if not checks:  # print one raw answer so a blocked or changed API is diagnosable from the log
+        try:
+            probe = requests.get(f"https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&fromdate={day}&todate={day}&limit=5",
+                                 headers=UA, timeout=20)
+            print("nasdaq probe", probe.status_code, probe.text[:400])
+        except Exception as ex:
+            print("nasdaq probe failed", repr(ex))
+
     res = dict(date=day.isoformat(), generated_at=dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
                sources=dict(prices="Yahoo Finance（经 yfinance）", universe="Nasdaq 股票筛选器（api.nasdaq.com）", check="Nasdaq 历史行情（交叉核对收盘价）",
                             sectors="SPDR 行业 ETF 作为 GICS 板块代理"),

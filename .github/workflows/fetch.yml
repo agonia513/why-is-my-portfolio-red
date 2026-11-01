@@ -45,7 +45,7 @@ jobs:
           cp "data/$D/market.json" /tmp/market.json
           B="draft/$D"
           if git ls-remote --exit-code --heads origin "$B" >/dev/null; then
-            git fetch origin "$B" && git checkout -B "$B" "origin/$B"
+            git fetch origin "$B" && git checkout -f -B "$B" "origin/$B"
           else
             git checkout -B "$B"
           fi
