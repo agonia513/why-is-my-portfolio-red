@@ -1,0 +1,162 @@
+[
+ {
+  "id": "n1",
+  "section": "news",
+  "title": "Marvell 千亿美元换股收购 Lumentum，两家股价双双重挫",
+  "fact": "Marvell 宣布以全股票方式收购光模块厂商 Lumentum，每股 Lumentum 换 4.5 股 Marvell，交易额约 1150 亿美元（溢价约 24%），用 Lumentum 的磷化铟激光技术补足 AI 互连。",
+  "assets": "MRVL、LITE、光通信与 AI 网络链（COHR、AAOI 等）",
+  "inference": "市场的反应说明：在 AI 硬件估值高位，用股票买股票的大并购被视为“高位接盘+稀释”，而不是协同利好。",
+  "src": "Motley Fool",
+  "url": "https://www.fool.com/investing/2026/11/02/why-marvell-technology-plunged-today/"
+ },
+ {
+  "id": "n2",
+  "section": "news",
+  "title": "甲骨文增发股票并发债，为 AI 数据中心筹资",
+  "fact": "甲骨文提交文件，计划发行约 100 亿美元普通股和约 100 亿美元债券，用于 AI 基础设施建设；此前一周它刚公布了更高的资本开支计划。",
+  "assets": "ORCL、AI 基础设施与云服务链、投资级信用债",
+  "inference": "“AI 投入谁来买单”从利润表问题变成了资产负债表问题：靠借钱和增发扩张的公司在被重新定价。",
+  "src": "Yahoo Finance",
+  "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-midday-nov-2-171255737.html"
+ },
+ {
+  "id": "n3",
+  "section": "news",
+  "title": "苹果财年 Q4 营收、利润均超预期（盘后）",
+  "fact": "营收 1145 亿美元、同比 +12%，创九月季度纪录；EPS 2.10 美元高于预期的约 1.99 美元；iPhone 营收 575.8 亿美元，服务营收创历史新高；这是新任 CEO John Ternus 的首份财报。",
+  "assets": "AAPL、苹果供应链",
+  "inference": "苹果是这轮 AI 抛售中的“避风港”，财报稳住了它的防守属性；盘后走势和电话会上的指引、内存成本说法，会影响周二开盘。",
+  "src": "MacDailyNews（据苹果财报）",
+  "url": "https://macdailynews.com/2026/11/02/apple-beats-the-street-with-all-time-record-fiscal-q4-earnings/"
+ },
+ {
+  "id": "n4",
+  "section": "news",
+  "title": "Palantir Q3 营收同比 +96%，上调全年指引（盘后）",
+  "fact": "Q3 营收 23.1 亿美元、首次突破 20 亿；美国商业收入同比 +148%，首次超过美国政府收入；全年营收指引上调至约 85.3 亿美元。",
+  "assets": "PLTR、AI 软件股",
+  "inference": "和芯片股的“烧钱”叙事相反，AI 软件端已在兑现利润——资金可能在 AI 链内部从硬件向软件、应用层转移。",
+  "src": "StockTitan（转载 Palantir 公告）",
+  "url": "https://www.stocktitan.net/news/PLTR/palantir-reports-q3-2026-u-s-comm-revenue-growth-of-148-y-y-and-quyw16dj59bm.html"
+ },
+ {
+  "id": "n5",
+  "section": "news",
+  "title": "10 月 ISM 制造业指数升至 55.5，好于预期",
+  "fact": "ISM 制造业指数从 54.5 升至 55.5，连续第十个月处于扩张区间；生产分项为 2021 年 11 月以来最高，价格分项回落但仍在高位。",
+  "assets": "美债收益率、工业股、美元",
+  "inference": "经济不弱、物价不低——这正是美联储考虑 12 月加息的理由，对高估值成长股不是好消息。",
+  "src": "Yahoo Finance",
+  "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html"
+ },
+ {
+  "id": "w1",
+  "section": "world",
+  "title": "美伊重燃外交希望，原油大跌",
+  "fact": "国务卿鲁比奥表示华盛顿倾向于和平解决冲突；另有报道称伊朗最高领袖授权政府进行谈判。伊朗谈判代表此前已在多哈与调停方达成协议框架。",
+  "assets": "原油、能源股、航空股、通胀预期",
+  "inference": "路径：油价↓ → 通胀预期↓ → 航空、零售等用油大户受益（当天可选消费领涨），能源股和油服股承压。但谈判反复是常态，油价可能剧烈来回。",
+  "src": "StockTitan 收盘直播",
+  "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-2-2026"
+ },
+ {
+  "id": "w2",
+  "section": "world",
+  "title": "欧亚天然气价格同步下滑",
+  "fact": "伊朗提出有条件重开霍尔木兹海峡，欧洲与亚洲天然气价格从 2022 年以来的高位回落；美国 Freeport LNG 因停电三条生产线全部停摆，限制了美国出口。",
+  "assets": "LNG 出口商（VG、LNG）、欧洲能源股",
+  "inference": "霍尔木兹若真正恢复通航，全球气价的“战争溢价”会继续回吐，美国 LNG 出口商的高价差红利会被压缩。",
+  "src": "NGI（Natural Gas Intelligence）",
+  "url": "https://naturalgasintel.com/news/european-asian-natural-gas-prices-slide-as-iran-talks-raise-hopes-for-lng-relief/"
+ },
+ {
+  "id": "w3",
+  "section": "world",
+  "title": "币安遭遇约 63 亿美元黑客攻击，比特币走弱",
+  "fact": "FBI 将此次攻击与朝鲜相关联；币安称已覆盖约 95% 的受影响资金。",
+  "assets": "比特币、加密资产相关股（COIN、MSTR 等）",
+  "inference": "加密市场的风险偏好受挫，与科技股抛售叠加，高贝塔资产整体承压。",
+  "src": "Yahoo Finance",
+  "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html"
+ },
+ {
+  "id": "s1",
+  "section": "speaker",
+  "title": "特朗普（周日晚爱荷华集会，非当日交易时段）",
+  "fact": "称对伊朗“还没收尾只是因为我想表现得友善”，但“到某个时候必须给他们一记重锤”，并说冲突“很快就会结束”。",
+  "assets": "",
+  "inference": "一边放软谈判、一边保留军事威胁，油价对他的每句话都会高度敏感；中期选举前后的表态值得盯紧。",
+  "src": "Fox News 直播",
+  "url": "https://www.foxnews.com/live-news/iran-war-news-trump-midterms-peace-deal-israel-november-2"
+ },
+ {
+  "id": "s2",
+  "section": "speaker",
+  "title": "国务卿鲁比奥",
+  "fact": "表示美国更希望“和平地”解决与伊朗的冲突。",
+  "assets": "",
+  "inference": "这是当天油价下跌的直接催化之一；外交口风和总统的强硬措辞并存，市场在两者之间来回定价。",
+  "src": "StockTitan 收盘直播",
+  "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-2-2026"
+ },
+ {
+  "id": "s3",
+  "section": "speaker",
+  "title": "苹果 CEO John Ternus",
+  "fact": "首份财报中称服务业务收入创历史新高，iPhone 创九月季度纪录。",
+  "assets": "",
+  "inference": "新 CEO 首秀交出稳健答卷，有助于苹果维持“AI 抛售中的避险股”定位。",
+  "src": "MacDailyNews（据苹果财报）",
+  "url": "https://macdailynews.com/2026/11/02/apple-beats-the-street-with-all-time-record-fiscal-q4-earnings/"
+ },
+ {
+  "id": "s4",
+  "section": "speaker",
+  "title": "Apollo 首席经济学家 Torsten Sløk",
+  "fact": "认为美联储离通胀目标可能比市场以为的更远，甚至可能需要累计约 275 个基点的加息。",
+  "assets": "",
+  "inference": "属于偏鹰的极端观点，但反映出市场对“加息周期远未结束”的担忧；联邦基金期货显示 12 月加息 25 个基点的概率约 76%。",
+  "src": "Yahoo Finance",
+  "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html"
+ },
+ {
+  "id": "t1",
+  "section": "watch",
+  "title": "周二 11/3：美国中期选举；AMD 盘后财报",
+  "fact": "选举结果被认为对伊朗战事走向至关重要；AMD 是本轮芯片抛售后第一个公布财报的大型芯片公司。",
+  "assets": "全市场、AMD、半导体、原油",
+  "inference": "选举影响财政、监管与外交预期；AMD 的数据中心指引将检验“AI 需求还在不在”。",
+  "src": "StockTitan 财报日历",
+  "url": "https://www.stocktitan.net/articles/earnings-calendar-week-of-november-2-2026"
+ },
+ {
+  "id": "t2",
+  "section": "watch",
+  "title": "周二 JOLTS 职位空缺；超微电脑（SMCI）盘后财报",
+  "fact": "周二盘前还有 MPC、ADM 等公司财报。",
+  "assets": "美债、AI 服务器链",
+  "inference": "劳动力市场数据偏热会强化 12 月加息预期。",
+  "src": "Market Alleys 收盘速递",
+  "url": "https://www.marketalleys.com/post/marketalleys-closing-tape-2026-11-02"
+ },
+ {
+  "id": "t3",
+  "section": "watch",
+  "title": "周五 11/6：10 月非农就业",
+  "fact": "道琼斯调查的经济学家预期新增约 5.5 万个就业岗位。",
+  "assets": "全市场、美债",
+  "inference": "本周最重要的宏观数据，直接影响 12 月是否加息。",
+  "src": "StockTitan 收盘直播",
+  "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-2-2026"
+ },
+ {
+  "id": "t4",
+  "section": "watch",
+  "title": "苹果、Palantir 盘后反应与电话会",
+  "fact": "两家公司均在收盘后发布财报，业绩高于预期。",
+  "assets": "AAPL、PLTR、纳指",
+  "inference": "如果“AI 软件+稳健硬件”获得买盘，可能缓和周一的科技抛售；反之，抛售可能向非芯片科技股扩散。",
+  "src": "Benzinga",
+  "url": "https://www.benzinga.com/markets/earnings/26/11/62799346/palantir-posts-q3-double-beat-lifts-guidance-extraordinary-is-an-understatement"
+ }
+]

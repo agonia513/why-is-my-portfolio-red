@@ -1,0 +1,72 @@
+{
+  "stocks": {
+    "AAPL": "盘后公布财年 Q4：营收 1145 亿美元、EPS 2.10 美元，均高于预期；新 CEO Ternus 首次财报",
+    "INTC": "上周 Q4 指引暴雷后继续下跌",
+    "AMD": "周二盘后发财报",
+    "AMZN": "大型科技股中少有的上涨者，市场重新评估其云业务增长",
+    "MSFT": "随科技板块走弱",
+    "NVDA": "芯片股普跌中跌幅相对较小"
+  },
+  "movers": {
+    "IDXX": {
+      "comment": "Q3 营收 12.1 亿美元、同比 +10%，EPS 4.01 美元高于预期；上调全年营收与调整后 EPS 指引",
+      "src": "Grafa（据 IDEXX 财报）",
+      "url": "https://grafa.com/en/news/united-states/idexx-laboratories-q3-2026-revenue-rises-10-percent"
+    },
+    "NWL": {
+      "comment": "上周五发布 Q3：核心销售同比 +3.3%、高于公司计划，上调全年净销售与核心销售增长指引；媒体将周一大涨归因于此",
+      "src": "Seeking Alpha / Newell 8-K",
+      "url": "https://seekingalpha.com/news/4662891-newell-brands-soars-15-on-q3-sales-beat-raised-outlook"
+    },
+    "NXT": {
+      "comment": "Jefferies 将其列为“franchise pick”（重点推荐股）；上周公布的财季业绩超预期并上调了 2027 财年展望",
+      "src": "Seeking Alpha",
+      "url": "https://seekingalpha.com/news/4662830-nextpower-rallies-15-after-jefferies-names-franchise-pick"
+    },
+    "PHIN": {
+      "comment": "瑞银将目标价由 68 美元上调至 69 美元（维持中性）；公司 10 月 29 日公布 Q3，EPS 1.83 美元高于预期的 1.68 美元",
+      "src": "MarketBeat",
+      "url": "https://www.marketbeat.com/instant-alerts/price-phinia-nyse-phin-stock-price-up-77-after-analyst-upgrade-2026-11-02/"
+    },
+    "SFM": {
+      "comment": "当天未见公司层面新闻；10 月 28 日 Q3 营收、EPS 均略低于预期后股价大跌，本周一随必需消费板块反弹（报道未给出具体催化剂）",
+      "src": "MarketBeat",
+      "url": "https://www.marketbeat.com/instant-alerts/price-sprouts-farmers-market-nasdaq-sfm-shares-climb-91-still-a-buy-2026-11-02/"
+    },
+    "PGEN": {
+      "comment": "竞争对手 Inovio 的 DNA 疗法 VOCERYQ 上周五获 FDA 加速批准，将与 Precigen 已上市的同适应症（复发性呼吸道乳头状瘤病）药物直接竞争",
+      "src": "Stocktwits News",
+      "url": "https://stocktwits.com/news-articles/markets/equity/pgen-stock-craters-27-after-hours-after-rival-inovio-s-rare-disease-drug-receives-fda-approval/cZULe5AR9ce"
+    },
+    "LITE": {
+      "comment": "Marvell 宣布以全股票方式收购（每股换 4.5 股 Marvell，交易额约 1150 亿美元），随 Marvell 大跌而联动下挫，监管周期长也使折价扩大；同日公布的财季营收同比增长 136.5%，未能抵消跌势",
+      "src": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/02/why-lumentum-stock-fell-14-9-today/"
+    },
+    "TWST": {
+      "comment": "当天没有公司新闻；基因组学工具股集体回吐上周三的反弹（10x Genomics、PacBio 同步下跌），估值偏高被认为放大了波动",
+      "src": "TIKR",
+      "url": "https://www.tikr.com/blog/10x-genomics-sinks-12-twist-down-15-pacbio-down-10-as-genomics-stocks-give-back-rebound"
+    },
+    "LBRT": {
+      "comment": "油价因美伊谈判希望大跌，油服股承压，当天创 52 周新低；此前 Q3 业绩小幅不及预期并由盈转亏",
+      "src": "Investing.com",
+      "url": "https://www.investing.com/news/company-news/liberty-energy-stock-hits-52week-low-at-1476-usd-93CH-4992684"
+    },
+    "VG": {
+      "comment": "当天没有公司层面利空（周日刚宣布 Plaquemines LNG 一期投入商业运营）；同日欧亚天然气价格因美伊谈判、伊朗提出有条件重开霍尔木兹而下滑，但报道未直接点名该股",
+      "src": "NGI（Natural Gas Intelligence）",
+      "url": "https://naturalgasintel.com/news/european-asian-natural-gas-prices-slide-as-iran-talks-raise-hopes-for-lng-relief/"
+    },
+    "MRVL": {
+      "comment": "宣布约 1150 亿美元全股票收购 Lumentum（溢价约 24%）；市场担心高位收购、股本稀释与整合风险",
+      "src": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/02/why-marvell-technology-plunged-today/"
+    },
+    "CBRS": {
+      "comment": "瑞银维持买入但把目标价由 330 美元下调至 250 美元；上周还遭做空机构 Culper Research 发报告质疑",
+      "src": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/02/why-cerebras-systems-stock-is-plummeting-today/"
+    }
+  }
+}
