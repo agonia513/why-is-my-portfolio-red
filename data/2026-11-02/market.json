@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "generated_at": "2026-11-02T22:26:30+00:00",
+ "generated_at": "2026-11-03T02:59:51+00:00",
  "sources": {
   "prices": "Yahoo Finance（经 yfinance）",
   "universe": "Nasdaq 股票筛选器（api.nasdaq.com）",
@@ -8,7 +8,7 @@
   "sectors": "SPDR 行业 ETF 作为 GICS 板块代理"
  },
  "universe": {
-  "count": 1974,
+  "count": 1978,
   "min_market_cap": 2000000000,
   "min_price": 5,
   "country": null,
@@ -35,11 +35,11 @@
    "open": 25600.1738,
    "high": 25799.4551,
    "low": 25145.9512,
-   "close": 25164.3164,
+   "close": 25164.3633,
    "prev_close": 25437.0,
    "chg_pct": -1.072,
    "range_pct": 2.569,
-   "volume": 7985701000
+   "volume": 8002403000
   },
   {
    "id": "DJI",
@@ -95,118 +95,120 @@
    "id": "NVDA",
    "name": "英伟达",
    "group": "AI 芯片",
-   "open": 207.59,
-   "high": 209.9769,
+   "open": 207.53,
+   "high": 209.98,
    "low": 201.66,
    "close": 202.06,
    "prev_close": 204.64,
    "chg_pct": -1.261,
-   "range_pct": 4.064,
-   "volume": 117533823
+   "range_pct": 4.066,
+   "volume": 118687200
   },
   {
    "id": "AMD",
    "name": "AMD",
    "group": "AI 芯片",
-   "open": 510.65,
+   "open": 510.71,
    "high": 512.82,
-   "low": 466.0717,
+   "low": 466.07,
    "close": 466.84,
    "prev_close": 504.8,
    "chg_pct": -7.52,
    "range_pct": 9.261,
-   "volume": 31757911
+   "volume": 31990800,
+   "verified": true
   },
   {
    "id": "AVGO",
    "name": "博通",
    "group": "AI 芯片",
-   "open": 328.44,
-   "high": 333.5599,
-   "low": 321.865,
+   "open": 328.37,
+   "high": 333.56,
+   "low": 321.87,
    "close": 322.23,
    "prev_close": 326.08,
    "chg_pct": -1.181,
-   "range_pct": 3.587,
-   "volume": 19795387
+   "range_pct": 3.585,
+   "volume": 20239800
   },
   {
    "id": "MU",
    "name": "美光",
    "group": "AI 芯片",
-   "open": 890.655,
+   "open": 890.54,
    "high": 892.08,
-   "low": 829.2401,
+   "low": 829.24,
    "close": 833.59,
    "prev_close": 884.74,
    "chg_pct": -5.781,
    "range_pct": 7.103,
-   "volume": 29291514
+   "volume": 29680300
   },
   {
    "id": "INTC",
    "name": "英特尔",
    "group": "AI 芯片",
-   "open": 65.38,
+   "open": 65.4,
    "high": 65.72,
-   "low": 59.395,
+   "low": 59.4,
    "close": 59.97,
    "prev_close": 65.76,
    "chg_pct": -8.805,
-   "range_pct": 9.618,
-   "volume": 227516903
+   "range_pct": 9.611,
+   "volume": 229466700
   },
   {
    "id": "TSM",
    "name": "台积电 ADR",
    "group": "AI 芯片",
    "open": 412.52,
-   "high": 414.7599,
+   "high": 414.76,
    "low": 398.29,
    "close": 398.63,
    "prev_close": 406.13,
    "chg_pct": -1.847,
    "range_pct": 4.055,
-   "volume": 13082230
+   "volume": 13149200
   },
   {
    "id": "MSFT",
    "name": "微软",
    "group": "云/平台",
-   "open": 524.1,
+   "open": 524.02,
    "high": 529.63,
-   "low": 504.99,
+   "low": 504.96,
    "close": 507.12,
    "prev_close": 521.91,
    "chg_pct": -2.834,
-   "range_pct": 4.721,
-   "volume": 33949220
+   "range_pct": 4.727,
+   "volume": 34624100
   },
   {
    "id": "GOOGL",
    "name": "谷歌 A",
    "group": "云/平台",
-   "open": 282.45,
+   "open": 282.46,
    "high": 287.0,
-   "low": 278.87,
+   "low": 278.8,
    "close": 278.99,
    "prev_close": 279.84,
    "chg_pct": -0.304,
-   "range_pct": 2.905,
-   "volume": 48164840
+   "range_pct": 2.93,
+   "volume": 48348400,
+   "verified": true
   },
   {
    "id": "AMZN",
    "name": "亚马逊",
    "group": "云/平台",
-   "open": 243.085,
+   "open": 243.01,
    "high": 253.81,
    "low": 242.28,
    "close": 245.63,
    "prev_close": 240.35,
    "chg_pct": 2.197,
    "range_pct": 4.797,
-   "volume": 57870783
+   "volume": 58155700
   },
   {
    "id": "META",
@@ -219,33 +221,35 @@
    "prev_close": 614.99,
    "chg_pct": -1.343,
    "range_pct": 2.485,
-   "volume": 18931716
+   "volume": 19440300,
+   "verified": true
   },
   {
    "id": "AAPL",
    "name": "苹果",
    "group": "终端",
    "open": 342.67,
-   "high": 343.78,
-   "low": 335.84,
+   "high": 343.8,
+   "low": 335.82,
    "close": 338.32,
    "prev_close": 344.63,
    "chg_pct": -1.831,
-   "range_pct": 2.304,
-   "volume": 58167285
+   "range_pct": 2.316,
+   "volume": 63842300,
+   "verified": true
   },
   {
    "id": "TSLA",
    "name": "特斯拉",
    "group": "终端",
-   "open": 404.74,
+   "open": 404.66,
    "high": 414.23,
    "low": 397.61,
    "close": 403.82,
    "prev_close": 399.81,
    "chg_pct": 1.003,
    "range_pct": 4.157,
-   "volume": 42586168
+   "volume": 43028200
   }
  ],
  "macro": [
@@ -253,40 +257,40 @@
    "id": "WTI",
    "name": "WTI 原油",
    "unit": "美元/桶",
-   "open": 102.39,
-   "high": 102.75,
-   "low": 95.15,
-   "close": 96.26,
+   "open": 96.3,
+   "high": 97.17,
+   "low": 96.12,
+   "close": 96.87,
    "prev_close": 104.12,
-   "chg_pct": -7.549,
-   "range_pct": 7.299,
-   "volume": 357697
+   "chg_pct": -6.963,
+   "range_pct": 1.008,
+   "volume": 19056
   },
   {
    "id": "BRENT",
    "name": "布伦特原油",
    "unit": "美元/桶",
-   "open": 111.84,
-   "high": 112.38,
-   "low": 103.29,
-   "close": 104.23,
+   "open": 104.51,
+   "high": 105.47,
+   "low": 104.2,
+   "close": 105.09,
    "prev_close": 117.64,
-   "chg_pct": -11.399,
-   "range_pct": 7.727,
-   "volume": 52218
+   "chg_pct": -10.668,
+   "range_pct": 1.08,
+   "volume": 2518
   },
   {
    "id": "GOLD",
    "name": "黄金期货",
    "unit": "美元/盎司",
-   "open": 3890.0,
-   "high": 3980.8,
-   "low": 3889.0,
-   "close": 3956.6001,
+   "open": 3960.5,
+   "high": 3974.5,
+   "low": 3950.8999,
+   "close": 3955.3999,
    "prev_close": 3898.8999,
-   "chg_pct": 1.48,
-   "range_pct": 2.355,
-   "volume": 166666
+   "chg_pct": 1.449,
+   "range_pct": 0.605,
+   "volume": 15936
   },
   {
    "id": "US10Y",
@@ -320,27 +324,14 @@
    "id": "DXY",
    "name": "美元指数",
    "unit": "点",
-   "open": 101.968,
-   "high": 101.994,
-   "low": 101.426,
-   "close": 101.776,
+   "open": 101.731,
+   "high": 101.874,
+   "low": 101.771,
+   "close": 101.853,
    "prev_close": 101.88,
-   "chg_pct": -0.102,
-   "range_pct": 0.558,
+   "chg_pct": -0.027,
+   "range_pct": 0.101,
    "volume": 0
-  },
-  {
-   "id": "BTC",
-   "name": "比特币",
-   "unit": "美元",
-   "open": 78235.5625,
-   "high": 78611.4531,
-   "low": 76592.8906,
-   "close": 76837.4922,
-   "prev_close": 78248.4531,
-   "chg_pct": -1.803,
-   "range_pct": 2.58,
-   "volume": 23616032768
   }
  ],
  "sectors": [
@@ -354,7 +345,7 @@
    "prev_close": 179.51,
    "chg_pct": -2.947,
    "range_pct": 3.888,
-   "volume": 15129955
+   "volume": 15263500
   },
   {
    "id": "XLC",
@@ -366,31 +357,31 @@
    "prev_close": 99.9,
    "chg_pct": 0.36,
    "range_pct": 1.321,
-   "volume": 9058949
+   "volume": 9064900
   },
   {
    "id": "XLY",
    "name": "可选消费",
    "open": 116.89,
-   "high": 119.205,
-   "low": 116.85,
+   "high": 119.21,
+   "low": 116.81,
    "close": 118.16,
    "prev_close": 115.38,
    "chg_pct": 2.409,
-   "range_pct": 2.041,
-   "volume": 11708704
+   "range_pct": 2.08,
+   "volume": 11711600
   },
   {
    "id": "XLP",
    "name": "必需消费",
    "open": 89.84,
    "high": 90.99,
-   "low": 89.75,
+   "low": 89.74,
    "close": 90.83,
    "prev_close": 89.42,
    "chg_pct": 1.577,
-   "range_pct": 1.387,
-   "volume": 24806858
+   "range_pct": 1.398,
+   "volume": 24873400
   },
   {
    "id": "XLE",
@@ -402,31 +393,31 @@
    "prev_close": 70.02,
    "chg_pct": -3.956,
    "range_pct": 2.728,
-   "volume": 50462629
+   "volume": 50854800
   },
   {
    "id": "XLF",
    "name": "金融",
    "open": 56.96,
-   "high": 57.695,
-   "low": 56.875,
+   "high": 57.7,
+   "low": 56.87,
    "close": 57.56,
    "prev_close": 56.51,
    "chg_pct": 1.858,
-   "range_pct": 1.451,
-   "volume": 41042458
+   "range_pct": 1.469,
+   "volume": 41193100
   },
   {
    "id": "XLV",
    "name": "医疗保健",
-   "open": 184.685,
-   "high": 185.54,
+   "open": 184.69,
+   "high": 185.56,
    "low": 183.38,
    "close": 184.6,
    "prev_close": 184.87,
    "chg_pct": -0.146,
-   "range_pct": 1.168,
-   "volume": 14049811
+   "range_pct": 1.179,
+   "volume": 14056600
   },
   {
    "id": "XLI",
@@ -438,19 +429,19 @@
    "prev_close": 167.4,
    "chg_pct": 1.38,
    "range_pct": 1.368,
-   "volume": 9258805
+   "volume": 9280800
   },
   {
    "id": "XLB",
    "name": "原材料",
-   "open": 53.228,
+   "open": 53.23,
    "high": 54.03,
    "low": 53.13,
    "close": 53.67,
    "prev_close": 52.74,
    "chg_pct": 1.763,
    "range_pct": 1.706,
-   "volume": 18739830
+   "volume": 18745600
   },
   {
    "id": "XLRE",
@@ -462,19 +453,19 @@
    "prev_close": 43.17,
    "chg_pct": 1.089,
    "range_pct": 1.448,
-   "volume": 9082807
+   "volume": 9085600
   },
   {
    "id": "XLU",
    "name": "公用事业",
    "open": 43.31,
    "high": 43.8,
-   "low": 43.245,
+   "low": 43.24,
    "close": 43.67,
    "prev_close": 43.43,
    "chg_pct": 0.553,
-   "range_pct": 1.278,
-   "volume": 29580124
+   "range_pct": 1.289,
+   "volume": 29796600
   }
  ],
  "intraday": {
@@ -1271,14 +1262,15 @@
     "sector": "Health Care",
     "industry": "Biotechnology: In Vitro & In Vivo Diagnostic Substances",
     "market_cap": 43424938950.0,
-    "open": 621.22,
+    "open": 625.0,
     "high": 673.19,
     "low": 620.2,
     "close": 671.64,
     "prev_close": 551.21,
     "chg_pct": 21.848,
     "range_pct": 9.613,
-    "volume": 1949013
+    "volume": 1976100,
+    "verified": true
    },
    {
     "id": "NWL",
@@ -1286,14 +1278,15 @@
     "sector": "Industrials",
     "industry": "Plastic Products",
     "market_cap": 2206162000.0,
-    "open": 5.215,
-    "high": 6.045,
+    "open": 5.19,
+    "high": 6.05,
     "low": 5.08,
     "close": 5.96,
     "prev_close": 5.18,
     "chg_pct": 15.058,
-    "range_pct": 18.629,
-    "volume": 16043836
+    "range_pct": 18.726,
+    "volume": 16043900,
+    "verified": true
    },
    {
     "id": "NXT",
@@ -1308,7 +1301,8 @@
     "prev_close": 79.33,
     "chg_pct": 14.875,
     "range_pct": 12.171,
-    "volume": 5507281
+    "volume": 5507800,
+    "verified": true
    },
    {
     "id": "PHIN",
@@ -1323,7 +1317,8 @@
     "prev_close": 62.92,
     "chg_pct": 12.508,
     "range_pct": 10.791,
-    "volume": 616737
+    "volume": 616700,
+    "verified": true
    },
    {
     "id": "SFM",
@@ -1338,7 +1333,8 @@
     "prev_close": 49.7,
     "chg_pct": 11.127,
     "range_pct": 11.268,
-    "volume": 8665039
+    "volume": 8666600,
+    "verified": true
    },
    {
     "id": "SAM",
@@ -1347,13 +1343,14 @@
     "industry": "Beverages (Production/Distribution)",
     "market_cap": 2043308176.0,
     "open": 200.92,
-    "high": 222.005,
+    "high": 222.01,
     "low": 200.81,
     "close": 221.37,
     "prev_close": 201.31,
     "chg_pct": 9.965,
-    "range_pct": 10.529,
-    "volume": 346003
+    "range_pct": 10.531,
+    "volume": 346000,
+    "verified": true
    },
    {
     "id": "MGRC",
@@ -1362,13 +1359,14 @@
     "industry": "Diversified Commercial Services",
     "market_cap": 2881814727.0,
     "open": 123.54,
-    "high": 132.88,
+    "high": 132.9,
     "low": 121.83,
     "close": 129.44,
     "prev_close": 118.28,
     "chg_pct": 9.435,
-    "range_pct": 9.342,
-    "volume": 1247034
+    "range_pct": 9.359,
+    "volume": 1247000,
+    "verified": true
    },
    {
     "id": "ESAB",
@@ -1377,13 +1375,14 @@
     "industry": "Industrial Machinery/Components",
     "market_cap": 4336826426.0,
     "open": 72.01,
-    "high": 76.8775,
-    "low": 71.455,
+    "high": 76.878,
+    "low": 71.445,
     "close": 76.3,
     "prev_close": 69.76,
     "chg_pct": 9.375,
-    "range_pct": 7.773,
-    "volume": 1333201
+    "range_pct": 7.788,
+    "volume": 1333200,
+    "verified": true
    },
    {
     "id": "LOAR",
@@ -1398,7 +1397,8 @@
     "prev_close": 62.11,
     "chg_pct": 9.338,
     "range_pct": 8.179,
-    "volume": 2302532
+    "volume": 2302500,
+    "verified": true
    },
    {
     "id": "ENPH",
@@ -1406,14 +1406,15 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 3393861205.0,
-    "open": 26.28,
+    "open": 26.27,
     "high": 28.88,
     "low": 26.27,
     "close": 27.93,
     "prev_close": 25.65,
     "chg_pct": 8.889,
     "range_pct": 10.175,
-    "volume": 8868700
+    "volume": 8884900,
+    "verified": true
    }
   ],
   "losers": [
@@ -1423,14 +1424,15 @@
     "sector": "Health Care",
     "industry": "Biotechnology: Pharmaceutical Preparations",
     "market_cap": 2484764614.0,
-    "open": 5.315,
+    "open": 5.36,
     "high": 5.48,
     "low": 4.91,
     "close": 5.14,
     "prev_close": 6.94,
     "chg_pct": -25.937,
     "range_pct": 8.213,
-    "volume": 20593634
+    "volume": 20608900,
+    "verified": true
    },
    {
     "id": "LITE",
@@ -1438,14 +1440,15 @@
     "sector": "Telecommunications",
     "industry": "Telecommunications Equipment",
     "market_cap": 76153007039.0,
-    "open": 800.02,
-    "high": 800.12,
+    "open": 802.55,
+    "high": 802.55,
     "low": 679.0,
     "close": 684.4,
     "prev_close": 840.7,
     "chg_pct": -18.592,
-    "range_pct": 14.407,
-    "volume": 15089670
+    "range_pct": 14.696,
+    "volume": 15257200,
+    "verified": true
    },
    {
     "id": "TWST",
@@ -1454,13 +1457,14 @@
     "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
     "market_cap": 10129493364.0,
     "open": 153.17,
-    "high": 154.11,
+    "high": 154.23,
     "low": 128.29,
     "close": 129.04,
     "prev_close": 152.78,
     "chg_pct": -15.539,
-    "range_pct": 16.9,
-    "volume": 2671309
+    "range_pct": 16.979,
+    "volume": 2672200,
+    "verified": true
    },
    {
     "id": "LBRT",
@@ -1475,7 +1479,8 @@
     "prev_close": 16.88,
     "chg_pct": -13.033,
     "range_pct": 13.27,
-    "volume": 4630295
+    "volume": 4630900,
+    "verified": true
    },
    {
     "id": "VG",
@@ -1490,7 +1495,8 @@
     "prev_close": 14.79,
     "chg_pct": -12.982,
     "range_pct": 10.412,
-    "volume": 34638683
+    "volume": 34655100,
+    "verified": true
    },
    {
     "id": "MRVL",
@@ -1498,14 +1504,15 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 172223160000.0,
-    "open": 191.89,
-    "high": 192.305,
+    "open": 191.56,
+    "high": 192.31,
     "low": 168.52,
     "close": 171.41,
     "prev_close": 196.4,
     "chg_pct": -12.724,
-    "range_pct": 12.11,
-    "volume": 61052943
+    "range_pct": 12.113,
+    "volume": 61258300,
+    "verified": true
    },
    {
     "id": "AXTI",
@@ -1513,14 +1520,15 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 3610461053.0,
-    "open": 56.11,
-    "high": 56.8897,
-    "low": 47.26,
+    "open": 56.34,
+    "high": 56.89,
+    "low": 47.23,
     "close": 48.2,
     "prev_close": 55.06,
     "chg_pct": -12.459,
-    "range_pct": 17.489,
-    "volume": 15235833
+    "range_pct": 17.544,
+    "volume": 15318300,
+    "verified": true
    },
    {
     "id": "TXG",
@@ -1535,7 +1543,8 @@
     "prev_close": 70.11,
     "chg_pct": -12.095,
     "range_pct": 13.928,
-    "volume": 5170191
+    "volume": 5172200,
+    "verified": true
    },
    {
     "id": "PURR",
@@ -1550,7 +1559,8 @@
     "prev_close": 11.01,
     "chg_pct": -11.807,
     "range_pct": 11.762,
-    "volume": 17021105
+    "volume": 17054400,
+    "verified": true
    },
    {
     "id": "CBRS",
@@ -1565,7 +1575,8 @@
     "prev_close": 109.18,
     "chg_pct": -11.742,
     "range_pct": 10.79,
-    "volume": 13101465
+    "volume": 13229500,
+    "verified": true
    }
   ],
   "swings": [
@@ -1582,7 +1593,7 @@
     "prev_close": 28.76,
     "chg_pct": -4.381,
     "range_pct": 25.344,
-    "volume": 236880
+    "volume": 236900
    },
    {
     "id": "NWL",
@@ -1590,14 +1601,15 @@
     "sector": "Industrials",
     "industry": "Plastic Products",
     "market_cap": 2206162000.0,
-    "open": 5.215,
-    "high": 6.045,
+    "open": 5.19,
+    "high": 6.05,
     "low": 5.08,
     "close": 5.96,
     "prev_close": 5.18,
     "chg_pct": 15.058,
-    "range_pct": 18.629,
-    "volume": 16043836
+    "range_pct": 18.726,
+    "volume": 16043900,
+    "verified": true
    },
    {
     "id": "TEM",
@@ -1605,14 +1617,14 @@
     "sector": "Technology",
     "industry": "Computer Software: Programming Data Processing",
     "market_cap": 13111985514.0,
-    "open": 74.305,
-    "high": 83.4243,
+    "open": 74.43,
+    "high": 83.424,
     "low": 70.3,
     "close": 78.48,
     "prev_close": 72.22,
     "chg_pct": 8.668,
-    "range_pct": 18.173,
-    "volume": 16980865
+    "range_pct": 18.172,
+    "volume": 17009500
    },
    {
     "id": "AXTI",
@@ -1620,14 +1632,15 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "market_cap": 3610461053.0,
-    "open": 56.11,
-    "high": 56.8897,
-    "low": 47.26,
+    "open": 56.34,
+    "high": 56.89,
+    "low": 47.23,
     "close": 48.2,
     "prev_close": 55.06,
     "chg_pct": -12.459,
-    "range_pct": 17.489,
-    "volume": 15235833
+    "range_pct": 17.544,
+    "volume": 15318300,
+    "verified": true
    },
    {
     "id": "TWST",
@@ -1636,13 +1649,14 @@
     "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
     "market_cap": 10129493364.0,
     "open": 153.17,
-    "high": 154.11,
+    "high": 154.23,
     "low": 128.29,
     "close": 129.04,
     "prev_close": 152.78,
     "chg_pct": -15.539,
-    "range_pct": 16.9,
-    "volume": 2671309
+    "range_pct": 16.979,
+    "volume": 2672200,
+    "verified": true
    },
    {
     "id": "CHRN",
@@ -1657,7 +1671,7 @@
     "prev_close": 14.38,
     "chg_pct": -9.388,
     "range_pct": 16.481,
-    "volume": 115415
+    "volume": 115400
    },
    {
     "id": "USLM",
@@ -1665,14 +1679,14 @@
     "sector": "Industrials",
     "industry": "Mining & Quarrying of Nonmetallic Minerals (No Fuels)",
     "market_cap": 3201908194.0,
-    "open": 108.3,
-    "high": 124.5,
-    "low": 106.9493,
+    "open": 107.05,
+    "high": 124.79,
+    "low": 106.92,
     "close": 118.99,
     "prev_close": 111.61,
     "chg_pct": 6.612,
-    "range_pct": 15.725,
-    "volume": 324350
+    "range_pct": 16.011,
+    "volume": 324400
    },
    {
     "id": "LITE",
@@ -1680,14 +1694,15 @@
     "sector": "Telecommunications",
     "industry": "Telecommunications Equipment",
     "market_cap": 76153007039.0,
-    "open": 800.02,
-    "high": 800.12,
+    "open": 802.55,
+    "high": 802.55,
     "low": 679.0,
     "close": 684.4,
     "prev_close": 840.7,
     "chg_pct": -18.592,
-    "range_pct": 14.407,
-    "volume": 15089670
+    "range_pct": 14.696,
+    "volume": 15257200,
+    "verified": true
    },
    {
     "id": "DFTX",
@@ -1702,7 +1717,7 @@
     "prev_close": 36.33,
     "chg_pct": -10.625,
     "range_pct": 14.396,
-    "volume": 3644415
+    "volume": 3645200
    },
    {
     "id": "AAOI",
@@ -1717,43 +1732,165 @@
     "prev_close": 69.05,
     "chg_pct": -9.486,
     "range_pct": 14.041,
-    "volume": 14911755
+    "volume": 14968400
    }
   ]
  },
- "crosscheck": [],
+ "crosscheck": [
+  {
+   "id": "AMD",
+   "yahoo": 466.84,
+   "nasdaq": 466.84,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "GOOGL",
+   "yahoo": 278.99,
+   "nasdaq": 278.99,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "META",
+   "yahoo": 606.73,
+   "nasdaq": 606.73,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "AAPL",
+   "yahoo": 338.32,
+   "nasdaq": 338.32,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "IDXX",
+   "yahoo": 671.64,
+   "nasdaq": 671.64,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "NWL",
+   "yahoo": 5.96,
+   "nasdaq": 5.96,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "NXT",
+   "yahoo": 91.13,
+   "nasdaq": 91.13,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "PHIN",
+   "yahoo": 70.79,
+   "nasdaq": 70.79,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "SFM",
+   "yahoo": 55.23,
+   "nasdaq": 55.23,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "SAM",
+   "yahoo": 221.37,
+   "nasdaq": 221.37,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "MGRC",
+   "yahoo": 129.44,
+   "nasdaq": 129.44,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "ESAB",
+   "yahoo": 76.3,
+   "nasdaq": 76.3,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "LOAR",
+   "yahoo": 67.91,
+   "nasdaq": 67.91,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "ENPH",
+   "yahoo": 27.93,
+   "nasdaq": 27.93,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "PGEN",
+   "yahoo": 5.14,
+   "nasdaq": 5.14,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "LITE",
+   "yahoo": 684.4,
+   "nasdaq": 684.4,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "TWST",
+   "yahoo": 129.04,
+   "nasdaq": 129.04,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "LBRT",
+   "yahoo": 14.68,
+   "nasdaq": 14.68,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "VG",
+   "yahoo": 12.87,
+   "nasdaq": 12.87,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "MRVL",
+   "yahoo": 171.41,
+   "nasdaq": 171.41,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "AXTI",
+   "yahoo": 48.2,
+   "nasdaq": 48.2,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "TXG",
+   "yahoo": 61.63,
+   "nasdaq": 61.63,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "PURR",
+   "yahoo": 9.71,
+   "nasdaq": 9.71,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "CBRS",
+   "yahoo": 96.36,
+   "nasdaq": 96.36,
+   "diff_pct": 0.0
+  }
+ ],
  "warnings": [
+  "missing BTC",
   "NVDA: Nasdaq 历史行情无数据，未能交叉核对",
-  "AMD: Nasdaq 历史行情无数据，未能交叉核对",
   "AVGO: Nasdaq 历史行情无数据，未能交叉核对",
   "MU: Nasdaq 历史行情无数据，未能交叉核对",
   "INTC: Nasdaq 历史行情无数据，未能交叉核对",
   "TSM: Nasdaq 历史行情无数据，未能交叉核对",
   "MSFT: Nasdaq 历史行情无数据，未能交叉核对",
-  "GOOGL: Nasdaq 历史行情无数据，未能交叉核对",
   "AMZN: Nasdaq 历史行情无数据，未能交叉核对",
-  "META: Nasdaq 历史行情无数据，未能交叉核对",
-  "AAPL: Nasdaq 历史行情无数据，未能交叉核对",
-  "TSLA: Nasdaq 历史行情无数据，未能交叉核对",
-  "IDXX: Nasdaq 历史行情无数据，未能交叉核对",
-  "NWL: Nasdaq 历史行情无数据，未能交叉核对",
-  "NXT: Nasdaq 历史行情无数据，未能交叉核对",
-  "PHIN: Nasdaq 历史行情无数据，未能交叉核对",
-  "SFM: Nasdaq 历史行情无数据，未能交叉核对",
-  "SAM: Nasdaq 历史行情无数据，未能交叉核对",
-  "MGRC: Nasdaq 历史行情无数据，未能交叉核对",
-  "ESAB: Nasdaq 历史行情无数据，未能交叉核对",
-  "LOAR: Nasdaq 历史行情无数据，未能交叉核对",
-  "ENPH: Nasdaq 历史行情无数据，未能交叉核对",
-  "PGEN: Nasdaq 历史行情无数据，未能交叉核对",
-  "LITE: Nasdaq 历史行情无数据，未能交叉核对",
-  "TWST: Nasdaq 历史行情无数据，未能交叉核对",
-  "LBRT: Nasdaq 历史行情无数据，未能交叉核对",
-  "VG: Nasdaq 历史行情无数据，未能交叉核对",
-  "MRVL: Nasdaq 历史行情无数据，未能交叉核对",
-  "AXTI: Nasdaq 历史行情无数据，未能交叉核对",
-  "TXG: Nasdaq 历史行情无数据，未能交叉核对",
-  "PURR: Nasdaq 历史行情无数据，未能交叉核对",
-  "CBRS: Nasdaq 历史行情无数据，未能交叉核对"
+  "TSLA: Nasdaq 历史行情无数据，未能交叉核对"
  ]
 }
