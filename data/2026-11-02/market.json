@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "generated_at": "2026-11-03T02:59:51+00:00",
+ "generated_at": "2026-11-03T03:33:31+00:00",
  "sources": {
   "prices": "Yahoo Finance（经 yfinance）",
   "universe": "Nasdaq 股票筛选器（api.nasdaq.com）",
@@ -102,7 +102,8 @@
    "prev_close": 204.64,
    "chg_pct": -1.261,
    "range_pct": 4.066,
-   "volume": 118687200
+   "volume": 118687200,
+   "verified": true
   },
   {
    "id": "AMD",
@@ -129,7 +130,8 @@
    "prev_close": 326.08,
    "chg_pct": -1.181,
    "range_pct": 3.585,
-   "volume": 20239800
+   "volume": 20239800,
+   "verified": true
   },
   {
    "id": "MU",
@@ -142,7 +144,8 @@
    "prev_close": 884.74,
    "chg_pct": -5.781,
    "range_pct": 7.103,
-   "volume": 29680300
+   "volume": 29680300,
+   "verified": true
   },
   {
    "id": "INTC",
@@ -155,7 +158,8 @@
    "prev_close": 65.76,
    "chg_pct": -8.805,
    "range_pct": 9.611,
-   "volume": 229466700
+   "volume": 229466700,
+   "verified": true
   },
   {
    "id": "TSM",
@@ -168,7 +172,8 @@
    "prev_close": 406.13,
    "chg_pct": -1.847,
    "range_pct": 4.055,
-   "volume": 13149200
+   "volume": 13149200,
+   "verified": true
   },
   {
    "id": "MSFT",
@@ -181,7 +186,8 @@
    "prev_close": 521.91,
    "chg_pct": -2.834,
    "range_pct": 4.727,
-   "volume": 34624100
+   "volume": 34624100,
+   "verified": true
   },
   {
    "id": "GOOGL",
@@ -208,7 +214,8 @@
    "prev_close": 240.35,
    "chg_pct": 2.197,
    "range_pct": 4.797,
-   "volume": 58155700
+   "volume": 58155700,
+   "verified": true
   },
   {
    "id": "META",
@@ -249,7 +256,8 @@
    "prev_close": 399.81,
    "chg_pct": 1.003,
    "range_pct": 4.157,
-   "volume": 43028200
+   "volume": 43028200,
+   "verified": true
   }
  ],
  "macro": [
@@ -260,11 +268,11 @@
    "open": 96.3,
    "high": 97.17,
    "low": 96.12,
-   "close": 96.87,
+   "close": 96.66,
    "prev_close": 104.12,
-   "chg_pct": -6.963,
+   "chg_pct": -7.165,
    "range_pct": 1.008,
-   "volume": 19056
+   "volume": 20893
   },
   {
    "id": "BRENT",
@@ -273,11 +281,11 @@
    "open": 104.51,
    "high": 105.47,
    "low": 104.2,
-   "close": 105.09,
+   "close": 104.83,
    "prev_close": 117.64,
-   "chg_pct": -10.668,
+   "chg_pct": -10.889,
    "range_pct": 1.08,
-   "volume": 2518
+   "volume": 2785
   },
   {
    "id": "GOLD",
@@ -285,12 +293,12 @@
    "unit": "美元/盎司",
    "open": 3960.5,
    "high": 3974.5,
-   "low": 3950.8999,
-   "close": 3955.3999,
+   "low": 3949.1001,
+   "close": 3950.6001,
    "prev_close": 3898.8999,
-   "chg_pct": 1.449,
-   "range_pct": 0.605,
-   "volume": 15936
+   "chg_pct": 1.326,
+   "range_pct": 0.651,
+   "volume": 17557
   },
   {
    "id": "US10Y",
@@ -327,9 +335,9 @@
    "open": 101.731,
    "high": 101.874,
    "low": 101.771,
-   "close": 101.853,
+   "close": 101.836,
    "prev_close": 101.88,
-   "chg_pct": -0.027,
+   "chg_pct": -0.043,
    "range_pct": 0.101,
    "volume": 0
   }
@@ -1738,15 +1746,57 @@
  },
  "crosscheck": [
   {
+   "id": "NVDA",
+   "yahoo": 202.06,
+   "nasdaq": 202.06,
+   "diff_pct": 0.0
+  },
+  {
    "id": "AMD",
    "yahoo": 466.84,
    "nasdaq": 466.84,
    "diff_pct": 0.0
   },
   {
+   "id": "AVGO",
+   "yahoo": 322.23,
+   "nasdaq": 322.23,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "MU",
+   "yahoo": 833.59,
+   "nasdaq": 833.59,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "INTC",
+   "yahoo": 59.97,
+   "nasdaq": 59.97,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "TSM",
+   "yahoo": 398.63,
+   "nasdaq": 398.63,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "MSFT",
+   "yahoo": 507.12,
+   "nasdaq": 507.12,
+   "diff_pct": 0.0
+  },
+  {
    "id": "GOOGL",
    "yahoo": 278.99,
    "nasdaq": 278.99,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "AMZN",
+   "yahoo": 245.63,
+   "nasdaq": 245.63,
    "diff_pct": 0.0
   },
   {
@@ -1759,6 +1809,12 @@
    "id": "AAPL",
    "yahoo": 338.32,
    "nasdaq": 338.32,
+   "diff_pct": 0.0
+  },
+  {
+   "id": "TSLA",
+   "yahoo": 403.82,
+   "nasdaq": 403.82,
    "diff_pct": 0.0
   },
   {
@@ -1883,14 +1939,6 @@
   }
  ],
  "warnings": [
-  "missing BTC",
-  "NVDA: Nasdaq 历史行情无数据，未能交叉核对",
-  "AVGO: Nasdaq 历史行情无数据，未能交叉核对",
-  "MU: Nasdaq 历史行情无数据，未能交叉核对",
-  "INTC: Nasdaq 历史行情无数据，未能交叉核对",
-  "TSM: Nasdaq 历史行情无数据，未能交叉核对",
-  "MSFT: Nasdaq 历史行情无数据，未能交叉核对",
-  "AMZN: Nasdaq 历史行情无数据，未能交叉核对",
-  "TSLA: Nasdaq 历史行情无数据，未能交叉核对"
+  "missing BTC"
  ]
 }
