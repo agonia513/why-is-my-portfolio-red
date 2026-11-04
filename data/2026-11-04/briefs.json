@@ -1,0 +1,142 @@
+[
+  {
+    "id": "n1",
+    "section": "news",
+    "title": "民主党拿下两院，道指录得 44 年来最强的中期选举次日表现",
+    "fact": "民主党在 11 月 3 日的中期选举中同时赢得众议院和参议院控制权。周三道指上涨逾 1500 点、收于 53356 点，是 44 年来中期选举后表现最好的一天，标普 500 和纳指也同步上涨。",
+    "assets": "DJI、SPX、IXIC、大盘消费与金融股",
+    "inference": "市场把“分治政府”理解为大规模财政和监管变化的概率下降、政策更可预测；历史上中期选举后股市多数时候走强，但单日暴涨能否延续，还要看周五非农和 12 月议息。",
+    "src": "The Motley Fool",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/11/04/stock-market-today-nov-4-dow-surges-3-in-biggest-post-midterm-rally-in-44-years/"
+  },
+  {
+    "id": "n2",
+    "section": "news",
+    "title": "得州州长易主，AI 数据中心概念股遭血洗",
+    "fact": "主张暂停新建数据中心、取消行业税收优惠的民主党人 Gina Hinojosa 击败现任州长 Abbott 当选得州州长。Modine、Hut 8、Sterling、Cipher、Comfort Systems、Vertiv、GE Vernova 等数据中心电力、散热和建筑股盘中普遍大跌，CoreWeave 也明显下跌。",
+    "assets": "HUT、CIFR、STRL、MOD、FIX、VRT、GEV、CRWV、NVDA、MU",
+    "inference": "得州占美国数据中心容量的比重接近三成，政策收紧更可能先抬高建设成本、拖慢审批，而不是直接砍掉已签约项目；但在新州长上任、细则明确之前，这类股票的估值溢价会受压。",
+    "src": "Stock Titan（援引 CNBC）",
+    "url": "https://www.stocktitan.net/articles/ai-data-center-stocks-fall-texas-vote-november-4-2026"
+  },
+  {
+    "id": "n3",
+    "section": "news",
+    "title": "FIS、Amdocs 指引暴雷，CVS 宣布拆分",
+    "fact": "FIS 下调全年业绩展望、CFO 将离任，股价跌超两成；Amdocs 给出远弱于预期的 2027 财年展望；CVS 计划在 2028 年上半年前拆分为医疗方案公司（保留 Aetna 和 Caremark）和药房公司两家上市公司，股价下跌。",
+    "assets": "FIS、DOX、CVS、金融科技、电信软件",
+    "inference": "在大盘普涨的日子里，指引下调的公司依然被重罚，说明市场对业绩的容忍度并没有因为选举利好而放宽。",
+    "src": "TheStreet",
+    "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
+  },
+  {
+    "id": "n4",
+    "section": "news",
+    "title": "财报季：Duolingo、Kyndryl、麦当劳大涨，Datadog 指引平淡被抛售",
+    "fact": "Duolingo 日活同比增长 29%，Kyndryl 维持全年展望，Clear Secure 营收增长超预期，股价均大涨；麦当劳全球同店销售增长 1.5% 并上调股息，但美国同店销售下滑 0.2%；Datadog 营收增长 35%，但 Q4 指引基本持平，股价重挫。",
+    "assets": "DUOL、KD、YOU、MCD、DDOG",
+    "inference": "个股的分化主要由财报和指引决定，软件股里“增长加速”的被追捧、“指引放缓”的被抛售。",
+    "src": "Stock Titan（汇总公司公告与 CNBC 报道）",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+  },
+  {
+    "id": "w1",
+    "section": "world",
+    "title": "伊朗战争降温预期升温，油价暴跌、布伦特跌破 100 美元",
+    "fact": "选举结果和美伊外交降温的迹象让油价全天走低，布伦特原油午后跌破 100 美元，为数周来首次；但霍尔木兹海峡仍有四艘油轮触雷起火。万斯据报道把共和党的失利归咎于推高通胀的伊朗战争。",
+    "assets": "WTI、BRENT、XLE、航空、运输、消费",
+    "inference": "油价回落直接缓解通胀压力，对消费股和美债是利好、对能源股是利空；但海峡航运风险仍在，一旦谈判反复，油价可能快速反弹。",
+    "src": "TheStreet",
+    "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
+  },
+  {
+    "id": "w2",
+    "section": "world",
+    "title": "得州数据中心政策：Hinojosa 要求暂停新项目，州环境委员会此前已暂停许可",
+    "fact": "Hinojosa 的竞选纲领要求在议会制定社区保护措施之前立即暂停新建数据中心，并呼吁召开特别会议取消行业税收优惠；即将卸任的 Abbott 9 月已要求州环境委员会在审计期间暂停数据中心许可。",
+    "assets": "数据中心开发商、比特币矿企转型股、电力设备、云服务商",
+    "inference": "政策路径要等新州长就任和议会开会才会清晰，短期主要是不确定性折价；在得州以外有储备的公司可能相对受益。",
+    "src": "crypto.news",
+    "url": "https://crypto.news/cipher-digital-shares-fall-texas-governor-election/"
+  },
+  {
+    "id": "w3",
+    "section": "world",
+    "title": "Riot 签下 280 亿美元 AI 数据中心租约，逆势大涨",
+    "fact": "Riot Platforms 宣布将其得州 Corsicana 园区租给一家未具名 AI 实验室，租期 15 年，覆盖 910 兆瓦 IT 容量，初始合同价值约 280 亿美元。",
+    "assets": "RIOT、比特币矿企、AI 算力租赁",
+    "inference": "已签下长期租约的项目受政策冲击较小，市场在“有合同”和“只有规划”的数据中心项目之间开始明显区分。",
+    "src": "crypto.news",
+    "url": "https://crypto.news/cipher-digital-shares-fall-texas-governor-election/"
+  },
+  {
+    "id": "s1",
+    "section": "speaker",
+    "title": "特朗普：愿与民主党合作，否则“全部否决”",
+    "fact": "特朗普对 CBS 表示，期待“为了国家的利益”与民主党合作，否则就会否决一切；他承认伊朗战争是共和党失利的部分原因，但表示“还会再这么做”，并把选举失利归咎于福克斯新闻。（11 月 4 日）",
+    "assets": "DJT、财政政策相关板块",
+    "inference": "合作与否决并存的表态意味着未来两年立法大概率陷入僵局，市场更关注的是行政权力范围内的关税和能源政策。",
+    "src": "TheStreet",
+    "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
+  },
+  {
+    "id": "s2",
+    "section": "speaker",
+    "title": "美联储主席沃什：降低通胀是我们的责任（10 月 28 日，非当天）",
+    "fact": "美联储 10 月 28 日以 10 比 2 维持联邦基金利率在 3.75%—4.00% 不变，理事库克和克利夫兰联储主席哈玛克主张立即加息 25 个基点。沃什称经济扩张强劲，降低通胀是美联储的责任，并表示不提供前瞻指引。",
+    "assets": "美债、美元、成长股估值",
+    "inference": "今天的油价暴跌如果持续，会减轻美联储 12 月加息的压力；10 年期美债收益率回落正反映了这种预期变化。",
+    "src": "Admiral Markets",
+    "url": "https://admiralmarkets.com/de/analysen/traders-blog/warsh-pressekonferenz-oktober-2026"
+  },
+  {
+    "id": "s3",
+    "section": "speaker",
+    "title": "伊朗首席谈判代表：美国选民对战争说了“不”",
+    "fact": "伊朗首席谈判代表卡利巴夫称，美国选举结果表明选民拒绝了这场战争，并警告如果美国无视这一信号，后果会是“噩梦”。（11 月 4 日）",
+    "assets": "原油、黄金、国防股",
+    "inference": "伊朗方面把选举结果当作谈判筹码，降温预期和强硬措辞并存，油价的波动不会马上平息。",
+    "src": "TheStreet",
+    "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
+  },
+  {
+    "id": "t1",
+    "section": "watch",
+    "title": "周四盘前：AppLovin、高通等盘后财报的开盘反应",
+    "fact": "AppLovin Q3 业绩和 Q4 营收指引均超预期，盘后大涨约 21%；高通营收超预期但下季度 EPS 指引中值略低于预期，盘后跌约 7%。",
+    "assets": "APP、QCOM、COHR",
+    "inference": "高通的走势会影响周四芯片股能否止跌；AppLovin 的大涨则说明 AI 应用端的业绩兑现仍受追捧。",
+    "src": "Investing.com",
+    "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-qcom-cohr-app-hubs-snap-fsly-fig-zg-bros-cde-432SI-5001535"
+  },
+  {
+    "id": "t2",
+    "section": "watch",
+    "title": "周四：初请失业金、生产率数据与英国央行议息",
+    "fact": "周四美东 8:30 公布每周初请失业金人数和第三季度生产率与单位劳动成本；英国央行同日公布利率决议。康菲石油、信诺等公司盘前发布财报。",
+    "assets": "美债、美元、能源股、医疗保险股",
+    "inference": "油价暴跌后，能源公司财报里的产量和资本开支指引会更受关注。",
+    "src": "MarketAlleys",
+    "url": "https://www.marketalleys.com/post/marketalleys-closing-tape-2026-11-04"
+  },
+  {
+    "id": "t3",
+    "section": "watch",
+    "title": "周五：10 月非农就业报告",
+    "fact": "10 月非农就业报告将于周五美东 8:30 公布；周三公布的 ADP 10 月私营部门新增就业 8.6 万，略高于 7.5 万的预期。",
+    "assets": "美债、美元、SPX、利率敏感板块",
+    "inference": "就业如果继续稳健，美联储 12 月仍可能加息；偏弱则会强化“油价回落 + 加息暂停”的交易。",
+    "src": "Stock Titan",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+  },
+  {
+    "id": "t4",
+    "section": "watch",
+    "title": "选举收尾：剩余众议院席位与参议院最终席位",
+    "fact": "截至周三，仍有部分众议院席位未出结果，阿拉斯加和密西西比的参议院计票还在进行，民主党最终可能拿到 55 至 56 个参议院席位。",
+    "assets": "医保、清洁能源、国防等政策敏感板块",
+    "inference": "席位差距越大，民主党在预算、监管听证上的主动权越强，政策敏感板块的波动可能延续。",
+    "src": "TheStreet",
+    "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
+  }
+]

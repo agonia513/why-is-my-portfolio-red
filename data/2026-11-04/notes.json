@@ -1,0 +1,78 @@
+{
+  "stocks": {
+    "MSFT": "大型平台股集体大涨，与 AI 硬件链条走势分化",
+    "AMZN": "大型平台股集体大涨，当天没有公司层面的公告",
+    "AAPL": "随大盘和道指权重股反弹，收复前一天财报后的跌幅",
+    "NVDA": "AI 芯片和数据中心链条在选举后承压",
+    "MU": "随芯片股和 AI 基础设施板块下跌，跌幅居大型芯片股前列",
+    "AMD": "前一晚 Q3 财报超预期、盘后大涨，但开盘涨幅基本消失，盘中冲高后回落",
+    "TSLA": "马斯克在中期选举中投入巨资，选举结果出炉后股价下跌"
+  },
+  "movers": {
+    "KD": {
+      "comment": "公布财季业绩：利润超预期、维持全年展望；来自云服务商的收入同比增长 27.2%，抵消了总营收同比下降 1.9% 的影响，股价大幅跳空高开",
+      "src": "Stock Titan（汇总公司公告与 CNBC 报道）",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+    },
+    "RYTM": {
+      "comment": "《华尔街日报》援引知情人士报道，阿斯利康上月曾提出以每股 124 美元、总价约 100 亿美元收购公司；双方均未置评。此前公司 Q3 IMCIVREE 净销售额 9210 万美元，同比增长约 80%",
+      "src": "Investing.com（援引《华尔街日报》）",
+      "url": "https://www.investing.com/news/stock-market-news/rhythm-pharmaceuticals-stock-surges-28-on-astrazeneca-bid-report-5001311"
+    },
+    "DUOL": {
+      "comment": "Q3 业绩好于预期并上调全年展望，日活跃用户同比增长 29%，打消了市场对增长放缓的担忧",
+      "src": "Stock Titan（汇总公司公告与 CNBC 报道）",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+    },
+    "YOU": {
+      "comment": "Q3 营收 2.929 亿美元、同比增长 27.8%，高于市场预期，股价跳空大涨",
+      "src": "Stock Titan（汇总公司公告与 CNBC 报道）",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+    },
+    "PCOR": {
+      "comment": "Q3 营收 4.02 亿美元、同比增长 18.7%，比市场预期高约 4.8%；调整后 EPS 0.51 美元高于预期的 0.45 美元，Q4 营收指引中值也明显高于市场预期",
+      "src": "StockStory（经 Chronicle Journal 转载）",
+      "url": "https://markets.chroniclejournal.com/chroniclejournal/article/stockstory-2026-11-3-procore-technologies-nysepcor-delivers-impressive-q3-2026-stock-jumps-11"
+    },
+    "NRIX": {
+      "comment": "合作方赛诺菲决定终止口服 STAT6 降解剂 SAR448272 的一期临床和整个项目，公司预计不会再收到该项目的任何里程碑付款或销售分成",
+      "src": "Nurix 向美国证交会提交的 8-K 文件",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001549595/000154959526000055/nrix-20261103.htm"
+    },
+    "DOX": {
+      "comment": "给出的 2027 财年营收展望大幅弱于市场预期，预计营收同比下降 14.3%—17.9%，公司将其归因于与 T-Mobile 的合同纠纷",
+      "src": "Stock Titan（汇总公司公告与 CNBC 报道）",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+    },
+    "ECG": {
+      "comment": "Q3 营收同比增长 40% 至 13.8 亿美元、EPS 大幅超预期并上调全年指引，但股价仍暴跌：一次性项目和解款抬高了利润率，数据中心是其积压订单的最大来源，分析师在电话会上追问选举后数据中心建设是否放缓（管理层称客户行为未变）",
+      "src": "Investing.com（财报电话会纪要）",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-everus-construction-beats-q3-2026-estimates-as-stock-sinks-93CH-5000720"
+    },
+    "FIS": {
+      "comment": "下调全年业绩展望，CFO James Kehoe 将于 11 月 5 日离任、由 Alexandra Brooks 暂代，摩根大通同时下调评级",
+      "src": "TheStreet",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
+    },
+    "HUT": {
+      "comment": "得州数据中心概念股集体暴跌：主张暂停新建数据中心的民主党人 Hinojosa 当选得州州长，而 Hut 8 在建电力容量约四分之三位于得州 Beacon Point 园区，是受影响最直接的公司之一",
+      "src": "Stock Titan（援引 CNBC）",
+      "url": "https://www.stocktitan.net/articles/ai-data-center-stocks-fall-texas-vote-november-4-2026"
+    },
+    "STRL": {
+      "comment": "数据中心建筑商，随得州数据中心概念股在选举后集体下跌；当天公司没有发布公告",
+      "src": "Stock Titan（援引 CNBC）",
+      "url": "https://www.stocktitan.net/articles/ai-data-center-stocks-fall-texas-vote-november-4-2026"
+    },
+    "MOD": {
+      "comment": "数据中心散热业务销售大增，但毛利率从 24.4% 降至 19.7%；叠加选举后数据中心板块被抛售，开盘后跌幅扩大",
+      "src": "Stock Titan（援引 CNBC）",
+      "url": "https://www.stocktitan.net/articles/ai-data-center-stocks-fall-texas-vote-november-4-2026"
+    },
+    "CIFR": {
+      "comment": "旗下 Barber Lake、Black Pearl 等数据中心园区位于得州，Hinojosa 当选州长后股价重挫",
+      "src": "The Energy Mag",
+      "url": "https://www.theenergymag.com/news/market-news/ai-data-center-plunge-texas-election"
+    }
+  }
+}
