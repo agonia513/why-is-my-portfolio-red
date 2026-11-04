@@ -1,0 +1,1757 @@
+{
+ "date": "2026-11-04",
+ "generated_at": "2026-11-04T22:25:17+00:00",
+ "sources": {
+  "prices": "Yahoo Finance（经 yfinance）",
+  "universe": "Nasdaq 股票筛选器（api.nasdaq.com）",
+  "check": "Nasdaq 历史行情（交叉核对收盘价）",
+  "sectors": "SPDR 行业 ETF 作为 GICS 板块代理"
+ },
+ "universe": {
+  "count": 1967,
+  "min_market_cap": 2000000000,
+  "min_price": 5,
+  "country": null,
+  "excluded_split": []
+ },
+ "indices": [
+  {
+   "id": "SPX",
+   "name": "标普 500",
+   "open": 7635.8101,
+   "high": 7715.5698,
+   "low": 7635.8101,
+   "close": 7688.6201,
+   "prev_close": 7568.9199,
+   "chg_pct": 1.581,
+   "range_pct": 1.054,
+   "volume": 4562882000
+  },
+  {
+   "id": "IXIC",
+   "name": "纳斯达克综指",
+   "open": 25652.7812,
+   "high": 26048.8301,
+   "low": 25602.1367,
+   "close": 25736.5137,
+   "prev_close": 25372.0098,
+   "chg_pct": 1.437,
+   "range_pct": 1.761,
+   "volume": 8582321000
+  },
+  {
+   "id": "DJI",
+   "name": "道琼斯工业",
+   "open": 52410.2305,
+   "high": 53492.3984,
+   "low": 52410.2305,
+   "close": 53356.1211,
+   "prev_close": 51786.7188,
+   "chg_pct": 3.031,
+   "range_pct": 2.09,
+   "volume": 712504679
+  },
+  {
+   "id": "RUT",
+   "name": "罗素 2000",
+   "open": 2856.2607,
+   "high": 2875.1355,
+   "low": 2831.5051,
+   "close": 2856.9497,
+   "prev_close": 2812.45,
+   "chg_pct": 1.582,
+   "range_pct": 1.551,
+   "volume": 0
+  },
+  {
+   "id": "SOX",
+   "name": "费城半导体",
+   "open": 10485.8799,
+   "high": 10652.0176,
+   "low": 10064.7344,
+   "close": 10268.6543,
+   "prev_close": 10600.4004,
+   "chg_pct": -3.13,
+   "range_pct": 5.54,
+   "volume": 0
+  },
+  {
+   "id": "VIX",
+   "name": "VIX 恐慌指数",
+   "open": 19.2,
+   "high": 19.22,
+   "low": 16.57,
+   "close": 16.61,
+   "prev_close": 20.83,
+   "chg_pct": -20.259,
+   "range_pct": 12.722,
+   "volume": 0
+  }
+ ],
+ "watchlist": [
+  {
+   "id": "NVDA",
+   "name": "英伟达",
+   "group": "AI 芯片",
+   "open": 203.5,
+   "high": 206.79,
+   "low": 199.685,
+   "close": 200.13,
+   "prev_close": 206.69,
+   "chg_pct": -3.174,
+   "range_pct": 3.438,
+   "volume": 147804408
+  },
+  {
+   "id": "AMD",
+   "name": "AMD",
+   "group": "AI 芯片",
+   "open": 485.25,
+   "high": 514.6099,
+   "low": 476.5,
+   "close": 488.78,
+   "prev_close": 483.9,
+   "chg_pct": 1.008,
+   "range_pct": 7.876,
+   "volume": 50584612
+  },
+  {
+   "id": "AVGO",
+   "name": "博通",
+   "group": "AI 芯片",
+   "open": 326.855,
+   "high": 334.12,
+   "low": 321.74,
+   "close": 325.48,
+   "prev_close": 332.13,
+   "chg_pct": -2.002,
+   "range_pct": 3.727,
+   "volume": 23713562
+  },
+  {
+   "id": "MU",
+   "name": "美光",
+   "group": "AI 芯片",
+   "open": 822.995,
+   "high": 853.3399,
+   "low": 791.03,
+   "close": 795.23,
+   "prev_close": 855.1,
+   "chg_pct": -7.002,
+   "range_pct": 7.287,
+   "volume": 35210225
+  },
+  {
+   "id": "INTC",
+   "name": "英特尔",
+   "group": "AI 芯片",
+   "open": 58.665,
+   "high": 60.2,
+   "low": 56.77,
+   "close": 58.27,
+   "prev_close": 60.55,
+   "chg_pct": -3.765,
+   "range_pct": 5.665,
+   "volume": 188096167
+  },
+  {
+   "id": "TSM",
+   "name": "台积电 ADR",
+   "group": "AI 芯片",
+   "open": 400.635,
+   "high": 410.5899,
+   "low": 391.6103,
+   "close": 395.75,
+   "prev_close": 404.8,
+   "chg_pct": -2.236,
+   "range_pct": 4.689,
+   "volume": 14353096
+  },
+  {
+   "id": "MSFT",
+   "name": "微软",
+   "group": "云/平台",
+   "open": 543.695,
+   "high": 559.15,
+   "low": 542.341,
+   "close": 555.8,
+   "prev_close": 520.99,
+   "chg_pct": 6.682,
+   "range_pct": 3.226,
+   "volume": 50697927
+  },
+  {
+   "id": "GOOGL",
+   "name": "谷歌 A",
+   "group": "云/平台",
+   "open": 283.51,
+   "high": 296.49,
+   "low": 283.51,
+   "close": 288.93,
+   "prev_close": 280.03,
+   "chg_pct": 3.178,
+   "range_pct": 4.635,
+   "volume": 51316963
+  },
+  {
+   "id": "AMZN",
+   "name": "亚马逊",
+   "group": "云/平台",
+   "open": 264.815,
+   "high": 271.49,
+   "low": 263.85,
+   "close": 266.03,
+   "prev_close": 250.69,
+   "chg_pct": 6.119,
+   "range_pct": 3.048,
+   "volume": 92981289
+  },
+  {
+   "id": "META",
+   "name": "Meta",
+   "group": "云/平台",
+   "open": 641.15,
+   "high": 643.09,
+   "low": 624.5,
+   "close": 630.0,
+   "prev_close": 621.03,
+   "chg_pct": 1.444,
+   "range_pct": 2.993,
+   "volume": 32325750
+  },
+  {
+   "id": "AAPL",
+   "name": "苹果",
+   "group": "终端",
+   "open": 341.565,
+   "high": 354.47,
+   "low": 340.99,
+   "close": 349.51,
+   "prev_close": 331.9,
+   "chg_pct": 5.306,
+   "range_pct": 4.061,
+   "volume": 88958176
+  },
+  {
+   "id": "TSLA",
+   "name": "特斯拉",
+   "group": "终端",
+   "open": 379.8,
+   "high": 392.04,
+   "low": 375.5001,
+   "close": 385.19,
+   "prev_close": 398.5,
+   "chg_pct": -3.34,
+   "range_pct": 4.151,
+   "volume": 47499015
+  }
+ ],
+ "macro": [
+  {
+   "id": "WTI",
+   "name": "WTI 原油",
+   "unit": "美元/桶",
+   "open": 96.81,
+   "high": 97.15,
+   "low": 87.13,
+   "close": 88.04,
+   "prev_close": 96.09,
+   "chg_pct": -8.378,
+   "range_pct": 10.428,
+   "volume": 423829
+  },
+  {
+   "id": "BRENT",
+   "name": "布伦特原油",
+   "unit": "美元/桶",
+   "open": 104.37,
+   "high": 104.87,
+   "low": 93.43,
+   "close": 94.63,
+   "prev_close": 103.6,
+   "chg_pct": -8.658,
+   "range_pct": 11.042,
+   "volume": 62959
+  },
+  {
+   "id": "GOLD",
+   "name": "黄金期货",
+   "unit": "美元/盎司",
+   "open": 3940.8,
+   "high": 4080.8,
+   "low": 3928.2,
+   "close": 4072.2,
+   "prev_close": 3940.3999,
+   "chg_pct": 3.345,
+   "range_pct": 3.873,
+   "volume": 226987
+  },
+  {
+   "id": "US10Y",
+   "name": "10 年期美债收益率",
+   "unit": "%",
+   "open": 4.919,
+   "high": 4.964,
+   "low": 4.884,
+   "close": 4.894,
+   "prev_close": 4.952,
+   "chg_pct": -1.171,
+   "range_pct": 1.616,
+   "volume": 0,
+   "chg_bp": -5.8
+  },
+  {
+   "id": "US5Y",
+   "name": "5 年期美债收益率",
+   "unit": "%",
+   "open": 4.714,
+   "high": 4.757,
+   "low": 4.677,
+   "close": 4.689,
+   "prev_close": 4.743,
+   "chg_pct": -1.139,
+   "range_pct": 1.687,
+   "volume": 0,
+   "chg_bp": -5.4
+  },
+  {
+   "id": "DXY",
+   "name": "美元指数",
+   "unit": "点",
+   "open": 101.734,
+   "high": 101.698,
+   "low": 101.099,
+   "close": 101.527,
+   "prev_close": 101.87,
+   "chg_pct": -0.337,
+   "range_pct": 0.588,
+   "volume": 0
+  },
+  {
+   "id": "BTC",
+   "name": "比特币",
+   "unit": "美元",
+   "open": 77338.2266,
+   "high": 80746.25,
+   "low": 75709.9141,
+   "close": 80525.9688,
+   "prev_close": 77345.0469,
+   "chg_pct": 4.113,
+   "range_pct": 6.512,
+   "volume": 39860510720
+  }
+ ],
+ "sectors": [
+  {
+   "id": "XLK",
+   "name": "信息技术",
+   "open": 176.68,
+   "high": 180.19,
+   "low": 175.74,
+   "close": 176.5,
+   "prev_close": 176.51,
+   "chg_pct": -0.006,
+   "range_pct": 2.521,
+   "volume": 12642440
+  },
+  {
+   "id": "XLC",
+   "name": "通信服务",
+   "open": 103.39,
+   "high": 105.88,
+   "low": 103.39,
+   "close": 104.96,
+   "prev_close": 101.44,
+   "chg_pct": 3.47,
+   "range_pct": 2.455,
+   "volume": 11575574
+  },
+  {
+   "id": "XLY",
+   "name": "可选消费",
+   "open": 119.78,
+   "high": 122.9246,
+   "low": 119.62,
+   "close": 122.33,
+   "prev_close": 117.33,
+   "chg_pct": 4.261,
+   "range_pct": 2.816,
+   "volume": 18206782
+  },
+  {
+   "id": "XLP",
+   "name": "必需消费",
+   "open": 90.52,
+   "high": 92.49,
+   "low": 90.27,
+   "close": 91.94,
+   "prev_close": 88.95,
+   "chg_pct": 3.361,
+   "range_pct": 2.496,
+   "volume": 23796927
+  },
+  {
+   "id": "XLE",
+   "name": "能源",
+   "open": 65.83,
+   "high": 65.94,
+   "low": 62.66,
+   "close": 63.52,
+   "prev_close": 66.68,
+   "chg_pct": -4.739,
+   "range_pct": 4.919,
+   "volume": 69327056
+  },
+  {
+   "id": "XLF",
+   "name": "金融",
+   "open": 58.41,
+   "high": 59.195,
+   "low": 57.94,
+   "close": 59.2,
+   "prev_close": 57.19,
+   "chg_pct": 3.515,
+   "range_pct": 2.194,
+   "volume": 51800381
+  },
+  {
+   "id": "XLV",
+   "name": "医疗保健",
+   "open": 187.71,
+   "high": 190.205,
+   "low": 185.33,
+   "close": 189.66,
+   "prev_close": 184.02,
+   "chg_pct": 3.065,
+   "range_pct": 2.649,
+   "volume": 16776568
+  },
+  {
+   "id": "XLI",
+   "name": "工业",
+   "open": 170.83,
+   "high": 170.96,
+   "low": 167.21,
+   "close": 169.46,
+   "prev_close": 171.32,
+   "chg_pct": -1.086,
+   "range_pct": 2.189,
+   "volume": 12294452
+  },
+  {
+   "id": "XLB",
+   "name": "原材料",
+   "open": 53.37,
+   "high": 53.95,
+   "low": 53.0016,
+   "close": 53.9,
+   "prev_close": 52.59,
+   "chg_pct": 2.491,
+   "range_pct": 1.803,
+   "volume": 21237551
+  },
+  {
+   "id": "XLRE",
+   "name": "房地产",
+   "open": 44.27,
+   "high": 45.15,
+   "low": 44.1,
+   "close": 45.12,
+   "prev_close": 43.67,
+   "chg_pct": 3.32,
+   "range_pct": 2.404,
+   "volume": 9026061
+  },
+  {
+   "id": "XLU",
+   "name": "公用事业",
+   "open": 43.36,
+   "high": 43.7897,
+   "low": 42.8,
+   "close": 43.61,
+   "prev_close": 43.42,
+   "chg_pct": 0.438,
+   "range_pct": 2.279,
+   "volume": 41306804
+  }
+ ],
+ "intraday": {
+  "SPX": [
+   [
+    "09:30",
+    7650.12,
+    1.073
+   ],
+   [
+    "09:35",
+    7682.68,
+    1.503
+   ],
+   [
+    "09:40",
+    7701.84,
+    1.756
+   ],
+   [
+    "09:45",
+    7694.75,
+    1.662
+   ],
+   [
+    "09:50",
+    7688.53,
+    1.58
+   ],
+   [
+    "09:55",
+    7695.29,
+    1.67
+   ],
+   [
+    "10:00",
+    7703.91,
+    1.783
+   ],
+   [
+    "10:05",
+    7701.73,
+    1.755
+   ],
+   [
+    "10:10",
+    7706.16,
+    1.813
+   ],
+   [
+    "10:15",
+    7700.77,
+    1.742
+   ],
+   [
+    "10:20",
+    7686.7,
+    1.556
+   ],
+   [
+    "10:25",
+    7687.69,
+    1.569
+   ],
+   [
+    "10:30",
+    7685.33,
+    1.538
+   ],
+   [
+    "10:35",
+    7694.27,
+    1.656
+   ],
+   [
+    "10:40",
+    7685.95,
+    1.546
+   ],
+   [
+    "10:45",
+    7677.36,
+    1.433
+   ],
+   [
+    "10:50",
+    7680.23,
+    1.471
+   ],
+   [
+    "10:55",
+    7683.43,
+    1.513
+   ],
+   [
+    "11:00",
+    7675.72,
+    1.411
+   ],
+   [
+    "11:05",
+    7678.8,
+    1.452
+   ],
+   [
+    "11:10",
+    7681.89,
+    1.493
+   ],
+   [
+    "11:15",
+    7683.6,
+    1.515
+   ],
+   [
+    "11:20",
+    7666.59,
+    1.29
+   ],
+   [
+    "11:25",
+    7664.9,
+    1.268
+   ],
+   [
+    "11:30",
+    7676.63,
+    1.423
+   ],
+   [
+    "11:35",
+    7681.37,
+    1.486
+   ],
+   [
+    "11:40",
+    7695.94,
+    1.678
+   ],
+   [
+    "11:45",
+    7699.45,
+    1.725
+   ],
+   [
+    "11:50",
+    7710.76,
+    1.874
+   ],
+   [
+    "11:55",
+    7710.23,
+    1.867
+   ],
+   [
+    "12:00",
+    7695.98,
+    1.679
+   ],
+   [
+    "12:05",
+    7702.2,
+    1.761
+   ],
+   [
+    "12:10",
+    7699.91,
+    1.731
+   ],
+   [
+    "12:15",
+    7698.66,
+    1.714
+   ],
+   [
+    "12:20",
+    7705.26,
+    1.801
+   ],
+   [
+    "12:25",
+    7707.95,
+    1.837
+   ],
+   [
+    "12:30",
+    7704.52,
+    1.792
+   ],
+   [
+    "12:35",
+    7703.4,
+    1.777
+   ],
+   [
+    "12:40",
+    7706.21,
+    1.814
+   ],
+   [
+    "12:45",
+    7710.49,
+    1.87
+   ],
+   [
+    "12:50",
+    7709.81,
+    1.861
+   ],
+   [
+    "12:55",
+    7711.85,
+    1.888
+   ],
+   [
+    "13:00",
+    7711.58,
+    1.885
+   ],
+   [
+    "13:05",
+    7711.18,
+    1.88
+   ],
+   [
+    "13:10",
+    7712.12,
+    1.892
+   ],
+   [
+    "13:15",
+    7708.95,
+    1.85
+   ],
+   [
+    "13:20",
+    7705.16,
+    1.8
+   ],
+   [
+    "13:25",
+    7705.99,
+    1.811
+   ],
+   [
+    "13:30",
+    7705.31,
+    1.802
+   ],
+   [
+    "13:35",
+    7701.71,
+    1.754
+   ],
+   [
+    "13:40",
+    7702.24,
+    1.761
+   ],
+   [
+    "13:45",
+    7699.09,
+    1.72
+   ],
+   [
+    "13:50",
+    7697.06,
+    1.693
+   ],
+   [
+    "13:55",
+    7697.33,
+    1.697
+   ],
+   [
+    "14:00",
+    7702.2,
+    1.761
+   ],
+   [
+    "14:05",
+    7709.97,
+    1.864
+   ],
+   [
+    "14:10",
+    7706.53,
+    1.818
+   ],
+   [
+    "14:15",
+    7707.04,
+    1.825
+   ],
+   [
+    "14:20",
+    7703.68,
+    1.78
+   ],
+   [
+    "14:25",
+    7703.41,
+    1.777
+   ],
+   [
+    "14:30",
+    7698.41,
+    1.711
+   ],
+   [
+    "14:35",
+    7703.39,
+    1.777
+   ],
+   [
+    "14:40",
+    7703.81,
+    1.782
+   ],
+   [
+    "14:45",
+    7702.29,
+    1.762
+   ],
+   [
+    "14:50",
+    7699.34,
+    1.723
+   ],
+   [
+    "14:55",
+    7696.3,
+    1.683
+   ],
+   [
+    "15:00",
+    7697.17,
+    1.694
+   ],
+   [
+    "15:05",
+    7697.4,
+    1.697
+   ],
+   [
+    "15:10",
+    7697.14,
+    1.694
+   ],
+   [
+    "15:15",
+    7701.91,
+    1.757
+   ],
+   [
+    "15:20",
+    7700.55,
+    1.739
+   ],
+   [
+    "15:25",
+    7702.66,
+    1.767
+   ],
+   [
+    "15:30",
+    7706.78,
+    1.821
+   ],
+   [
+    "15:35",
+    7698.32,
+    1.71
+   ],
+   [
+    "15:40",
+    7696.26,
+    1.682
+   ],
+   [
+    "15:45",
+    7698.16,
+    1.708
+   ],
+   [
+    "15:50",
+    7686.8,
+    1.557
+   ],
+   [
+    "15:55",
+    7688.73,
+    1.583
+   ]
+  ],
+  "IXIC": [
+   [
+    "09:30",
+    25602.14,
+    0.907
+   ],
+   [
+    "09:35",
+    25798.56,
+    1.681
+   ],
+   [
+    "09:40",
+    25916.66,
+    2.147
+   ],
+   [
+    "09:45",
+    25914.61,
+    2.139
+   ],
+   [
+    "09:50",
+    25866.16,
+    1.948
+   ],
+   [
+    "09:55",
+    25921.24,
+    2.165
+   ],
+   [
+    "10:00",
+    25982.86,
+    2.408
+   ],
+   [
+    "10:05",
+    25980.62,
+    2.399
+   ],
+   [
+    "10:10",
+    26028.32,
+    2.587
+   ],
+   [
+    "10:15",
+    25986.24,
+    2.421
+   ],
+   [
+    "10:20",
+    25922.9,
+    2.171
+   ],
+   [
+    "10:25",
+    25924.55,
+    2.178
+   ],
+   [
+    "10:30",
+    25886.63,
+    2.028
+   ],
+   [
+    "10:35",
+    25917.46,
+    2.15
+   ],
+   [
+    "10:40",
+    25847.84,
+    1.875
+   ],
+   [
+    "10:45",
+    25801.69,
+    1.694
+   ],
+   [
+    "10:50",
+    25799.79,
+    1.686
+   ],
+   [
+    "10:55",
+    25789.09,
+    1.644
+   ],
+   [
+    "11:00",
+    25745.41,
+    1.472
+   ],
+   [
+    "11:05",
+    25758.42,
+    1.523
+   ],
+   [
+    "11:10",
+    25787.45,
+    1.637
+   ],
+   [
+    "11:15",
+    25793.62,
+    1.662
+   ],
+   [
+    "11:20",
+    25710.3,
+    1.333
+   ],
+   [
+    "11:25",
+    25691.27,
+    1.258
+   ],
+   [
+    "11:30",
+    25756.04,
+    1.514
+   ],
+   [
+    "11:35",
+    25757.63,
+    1.52
+   ],
+   [
+    "11:40",
+    25838.17,
+    1.837
+   ],
+   [
+    "11:45",
+    25856.12,
+    1.908
+   ],
+   [
+    "11:50",
+    25918.51,
+    2.154
+   ],
+   [
+    "11:55",
+    25913.42,
+    2.134
+   ],
+   [
+    "12:00",
+    25842.97,
+    1.856
+   ],
+   [
+    "12:05",
+    25863.95,
+    1.939
+   ],
+   [
+    "12:10",
+    25847.81,
+    1.875
+   ],
+   [
+    "12:15",
+    25854.34,
+    1.901
+   ],
+   [
+    "12:20",
+    25888.52,
+    2.036
+   ],
+   [
+    "12:25",
+    25903.93,
+    2.096
+   ],
+   [
+    "12:30",
+    25892.26,
+    2.05
+   ],
+   [
+    "12:35",
+    25873.19,
+    1.975
+   ],
+   [
+    "12:40",
+    25900.59,
+    2.083
+   ],
+   [
+    "12:45",
+    25922.45,
+    2.169
+   ],
+   [
+    "12:50",
+    25911.37,
+    2.126
+   ],
+   [
+    "12:55",
+    25917.82,
+    2.151
+   ],
+   [
+    "13:00",
+    25913.19,
+    2.133
+   ],
+   [
+    "13:05",
+    25906.72,
+    2.107
+   ],
+   [
+    "13:10",
+    25913.22,
+    2.133
+   ],
+   [
+    "13:15",
+    25904.24,
+    2.098
+   ],
+   [
+    "13:20",
+    25885.47,
+    2.024
+   ],
+   [
+    "13:25",
+    25878.23,
+    1.995
+   ],
+   [
+    "13:30",
+    25873.54,
+    1.977
+   ],
+   [
+    "13:35",
+    25854.64,
+    1.902
+   ],
+   [
+    "13:40",
+    25845.45,
+    1.866
+   ],
+   [
+    "13:45",
+    25829.2,
+    1.802
+   ],
+   [
+    "13:50",
+    25812.28,
+    1.735
+   ],
+   [
+    "13:55",
+    25811.6,
+    1.733
+   ],
+   [
+    "14:00",
+    25845.14,
+    1.865
+   ],
+   [
+    "14:05",
+    25879.03,
+    1.998
+   ],
+   [
+    "14:10",
+    25861.63,
+    1.93
+   ],
+   [
+    "14:15",
+    25863.38,
+    1.937
+   ],
+   [
+    "14:20",
+    25841.2,
+    1.849
+   ],
+   [
+    "14:25",
+    25844.61,
+    1.863
+   ],
+   [
+    "14:30",
+    25815.83,
+    1.749
+   ],
+   [
+    "14:35",
+    25832.01,
+    1.813
+   ],
+   [
+    "14:40",
+    25837.47,
+    1.835
+   ],
+   [
+    "14:45",
+    25831.11,
+    1.809
+   ],
+   [
+    "14:50",
+    25814.7,
+    1.745
+   ],
+   [
+    "14:55",
+    25795.18,
+    1.668
+   ],
+   [
+    "15:00",
+    25800.93,
+    1.691
+   ],
+   [
+    "15:05",
+    25792.96,
+    1.659
+   ],
+   [
+    "15:10",
+    25792.85,
+    1.659
+   ],
+   [
+    "15:15",
+    25823.59,
+    1.78
+   ],
+   [
+    "15:20",
+    25804.29,
+    1.704
+   ],
+   [
+    "15:25",
+    25806.18,
+    1.711
+   ],
+   [
+    "15:30",
+    25820.95,
+    1.769
+   ],
+   [
+    "15:35",
+    25773.71,
+    1.583
+   ],
+   [
+    "15:40",
+    25762.53,
+    1.539
+   ],
+   [
+    "15:45",
+    25785.03,
+    1.628
+   ],
+   [
+    "15:50",
+    25730.64,
+    1.413
+   ],
+   [
+    "15:55",
+    25739.71,
+    1.449
+   ]
+  ]
+ },
+ "movers": {
+  "gainers": [
+   {
+    "id": "KD",
+    "name": "Kyndryl Holdings",
+    "sector": "Technology",
+    "industry": "EDP Services",
+    "market_cap": 2818568323.0,
+    "open": 14.91,
+    "high": 18.01,
+    "low": 14.66,
+    "close": 16.84,
+    "prev_close": 12.94,
+    "chg_pct": 30.139,
+    "range_pct": 25.889,
+    "volume": 14951422
+   },
+   {
+    "id": "RYTM",
+    "name": "Rhythm Pharmaceuticals",
+    "sector": "Health Care",
+    "industry": "Biotechnology: Pharmaceutical Preparations",
+    "market_cap": 5951573968.0,
+    "open": 85.94,
+    "high": 110.68,
+    "low": 85.04,
+    "close": 110.68,
+    "prev_close": 86.44,
+    "chg_pct": 28.043,
+    "range_pct": 29.662,
+    "volume": 5401040
+   },
+   {
+    "id": "DUOL",
+    "name": "Duolingo",
+    "sector": "Technology",
+    "industry": "Computer Software: Prepackaged Software",
+    "market_cap": 5988642432.0,
+    "open": 159.995,
+    "high": 175.56,
+    "low": 157.001,
+    "close": 161.27,
+    "prev_close": 128.0,
+    "chg_pct": 25.992,
+    "range_pct": 14.499,
+    "volume": 9493982
+   },
+   {
+    "id": "YOU",
+    "name": "Clear Secure",
+    "sector": "Technology",
+    "industry": "Computer Software: Prepackaged Software",
+    "market_cap": 6461358796.0,
+    "open": 51.4,
+    "high": 66.17,
+    "low": 51.3,
+    "close": 59.08,
+    "prev_close": 47.76,
+    "chg_pct": 23.702,
+    "range_pct": 31.135,
+    "volume": 6742844
+   },
+   {
+    "id": "PCOR",
+    "name": "Procore Technologies",
+    "sector": "Technology",
+    "industry": "Computer Software: Prepackaged Software",
+    "market_cap": 9599018701.0,
+    "open": 66.93,
+    "high": 76.2101,
+    "low": 67.25,
+    "close": 75.6,
+    "prev_close": 63.17,
+    "chg_pct": 19.677,
+    "range_pct": 14.184,
+    "volume": 9020069
+   },
+   {
+    "id": "MDLN",
+    "name": "Medline",
+    "sector": "Health Care",
+    "industry": "Medical/Dental Instruments",
+    "market_cap": 44818378402.0,
+    "open": 37.37,
+    "high": 40.8,
+    "low": 37.06,
+    "close": 40.35,
+    "prev_close": 34.09,
+    "chg_pct": 18.363,
+    "range_pct": 10.971,
+    "volume": 25463700
+   },
+   {
+    "id": "LIVN",
+    "name": "LivaNova",
+    "sector": "Health Care",
+    "industry": "Biotechnology: Electromedical & Electrotherapeutic Apparatus",
+    "market_cap": 4401971209.0,
+    "open": 89.675,
+    "high": 99.3799,
+    "low": 89.495,
+    "close": 94.19,
+    "prev_close": 79.9,
+    "chg_pct": 17.885,
+    "range_pct": 12.372,
+    "volume": 3788870
+   },
+   {
+    "id": "UFPT",
+    "name": "UFP Technologies",
+    "sector": "Health Care",
+    "industry": "Medical/Dental Instruments",
+    "market_cap": 2171299853.0,
+    "open": 306.54,
+    "high": 342.11,
+    "low": 301.11,
+    "close": 329.82,
+    "prev_close": 280.32,
+    "chg_pct": 17.658,
+    "range_pct": 14.626,
+    "volume": 358590
+   },
+   {
+    "id": "MOS",
+    "name": "Mosaic Company (The)",
+    "sector": "Industrials",
+    "industry": "Agricultural Chemicals",
+    "market_cap": 5855637799.0,
+    "open": 18.99,
+    "high": 21.645,
+    "low": 18.44,
+    "close": 21.62,
+    "prev_close": 18.42,
+    "chg_pct": 17.372,
+    "range_pct": 17.4,
+    "volume": 22221893
+   },
+   {
+    "id": "OUST",
+    "name": "Ouster",
+    "sector": "Industrials",
+    "industry": "Industrial Machinery/Components",
+    "market_cap": 2089815410.0,
+    "open": 33.26,
+    "high": 33.63,
+    "low": 30.235,
+    "close": 33.54,
+    "prev_close": 28.98,
+    "chg_pct": 15.735,
+    "range_pct": 11.715,
+    "volume": 6181864
+   }
+  ],
+  "losers": [
+   {
+    "id": "NRIX",
+    "name": "Nurix Therapeutics",
+    "sector": "Health Care",
+    "industry": "Biotechnology: Pharmaceutical Preparations",
+    "market_cap": 2820830197.0,
+    "open": 17.16,
+    "high": 17.25,
+    "low": 14.78,
+    "close": 15.95,
+    "prev_close": 25.82,
+    "chg_pct": -38.226,
+    "range_pct": 9.566,
+    "volume": 19547045
+   },
+   {
+    "id": "DOX",
+    "name": "Amdocs Limited",
+    "sector": "Technology",
+    "industry": "EDP Services",
+    "market_cap": 6739289720.0,
+    "open": 42.93,
+    "high": 46.3856,
+    "low": 41.441,
+    "close": 43.66,
+    "prev_close": 62.43,
+    "chg_pct": -30.066,
+    "range_pct": 7.92,
+    "volume": 9355706
+   },
+   {
+    "id": "ECG",
+    "name": "Everus Construction Group",
+    "sector": "Consumer Discretionary",
+    "industry": "Homebuilding",
+    "market_cap": 5756426232.0,
+    "open": 99.72,
+    "high": 100.39,
+    "low": 77.55,
+    "close": 79.71,
+    "prev_close": 112.73,
+    "chg_pct": -29.291,
+    "range_pct": 20.261,
+    "volume": 3454196
+   },
+   {
+    "id": "FIS",
+    "name": "Fidelity National Information Services",
+    "sector": "Consumer Discretionary",
+    "industry": "Business Services",
+    "market_cap": 20107373704.0,
+    "open": 30.58,
+    "high": 32.4,
+    "low": 29.15,
+    "close": 29.76,
+    "prev_close": 38.99,
+    "chg_pct": -23.673,
+    "range_pct": 8.335,
+    "volume": 37059180
+   },
+   {
+    "id": "HUT",
+    "name": "Hut 8",
+    "sector": "Finance",
+    "industry": "Finance: Consumer Services",
+    "market_cap": 7857791085.0,
+    "open": 53.44,
+    "high": 56.9827,
+    "low": 48.48,
+    "close": 48.94,
+    "prev_close": 63.75,
+    "chg_pct": -23.231,
+    "range_pct": 13.338,
+    "volume": 13833529
+   },
+   {
+    "id": "STRL",
+    "name": "Sterling Infrastructure",
+    "sector": "Industrials",
+    "industry": "Military/Government/Technical",
+    "market_cap": 11015838725.0,
+    "open": 339.86,
+    "high": 340.0,
+    "low": 279.775,
+    "close": 283.66,
+    "prev_close": 361.15,
+    "chg_pct": -21.456,
+    "range_pct": 16.676,
+    "volume": 3213049
+   },
+   {
+    "id": "MOD",
+    "name": "Modine Manufacturing",
+    "sector": "Consumer Discretionary",
+    "industry": "Auto Parts:O.E.M.",
+    "market_cap": 6673553363.0,
+    "open": 115.5,
+    "high": 115.12,
+    "low": 91.45,
+    "close": 98.56,
+    "prev_close": 125.45,
+    "chg_pct": -21.435,
+    "range_pct": 18.868,
+    "volume": 9491114
+   },
+   {
+    "id": "CIFR",
+    "name": "Cipher Digital",
+    "sector": "Finance",
+    "industry": "Finance: Consumer Services",
+    "market_cap": 3705684718.0,
+    "open": 6.99,
+    "high": 7.339,
+    "low": 6.18,
+    "close": 6.5,
+    "prev_close": 8.12,
+    "chg_pct": -19.951,
+    "range_pct": 14.273,
+    "volume": 103235832
+   },
+   {
+    "id": "INIO",
+    "name": "INNIO",
+    "sector": "Consumer Discretionary",
+    "industry": "Metal Fabrications",
+    "market_cap": 13732500000.0,
+    "open": 17.4,
+    "high": 17.58,
+    "low": 14.195,
+    "close": 14.74,
+    "prev_close": 18.31,
+    "chg_pct": -19.498,
+    "range_pct": 18.487,
+    "volume": 13091524
+   },
+   {
+    "id": "IOSP",
+    "name": "Innospec",
+    "sector": "Industrials",
+    "industry": "Major Chemicals",
+    "market_cap": 2444138794.0,
+    "open": 91.65,
+    "high": 93.99,
+    "low": 79.885,
+    "close": 80.65,
+    "prev_close": 99.23,
+    "chg_pct": -18.724,
+    "range_pct": 14.214,
+    "volume": 482348
+   }
+  ],
+  "swings": [
+   {
+    "id": "YOU",
+    "name": "Clear Secure",
+    "sector": "Technology",
+    "industry": "Computer Software: Prepackaged Software",
+    "market_cap": 6461358796.0,
+    "open": 51.4,
+    "high": 66.17,
+    "low": 51.3,
+    "close": 59.08,
+    "prev_close": 47.76,
+    "chg_pct": 23.702,
+    "range_pct": 31.135,
+    "volume": 6742844
+   },
+   {
+    "id": "RYTM",
+    "name": "Rhythm Pharmaceuticals",
+    "sector": "Health Care",
+    "industry": "Biotechnology: Pharmaceutical Preparations",
+    "market_cap": 5951573968.0,
+    "open": 85.94,
+    "high": 110.68,
+    "low": 85.04,
+    "close": 110.68,
+    "prev_close": 86.44,
+    "chg_pct": 28.043,
+    "range_pct": 29.662,
+    "volume": 5401040
+   },
+   {
+    "id": "ACCV",
+    "name": "Accelevation Holdings",
+    "sector": "Energy",
+    "industry": "Industrial Machinery/Components",
+    "market_cap": 3335939239.0,
+    "open": 13.97,
+    "high": 14.11,
+    "low": 10.35,
+    "close": 11.7,
+    "prev_close": 14.11,
+    "chg_pct": -17.08,
+    "range_pct": 26.648,
+    "volume": 3781770
+   },
+   {
+    "id": "KD",
+    "name": "Kyndryl Holdings",
+    "sector": "Technology",
+    "industry": "EDP Services",
+    "market_cap": 2818568323.0,
+    "open": 14.91,
+    "high": 18.01,
+    "low": 14.66,
+    "close": 16.84,
+    "prev_close": 12.94,
+    "chg_pct": 30.139,
+    "range_pct": 25.889,
+    "volume": 14951422
+   },
+   {
+    "id": "DPC",
+    "name": "DPC Holdings",
+    "sector": "Telecommunications",
+    "industry": "Metal Fabrications",
+    "market_cap": 4735758607.0,
+    "open": 32.11,
+    "high": 32.215,
+    "low": 25.24,
+    "close": 28.42,
+    "prev_close": 31.7,
+    "chg_pct": -10.347,
+    "range_pct": 22.003,
+    "volume": 5483471
+   },
+   {
+    "id": "MTRN",
+    "name": "Materion Corporation",
+    "sector": "Industrials",
+    "industry": "Industrial Specialties",
+    "market_cap": 4738214077.0,
+    "open": 218.95,
+    "high": 223.7,
+    "low": 175.3,
+    "close": 187.26,
+    "prev_close": 227.43,
+    "chg_pct": -17.663,
+    "range_pct": 21.281,
+    "volume": 806739
+   },
+   {
+    "id": "IMNM",
+    "name": "Immunome",
+    "sector": "Health Care",
+    "industry": "Biotechnology: Pharmaceutical Preparations",
+    "market_cap": 2396643286.0,
+    "open": 20.64,
+    "high": 22.77,
+    "low": 18.47,
+    "close": 19.52,
+    "prev_close": 20.31,
+    "chg_pct": -3.89,
+    "range_pct": 21.172,
+    "volume": 3321760
+   },
+   {
+    "id": "PRIM",
+    "name": "Primoris Services",
+    "sector": "Industrials",
+    "industry": "Water Sewer Pipeline Comm & Power Line Construction",
+    "market_cap": 4283438259.0,
+    "open": 84.45,
+    "high": 83.92,
+    "low": 67.35,
+    "close": 68.45,
+    "prev_close": 79.57,
+    "chg_pct": -13.975,
+    "range_pct": 20.824,
+    "volume": 3081915
+   },
+   {
+    "id": "ECG",
+    "name": "Everus Construction Group",
+    "sector": "Consumer Discretionary",
+    "industry": "Homebuilding",
+    "market_cap": 5756426232.0,
+    "open": 99.72,
+    "high": 100.39,
+    "low": 77.55,
+    "close": 79.71,
+    "prev_close": 112.73,
+    "chg_pct": -29.291,
+    "range_pct": 20.261,
+    "volume": 3454196
+   },
+   {
+    "id": "RGC",
+    "name": "Regencell Bioscience Holdings Limited",
+    "sector": "Health Care",
+    "industry": " Medicinal Chemicals and Botanical Products ",
+    "market_cap": 3049688912.0,
+    "open": 6.26,
+    "high": 6.51,
+    "low": 5.31,
+    "close": 5.42,
+    "prev_close": 6.15,
+    "chg_pct": -11.87,
+    "range_pct": 19.512,
+    "volume": 273755
+   }
+  ]
+ },
+ "crosscheck": [],
+ "warnings": [
+  "NVDA: Nasdaq 历史行情无数据，未能交叉核对",
+  "AMD: Nasdaq 历史行情无数据，未能交叉核对",
+  "AVGO: Nasdaq 历史行情无数据，未能交叉核对",
+  "MU: Nasdaq 历史行情无数据，未能交叉核对",
+  "INTC: Nasdaq 历史行情无数据，未能交叉核对",
+  "TSM: Nasdaq 历史行情无数据，未能交叉核对",
+  "MSFT: Nasdaq 历史行情无数据，未能交叉核对",
+  "GOOGL: Nasdaq 历史行情无数据，未能交叉核对",
+  "AMZN: Nasdaq 历史行情无数据，未能交叉核对",
+  "META: Nasdaq 历史行情无数据，未能交叉核对",
+  "AAPL: Nasdaq 历史行情无数据，未能交叉核对",
+  "TSLA: Nasdaq 历史行情无数据，未能交叉核对",
+  "KD: Nasdaq 历史行情无数据，未能交叉核对",
+  "RYTM: Nasdaq 历史行情无数据，未能交叉核对",
+  "DUOL: Nasdaq 历史行情无数据，未能交叉核对",
+  "YOU: Nasdaq 历史行情无数据，未能交叉核对",
+  "PCOR: Nasdaq 历史行情无数据，未能交叉核对",
+  "MDLN: Nasdaq 历史行情无数据，未能交叉核对",
+  "LIVN: Nasdaq 历史行情无数据，未能交叉核对",
+  "UFPT: Nasdaq 历史行情无数据，未能交叉核对",
+  "MOS: Nasdaq 历史行情无数据，未能交叉核对",
+  "OUST: Nasdaq 历史行情无数据，未能交叉核对",
+  "NRIX: Nasdaq 历史行情无数据，未能交叉核对",
+  "DOX: Nasdaq 历史行情无数据，未能交叉核对",
+  "ECG: Nasdaq 历史行情无数据，未能交叉核对",
+  "FIS: Nasdaq 历史行情无数据，未能交叉核对",
+  "HUT: Nasdaq 历史行情无数据，未能交叉核对",
+  "STRL: Nasdaq 历史行情无数据，未能交叉核对",
+  "MOD: Nasdaq 历史行情无数据，未能交叉核对",
+  "CIFR: Nasdaq 历史行情无数据，未能交叉核对",
+  "INIO: Nasdaq 历史行情无数据，未能交叉核对",
+  "IOSP: Nasdaq 历史行情无数据，未能交叉核对"
+ ]
+}
