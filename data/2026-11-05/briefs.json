@@ -1,0 +1,152 @@
+[
+  {
+    "id": "n1",
+    "section": "news",
+    "title": "AI 交易大崩盘：纳指进入回调区间，标普录得 2025 年 4 月以来最差单日",
+    "fact": "周四芯片和 AI 股遭集中抛售，纳指收跌约 5.5%、较上月创下的纪录高点回撤超过 10%；标普 500 跌约 4.4%，盘中市值蒸发超过 2 万亿美元；道指跌 1800 多点，把周三的选举涨幅全部吐回。罗素 2000 和费城半导体指数也双双进入回调区间。",
+    "assets": "SPX、IXIC、SOX、RUT、NVDA、AMD、MU",
+    "inference": "前一天的“分治政府”利好只覆盖了大盘消费和金融股，AI 链条的高估值在政策不确定面前非常脆弱；在周五非农和 11 月 17 日英伟达财报之前，卖压可能还会反复。",
+    "src": "雅虎财经",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html"
+  },
+  {
+    "id": "n2",
+    "section": "news",
+    "title": "数据中心建设放缓担忧：UBS 估计 2028 年约三成新增容量面临风险",
+    "fact": "投资者担心民主党拿下国会、多个数据中心大州的选民对行业表达不满后，数据中心建设会放缓。UBS 策略师估计，2028 年预期新增的数据中心容量中约 30% 现在面临风险。美光、AMD、Marvell、Arm、博通、英特尔、高通、英伟达全线大跌，CoreWeave、Nebius、戴尔、HPE 也明显下跌。",
+    "assets": "SOX、MU、AMD、MRVL、ARM、AVGO、CRWV、DELL",
+    "inference": "数据中心资本开支是今年芯片股上涨的核心逻辑；只要审批、电价和税收优惠的政策风险没落地，市场会给这条链条更低的估值，受影响最大的是订单高度集中在 AI 基建上的中小型公司。",
+    "src": "Stock Titan（援引 CNBC）",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
+  },
+  {
+    "id": "n3",
+    "section": "news",
+    "title": "对冲基金“射杀将军”、散户投降式抛售",
+    "fact": "Nomura 的 Charlie McElligott 形容对冲基金正在“射杀将军”，即集中卖出今年涨得最多的龙头股以锁定收益。Vanda 数据显示，截至下午 3 点散户净卖出个股约 3.58 亿美元，有望创下 2020 年 3 月以来最大的单日净卖出；但仍有散户在买入 TQQQ、SOXL 等杠杆 ETF。Palantir、CrowdStrike 盘中一度跌超 10%。",
+    "assets": "IXIC、PLTR、CRWD、TQQQ、SOXL",
+    "inference": "年底前机构兑现收益和散户恐慌叠加，往往放大单日跌幅；这类抛售本身未必改变基本面，但短期内高位股的波动会明显加大。",
+    "src": "雅虎财经",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html"
+  },
+  {
+    "id": "n4",
+    "section": "news",
+    "title": "财报季：AppLovin、Krispy Kreme 大涨，Veracyte、MNTN 腰斩；温蒂汉堡拒绝 Trian 收购",
+    "fact": "AppLovin 三季度营收和四季度指引均大超预期，成为大跌日的亮点；Krispy Kreme 上调 2026 年营收预期，Portillo's 上调利润展望。Veracyte、MNTN 下调全年指引后股价腰斩，Tripadvisor 宣布 CEO 和 CFO 相继离任。温蒂汉堡（Wendy's）拒绝 Trian 牵头财团每股 7.35 美元的收购要约，称其严重低估公司价值，同时公布了扭转计划。",
+    "assets": "APP、DNUT、PTLO、VCYT、MNTN、TRIP、WEN",
+    "inference": "在系统性抛售里，业绩和指引超预期的公司仍能逆势大涨，说明市场在“去 AI 拥挤仓位”而不是全面否定盈利；但指引下调的公司被惩罚得更狠。",
+    "src": "Stock Titan（汇总公司公告与 CNBC 报道）",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
+  },
+  {
+    "id": "w1",
+    "section": "world",
+    "title": "英国央行 2023 年以来首次加息，理由是伊朗战争推高能源价格",
+    "fact": "英国央行以 8 比 1 的投票把基准利率从 3.75% 上调至 4%，委员 Mann 主张一次加 50 个基点。央行预计通胀将在 2027 年二季度见顶 4.8%，如果油价升到每桶 130 美元左右，通胀可能达到 6.2%。",
+    "assets": "英镑、英国国债、全球债市、美债收益率",
+    "inference": "美联储、欧洲央行和英国央行都已转向加息，全球紧缩的方向更清晰；但当天美股暴跌让避险资金涌入美债，美债收益率反而下降。",
+    "src": "路透社（经 Investing.com 转载）",
+    "url": "https://ca.investing.com/news/economy-news/bank-of-england-raises-rates-for-first-time-since-2023-warns-more-likely-4935844"
+  },
+  {
+    "id": "w2",
+    "section": "world",
+    "title": "伊朗协议前景不明，油价在暴跌一天后反弹",
+    "fact": "在周三暴跌约 8% 后，原油周四反弹：市场不确定特朗普政府是否会推动与伊朗达成结束中东战争的协议。副总统万斯称，这场战争是共和党输掉中期选举的“原因”。",
+    "assets": "WTI、BRENT、XLE、航空股",
+    "inference": "选举结果提高了政府寻求停战的政治压力，但协议仍未落地；油价会在“和谈预期”和“供应风险”之间大幅摆动，持续推高通胀预期和各国央行的加息压力。",
+    "src": "雅虎财经",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html"
+  },
+  {
+    "id": "w3",
+    "section": "world",
+    "title": "亚洲芯片股先崩：韩国 KOSPI 收跌逾 5%，SK 海力士重挫",
+    "fact": "美股开盘前，韩国 KOSPI 指数收跌 5.28%，SK 海力士跌 9.03%；美股盘前跌幅最大的 15 只股票中有 7 只是芯片公司，包括 SK 海力士、日月光、联电、Arm、AXT 和 Aehr Test Systems。",
+    "assets": "TSM、MU、ASX、UMC、ARM、SOX",
+    "inference": "AI 存储和代工链条高度全球化，亚洲市场先行下跌，说明这轮抛售不只是美国政治因素，而是全球资金对 AI 硬件拥挤仓位的集中调整。",
+    "src": "Stock Titan（援引 CNBC）",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
+  },
+  {
+    "id": "w4",
+    "section": "world",
+    "title": "民主党掌控参议院：美联储人事和加密立法都要改道",
+    "fact": "UBS 的 Jonathan Pingle 认为，民主党控制参议院后，特朗普重塑美联储的努力预计会受阻。Stifel 的 Brian Gardner 表示，加密市场结构法案在跛脚鸭会期“已经没戏”，Clarity Act 今年难以推进；比特币当天跌超 5%。",
+    "assets": "BTC、COIN、美债、美元",
+    "inference": "美联储独立性受到的政治冲击减小，对长期通胀预期是利好；加密立法推迟则削弱了今年支撑加密资产的一大政策预期。",
+    "src": "雅虎财经",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html"
+  },
+  {
+    "id": "s1",
+    "section": "speaker",
+    "title": "AMD CEO 苏姿丰：市场“有时有点短视”，AI 需求依然强劲",
+    "fact": "在 AMD 股价大跌的当天，苏姿丰表示市场有时会有点短视，并强调 AI 需求仍然强劲。",
+    "assets": "AMD、NVDA、SOX",
+    "inference": "管理层对需求的表态和股价走势完全相反，说明眼下决定股价的是政策和资金面，而不是订单；下一个检验点是 11 月 17 日英伟达财报。",
+    "src": "雅虎财经",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html"
+  },
+  {
+    "id": "s2",
+    "section": "speaker",
+    "title": "克利夫兰联储哈玛克、里士满联储巴尔金：倾向小步、多次加息",
+    "fact": "哈玛克周四在苏黎世表示，政策需要转向限制性立场，才能及时把通胀拉回 2%，她更倾向通过幅度较小、频率较高的加息来实现；巴尔金在夏洛特也支持渐进路径，并称通胀“太高”。上周美联储把利率维持在 3.75%–4.00%。",
+    "assets": "美债收益率、美元、SPX",
+    "inference": "美联储官员仍在为 12 月加息铺路；当天股市暴跌让交易员把 12 月加息概率从八成多下调到约七成，但周五非农如果偏强，加息预期可能再次升温。",
+    "src": "路透社（经 Investing.com 转载）",
+    "url": "https://www.investing.com/news/economy-news/feds-hammack-favors-gradual-ratehike-path-to-lower-inflation-5004429"
+  },
+  {
+    "id": "s3",
+    "section": "speaker",
+    "title": "英国央行行长贝利：这次加息不是“一长串加息的开始”",
+    "fact": "贝利表示，这次加息不应被视为一连串加息的第一步，但如果中东冲突得不到解决，这“似乎不会是最后一次”；他称近期油价回落是“令人鼓舞的消息”，但此前的回落也曾被证明是假象。",
+    "assets": "英镑、全球债市",
+    "inference": "全球主要央行都把加息与中东局势挂钩，油价已经成为货币政策的关键变量。",
+    "src": "路透社（经 Investing.com 转载）",
+    "url": "https://ca.investing.com/news/economy-news/bank-of-england-raises-rates-for-first-time-since-2023-warns-more-likely-4935844"
+  },
+  {
+    "id": "t1",
+    "section": "watch",
+    "title": "周五 8:30：10 月非农就业报告",
+    "fact": "经济学家预计 10 月新增就业约 6.5 万、失业率持平于 4.2%。周四公布的初请失业金人数降至 18.9 万，Challenger 统计的 10 月裁员人数为 2023 年以来最低。",
+    "assets": "美债收益率、SPX、IXIC、美元",
+    "inference": "数据偏强会推高 12 月加息预期、压制估值；数据偏弱会加剧对经济的担忧。无论方向，在今天的高波动之后，开盘跳空都可能很大。",
+    "src": "路透社（经 Investing.com 转载）",
+    "url": "https://www.investing.com/news/economy-news/feds-hammack-favors-gradual-ratehike-path-to-lower-inflation-5004429"
+  },
+  {
+    "id": "t2",
+    "section": "watch",
+    "title": "周五开盘：Airbnb 盘后大涨，IonQ 上调指引",
+    "fact": "Airbnb 三季度每股收益 3.16 美元、营收 48.7 亿美元，均高于预期，四季度营收指引 32.2–32.8 亿美元也高于预期并上调全年增长预期，股价盘后大涨约一成。DraftKings、Cloudflare、Atlassian、IonQ 等也在盘后公布了业绩。",
+    "assets": "ABNB、DKNG、NET、TEAM、IONQ",
+    "inference": "盘后财报给了个股反弹的理由，但大盘能否企稳仍取决于芯片股是否止跌。",
+    "src": "MarketScreener",
+    "url": "https://www.marketscreener.com/news/airbnb-q3-earnings-revenue-rise-shares-jump-after-hours-ce785fddda88f521"
+  },
+  {
+    "id": "t3",
+    "section": "watch",
+    "title": "11 月 17 日：英伟达财报",
+    "fact": "英伟达周四跌到 4 月以来最低，今年以来转为下跌；公司此前表示预计下个财年销售额将再增长约 70%。11 月 17 日公布的季度财报将是 AI 需求的下一个硬核检验。",
+    "assets": "NVDA、SOX、AI 服务器与存储链条",
+    "inference": "如果英伟达的订单和指引继续强劲，芯片股有望修复部分估值；但只要政策风险悬而未决，市场可能不会再给出之前的溢价。",
+    "src": "The Motley Fool",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/11/05/stock-market-today-nov-5-nvidia-slides-on-ai-chip-selloff-as-election-uncertainty-weighs/"
+  },
+  {
+    "id": "t4",
+    "section": "watch",
+    "title": "技术面：纳指跌破 200 日均线，VIX 站上 28",
+    "fact": "纳指周四跌破 200 日移动平均线，是 4 月以来首次；VIX 盘中一度涨到 28 以上。12 月 8–9 日的美联储议息会议，交易员目前给出的加息概率约七成。",
+    "assets": "IXIC、VIX、QQQ",
+    "inference": "跌破长期均线后，技术面资金往往会继续减仓；能否在下周重新站回均线，是判断这次是短暂恐慌还是趋势转折的重要信号。",
+    "src": "Stock Titan（援引 CNBC）",
+    "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
+  }
+]

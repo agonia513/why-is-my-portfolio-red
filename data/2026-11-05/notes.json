@@ -1,0 +1,73 @@
+{
+  "stocks": {
+    "NVDA": "随 AI 芯片股集体被抛售，跌回去年底收盘价下方，抹掉今年全部涨幅；11 月 17 日公布财报",
+    "AMD": "苏姿丰称 AI 需求依然强劲，但股价仍跌幅居大型芯片股前列",
+    "MU": "存储芯片领跌，跌幅居大型芯片股之首",
+    "INTC": "此前给出的四季度营收指引 150–160 亿美元低于预期，叠加芯片股抛售",
+    "TSLA": "市场担心民主党控制国会后，SpaceX 与特斯拉相关合并和数据中心扩张的监管难度上升",
+    "AAPL": "前一天随大盘大涨后转跌，跌幅在大型科技股里最小",
+    "MSFT": "平台股也没能幸免，但跌幅远小于芯片股"
+  },
+  "movers": {
+    "APP": {
+      "comment": "三季度营收 21.8 亿美元，高于市场预期的 20.7 亿美元，也超过公司自己给出的区间；四季度营收指引 23.7–24.0 亿美元，明显高于约 22.5 亿美元的市场预期，成为大跌日里涨幅最大的大盘股",
+      "src": "雅虎财经",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html"
+    },
+    "ECPG": {
+      "comment": "这家不良债务收购公司三季度 GAAP 每股收益 5.57 美元、同比增长 76%；全球回收额创纪录的 7.54 亿美元，主要来自美国业务加大债务组合收购；同时上调全年指引，每股收益目标提高到 15.50–16.00 美元",
+      "src": "StockStory",
+      "url": "https://stockstory.org/us/stocks/nasdaq/ecpg/news/why-up-down/why-encore-capital-group-ecpg-stock-is-up-today-2"
+    },
+    "ADMA": {
+      "comment": "公布三季度业绩，核心免疫球蛋白产品 ASCENIV 销售额增长 31%，带动股价大涨",
+      "src": "Stock Titan（汇总公司公告与 CNBC 报道）",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
+    },
+    "WRBY": {
+      "comment": "三季度营收增长 10.4%；公司宣布首款智能眼镜（Intelligent Eyewear）将于 11 月 12 日开放预订",
+      "src": "Stock Titan（汇总公司公告与 CNBC 报道）",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
+    },
+    "MGNI": {
+      "comment": "广告技术公司三季度营收增长 14%，并上调 2026 年的增长预期",
+      "src": "Stock Titan（汇总公司公告与 CNBC 报道）",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
+    },
+    "EPAM": {
+      "comment": "公布三季度业绩，并把股票回购计划增加 15 亿美元",
+      "src": "Stock Titan（汇总公司公告与 CNBC 报道）",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
+    },
+    "CDLR": {
+      "comment": "不是真实暴跌：公司当天完成从丹麦迁册到英国的换股，新股开始在纽交所以 CDLR 代码交易。原来每份 ADS 对应 4 股旧股，新旧股按 1:1 换发，数据源把旧 ADS 前收直接和新股收盘相比，才显示出巨大跌幅；按 4 股折算，股价实际并未大跌",
+      "src": "TipRanks（公司公告）；Cadeler 6-K 文件",
+      "url": "https://www.tipranks.com/news/company-announcements/cadeler-completes-share-exchange-and-begins-trading-on-nyse-and-oslo-exchange"
+    },
+    "VCYT": {
+      "comment": "下调 2026 年检测业务收入指引，核心的 Decipher 前列腺癌检测量低于公司自己的预期，股价腰斩",
+      "src": "Stock Titan（汇总公司公告与 CNBC 报道）",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
+    },
+    "FSLY": {
+      "comment": "三季度营收 1.902 亿美元、同比增长 20.2%，利润和四季度指引都好于预期；但负责市场拓展的高管 Scott Lovett 宣布退休，分析师也指出部分业务增速放缓，叠加科技股抛售，股价大跌",
+      "src": "StockStory；Seeking Alpha",
+      "url": "https://stockstory.org/us/stocks/nasdaq/fsly/news/earnings/fastly-nasdaqfsly-beats-q3-2026-sales-expectations-but-stock-drops-13percent"
+    },
+    "PENG": {
+      "comment": "当天没有公司层面的重大消息，主要随 AI 服务器和存储板块一起被抛售；MarketBeat 另提到两名高管此前按预设的 10b5-1 计划小额减持",
+      "src": "MarketBeat",
+      "url": "https://www.marketbeat.com/instant-alerts/price-penguin-solutions-nasdaq-peng-shares-down-165-after-insider-selling-2026-11-05/"
+    },
+    "AXTI": {
+      "comment": "当天没有新的公司公告：10 月 29 日公布的三季度营收同比增长 162%，但周四盘前就和多只芯片股一起列入跌幅最大的名单，随光通信和半导体板块集体重挫",
+      "src": "Stock Titan（汇总 CNBC 报道）；GuruFocus（三季度业绩）",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
+    },
+    "ROAD": {
+      "comment": "公布财季业绩，多雨天气和柴油成本上升拖累利润",
+      "src": "Stock Titan（汇总公司公告与 CNBC 报道）",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
+    }
+  }
+}
