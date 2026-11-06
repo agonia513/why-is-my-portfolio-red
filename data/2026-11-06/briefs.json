@@ -1,0 +1,152 @@
+[
+  {
+    "id": "n1",
+    "section": "news",
+    "title": "10 月非农新增 16.5 万人，远超预期；失业率降到 4.1%",
+    "fact": "美国 10 月非农就业新增 16.5 万人，市场预期只有约 6.5 万人；9 月数据上修至 6 万人，8、9 月合计上修 8.4 万人。失业率从 4.2% 降到 4.1%，好于预期。新增岗位主要来自专业和商业服务、医疗保健以及运输仓储，制造业也增加了 1.9 万人。过去三个月平均每月新增 13.7 万人。",
+    "assets": "US10Y、US5Y、DXY、XLF、XLP、XLU",
+    "inference": "就业这么强，美联储就没有理由停下加息；对股市来说，这意味着估值面临更高的利率压力，利率敏感的防御板块和高估值成长股会更敏感于下周的 CPI。",
+    "src": "雅虎财经",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"
+  },
+  {
+    "id": "n2",
+    "section": "news",
+    "title": "AI 大崩盘后芯片股反弹，但标普仍录得 6 月初以来最差一周",
+    "fact": "周四标普 500 录得 2025 年 4 月关税冲击以来最差单日、费城半导体指数录得 2020 年 3 月以来最差单日之后，周五芯片股率先反弹，英伟达、AMD、英特尔盘中一度大涨。雅虎财经专栏作者 Brian Sozzi 统计，像周四这样的 VIX 暴涨自 1991 年以来只出现过 8 次，此后标普 500 一个月、三个月、半年和一年的平均表现都是上涨。",
+    "assets": "SOX、NVDA、AMD、INTC、TSM、IXIC",
+    "inference": "周五的反弹集中在跌得最深的芯片股，更像空头回补和抄底资金进场，而不是基本面转好；数据中心政策风险没有消失，下周 CoreWeave、思科、应用材料的财报会是检验 AI 需求的第一批硬数据。",
+    "src": "雅虎财经",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"
+  },
+  {
+    "id": "n3",
+    "section": "news",
+    "title": "量子计算股集体大涨：IonQ 营收大超预期、上调全年指引",
+    "fact": "IonQ 三季度营收 1.738 亿美元、同比增长 336%，高于 1.412 亿美元的预期，全年营收指引上调到 5.05–5.15 亿美元；英伟达计划在其量子研究中心安装一套 IonQ 系统。Rigetti 和 D-Wave 跟随上涨，两家公司都将在 11 月 10 日公布财报。",
+    "assets": "IONQ、RGTI、QBTS、QNT",
+    "inference": "量子板块波动极大、稀释频繁，今天的上涨很大程度上是 AI 抛售后的高弹性品种反弹；下周二 Rigetti 和 D-Wave 的财报能否同样超预期，决定这波行情能否延续。",
+    "src": "24/7 Wall St.",
+    "url": "https://247wallst.com/investing/2026/11/06/ionq-surges-18-on-beat-and-raised-guidance-rigetti-computing-jumps-18-d-wave-quantum-surges-16/"
+  },
+  {
+    "id": "n4",
+    "section": "news",
+    "title": "Airbnb 业绩超预期、宣布“回到增长模式”；Anthropic IPO 估值预期下调",
+    "fact": "Airbnb 三季度每股收益 3.16 美元、营收增长 19% 至 48.7 亿美元，均高于预期，四季度营收指引 32.2–32.8 亿美元也高于预期，CEO Brian Chesky 称公司“回到了增长模式”。另据报道，投资者目前给 Anthropic IPO 的估值预期约为 1–1.3 万亿美元，低于上个月预计的约 2 万亿美元；公司上周一已公开提交 S-1，IPO 仍预计在月底前进行，但可能推迟。",
+    "assets": "ABNB、BKNG、EXPE、AI 平台股",
+    "inference": "消费和旅游需求依然稳健，与就业数据互相印证；而 Anthropic 估值预期下调说明 AI 抛售已经传导到一级市场，如果 IPO 定价偏低，可能进一步压制 AI 相关股的估值。",
+    "src": "雅虎财经",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"
+  },
+  {
+    "id": "w1",
+    "section": "world",
+    "title": "霍尔木兹海峡油轮遇袭不断，原油一周大跌后仍有支撑",
+    "fact": "受中期选举后市场押注美以与伊朗战争降温影响，原油本周大幅下跌，布伦特有望录得 2020 年以来最大周跌幅。但周三和周四海湾地区及霍尔木兹海峡的油轮袭击激增，伊朗称周四又有三艘油轮遇袭，UKMTO 数据显示针对运油船只的袭击仍接近创纪录的频率。KCM 首席分析师 Tim Waterer 认为，在出现安全通航的可信路径之前，油价“回调时可能仍有支撑”。",
+    "assets": "WTI、BRENT、XLE、航空股",
+    "inference": "选举结果改变的是战争降温的预期，但海峡航运风险没有消失；油价在 90 美元上方徘徊，会继续推高通胀和加息预期，对能源股是支撑，对航空和消费股是成本压力。",
+    "src": "路透社（经雅虎财经转载）",
+    "url": "https://finance.yahoo.com/energy/articles/oil-set-sharp-weekly-drop-052924519.html"
+  },
+  {
+    "id": "w2",
+    "section": "world",
+    "title": "高盛：约 45% 的规划数据中心容量可能受新任州长限制",
+    "fact": "高盛估计，美国约 45% 的规划数据中心容量可能面临新当选州长的限制。得州新任州长 Gina Hinojosa 表示，已获批的数据中心项目可以完成建设；Yardeni Research 指出，已获批项目基本覆盖了得州 2027 年规划的全部容量，并把周四的抛售称为“买入机会”，维持标普 500 年底 7,900 点的目标。",
+    "assets": "SOX、NVDA、CRWV、VST、数据中心电力与建筑股",
+    "inference": "限制主要针对尚未获批的新项目，2027 年前的建设节奏受影响有限，但 2028 年以后的增长预期被打了折扣；市场需要看到各州具体政策落地，才能判断这次是“减速”还是“刹车”。",
+    "src": "雅虎财经",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"
+  },
+  {
+    "id": "w3",
+    "section": "world",
+    "title": "美元录得 6 月以来最大单日涨幅；日本首相拟动用央行 ETF 出售收入",
+    "fact": "非农数据公布后，美元指数录得 6 月 17 日以来最大单日涨幅，欧元、英镑和日元全线走弱，美元兑日元升至 158.43 附近。日本首相高市早苗提议，用日本央行出售 ETF 的收入为她的投资计划提供资金，因为 AI 引发的股市下跌威胁到了税收；日本央行行长植田和男表示，基础通胀应保持在 2% 左右，但存在“一些上行风险”。",
+    "assets": "DXY、USDJPY、EWJ、美股跨国公司",
+    "inference": "美元走强会压低美国跨国公司的海外收入折算，也会让新兴市场和大宗商品承压；日本央行若加快出售 ETF，可能给全球风险资产再添一层抛压。",
+    "src": "路透社（经 GV Wire 转载）",
+    "url": "https://gvwire.com/2026/11/06/dollar-jumps-after-strong-us-payrolls-report/"
+  },
+  {
+    "id": "s1",
+    "section": "speaker",
+    "title": "圣路易斯联储穆萨莱姆：通胀是“累退税”，货币政策要针对眼下的经济",
+    "fact": "周五，圣路易斯联储主席穆萨莱姆把通胀形容为一种“累退的、扭曲性的税”，并表示货币政策要针对当下的经济，而不是五年之后的样子。主席沃什上个月曾表示，决策者会观察“数据的累积”再决定是否需要进一步收紧（这句话不是今天说的）。",
+    "assets": "US5Y、US10Y、XLF、IXIC",
+    "inference": "官员在强劲就业数据出炉当天强调通胀优先，意味着 12 月加息的门槛不高；除非下周 CPI 明显降温，市场很难把加息预期再压下去。",
+    "src": "路透社（经雅虎财经转载）",
+    "url": "https://finance.yahoo.com/economy/policy/articles/traders-raise-bets-fed-rate-134402668.html"
+  },
+  {
+    "id": "s2",
+    "section": "speaker",
+    "title": "纽约联储威廉姆斯、旧金山联储戴利：通胀太高，可能还需继续加息",
+    "fact": "据路透社汇总，纽约联储主席威廉姆斯表示通胀太高、必须回到 2%；旧金山联储主席戴利表示可能还需要进一步加息，穆萨莱姆也把通胀列为首要担忧。",
+    "assets": "DXY、US5Y、US10Y",
+    "inference": "几位重量级官员口径一致偏鹰，加上就业强劲，12 月加息基本已成市场的基准情形；真正的分歧在于明年还要加几次。",
+    "src": "路透社（经 GV Wire 转载）",
+    "url": "https://gvwire.com/2026/11/06/dollar-jumps-after-strong-us-payrolls-report/"
+  },
+  {
+    "id": "s3",
+    "section": "speaker",
+    "title": "白宫哈塞特：“劳动力需求正在飙升”",
+    "fact": "白宫国家经济委员会主任哈塞特在就业数据公布后表示，“劳动力需求正在飙升”，并称初请失业金人数处于二战以来的最低水平。",
+    "assets": "SPX、DJI、XLY",
+    "inference": "白宫用强劲就业数据回应股市下跌，但对市场来说，就业越强，美联储越可能继续加息，好消息在短期内未必是股市的好消息。",
+    "src": "雅虎财经",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"
+  },
+  {
+    "id": "s4",
+    "section": "speaker",
+    "title": "马斯克：Cybertruck 明年年中前后逐步停产，产能让给 Cybercab",
+    "fact": "马斯克在 X 上表示，得州超级工厂的 Cybertruck 生产将在明年年中前后逐步结束，为无人驾驶出租车 Cybercab 腾出产能。特斯拉此前曾称 Cybertruck 有超过 100 万份预订。",
+    "assets": "TSLA",
+    "inference": "停掉销量不及预期的车型、把资源押在自动驾驶上，市场今天给了正面反应；但 Cybercab 的量产时间和监管审批才是估值的关键。",
+    "src": "雅虎财经",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"
+  },
+  {
+    "id": "t1",
+    "section": "watch",
+    "title": "下周二 8:30：10 月 CPI；周五 8:30：10 月 PPI",
+    "fact": "11 月 10 日（周二）公布 10 月 CPI，这次不发布同比数据，市场将聚焦整体和核心 CPI 的环比；9 月整体 CPI 环比上涨 0.6%，核心环比上涨 0.3%。11 月 13 日（周五）公布 10 月 PPI。",
+    "assets": "US5Y、US10Y、DXY、IXIC",
+    "inference": "在就业强劲之后，CPI 是 12 月加息前最重要的一份数据；如果核心通胀继续偏热，利率和美元可能再上一个台阶，高估值成长股首当其冲。",
+    "src": "FinancialJuice",
+    "url": "https://features.financialjuice.com/2026/11/06/week-ahead-economic-indicators-9th-13th-november-us/"
+  },
+  {
+    "id": "t2",
+    "section": "watch",
+    "title": "下周财报：CoreWeave、思科、应用材料、Cerebras 检验 AI 需求",
+    "fact": "11 月 9 日（周一）盘后有 Take-Two、Rocket Lab 和 AST SpaceMobile；10 日（周二）D-Wave 盘前、CoreWeave 和 Rigetti 盘后公布；12 日（周四）Nebius 盘前，思科、应用材料和 AI 芯片公司 Cerebras 盘后公布。",
+    "assets": "CRWV、CSCO、AMAT、CBRS、NBIS、RGTI、QBTS",
+    "inference": "CoreWeave 和 Nebius 是数据中心算力租赁的风向标，应用材料反映芯片设备投资，思科反映企业网络开支；这几份财报会直接回答“AI 资本开支会不会因为政策风险而放缓”。",
+    "src": "Stock Titan",
+    "url": "https://www.stocktitan.net/articles/earnings-calendar-week-of-november-9-2026"
+  },
+  {
+    "id": "t3",
+    "section": "watch",
+    "title": "12 月 8–9 日议息会议：加息概率升到约八成",
+    "fact": "非农公布前，期货市场隐含的 12 月加息概率约为三分之二，数据公布后一度升到八成五左右，随后回落到约八成；交易员还把本轮最后一次加息的预期时间从明年 6 月提前到 4 月。Raymond James 预计美联储 12 月会加息 25 个基点。",
+    "assets": "US5Y、US10Y、XLF、XLRE、XLU",
+    "inference": "加息已经基本被定价，市场接下来交易的是加息周期会持续多久；利率敏感的房地产、公用事业和必需消费板块短期可能继续跑输。",
+    "src": "路透社（经雅虎财经转载）",
+    "url": "https://finance.yahoo.com/economy/policy/articles/traders-raise-bets-fed-rate-134402668.html"
+  },
+  {
+    "id": "t4",
+    "section": "watch",
+    "title": "11 月 17 日：英伟达财报",
+    "fact": "英伟达周四跌到 4 月以来最低、今年以来转为下跌，周五只小幅反弹。11 月 17 日公布的季度财报将是本轮 AI 抛售之后，市场对 AI 需求的最重要一次检验。",
+    "assets": "NVDA、SOX、AI 服务器与存储链条",
+    "inference": "如果英伟达的订单和指引继续强劲，芯片股有望修复部分估值；但只要数据中心政策风险和加息压力还在，市场可能不会再给出之前的估值溢价。",
+    "src": "The Motley Fool",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/11/05/stock-market-today-nov-5-nvidia-slides-on-ai-chip-selloff-as-election-uncertainty-weighs/"
+  }
+]
