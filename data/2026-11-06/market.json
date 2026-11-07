@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "generated_at": "2026-11-06T22:26:20+00:00",
+ "generated_at": "2026-11-07T01:00:50+00:00",
  "sources": {
   "prices": "Yahoo Finance（经 yfinance）",
   "universe": "Nasdaq 股票筛选器（api.nasdaq.com）",
@@ -37,7 +37,7 @@
    "prev_close": 24315.0,
    "chg_pct": 1.087,
    "range_pct": 1.307,
-   "volume": 9372641000
+   "volume": 9385738000
   },
   {
    "id": "DJI",
@@ -253,11 +253,11 @@
    "unit": "美元/桶",
    "open": 91.2,
    "high": 92.53,
-   "low": 89.07,
+   "low": 89.08,
    "close": 90.34,
    "prev_close": 90.52,
    "chg_pct": -0.199,
-   "range_pct": 3.822,
+   "range_pct": 3.811,
    "volume": 253859
   },
   {
@@ -266,12 +266,12 @@
    "unit": "美元/桶",
    "open": 99.24,
    "high": 100.92,
-   "low": 96.65,
+   "low": 96.71,
    "close": 97.76,
    "prev_close": 98.29,
    "chg_pct": -0.539,
-   "range_pct": 4.344,
-   "volume": 38991
+   "range_pct": 4.283,
+   "volume": 38993
   },
   {
    "id": "GOLD",
@@ -279,11 +279,11 @@
    "unit": "美元/盎司",
    "open": 4098.5,
    "high": 4116.2002,
-   "low": 4037.0,
+   "low": 4035.6001,
    "close": 4079.5,
    "prev_close": 4113.5,
    "chg_pct": -0.827,
-   "range_pct": 1.925,
+   "range_pct": 1.959,
    "volume": 166431
   },
   {
@@ -326,19 +326,6 @@
    "chg_pct": 0.718,
    "range_pct": 0.793,
    "volume": 0
-  },
-  {
-   "id": "BTC",
-   "name": "比特币",
-   "unit": "美元",
-   "open": 75982.8125,
-   "high": 76282.3984,
-   "low": 75067.125,
-   "close": 75919.8984,
-   "prev_close": 75942.125,
-   "chg_pct": -0.029,
-   "range_pct": 1.6,
-   "volume": 31821588480
   }
  ],
  "sectors": [
@@ -406,12 +393,12 @@
    "id": "XLF",
    "name": "金融",
    "open": 56.73,
-   "high": 57.7,
+   "high": 57.71,
    "low": 56.7,
    "close": 57.16,
    "prev_close": 57.5,
    "chg_pct": -0.591,
-   "range_pct": 1.739,
+   "range_pct": 1.757,
    "volume": 34689458
   },
   {
@@ -1649,12 +1636,12 @@
     "industry": "Biotechnology: Pharmaceutical Preparations",
     "market_cap": 4255594998.0,
     "open": 39.71,
-    "high": 45.76,
+    "high": 45.75,
     "low": 38.045,
     "close": 45.04,
     "prev_close": 38.87,
     "chg_pct": 15.873,
-    "range_pct": 19.848,
+    "range_pct": 19.822,
     "volume": 3608213
    },
    {
@@ -1721,6 +1708,7 @@
  },
  "crosscheck": [],
  "warnings": [
+  "missing BTC",
   "NVDA: Nasdaq 历史行情无数据，未能交叉核对",
   "AMD: Nasdaq 历史行情无数据，未能交叉核对",
   "AVGO: Nasdaq 历史行情无数据，未能交叉核对",
